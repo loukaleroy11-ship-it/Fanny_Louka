@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louka X Fanny ❤️</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pink-bg: #FFC0CB;
+            --rose-color: #ff3366;
+            --rose-dark: #c41b47;
+            --leaf-color: #2ecc71;
+            --paper-color: #d2b48c;
+            --envelope-color: #ff9eb5;
+            --letter-color: #fffdf0;
+        }
+
+        body, html {
+            margin: 0; padding: 0;
+            font-family: 'Fredoka', sans-serif;
+            background: var(--pink-bg);
+            height: 100vh; overflow: hidden;
+            display: flex; justify-content: center; align-items: center;
+        }
+
+        /* --- CORRECTION IMAGE (FUSION DU BLANC) --- */
+        .image-calin-fixe {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 220px;
+            height: auto;
+            z-index: 15;
+            pointer-events: none;
+            mix-blend-mode: multiply; 
+            opacity: 0.9; 
+        }
+
+        /* --- WIDGET MUSIQUE --- */
+        #music-box {
+            position: absolute; 
+            top: 25px; 
+            right: 25px; 
+            display: flex; 
+            align-items: center; 
+            gap: 15px; 
+            background: rgba(255,255,255,0.85); 
+            padding: 12px 25px; 
+            border-radius: 50px; 
+            z-index: 30;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15); 
+            backdrop-filter: blur(5px);
+            animation: floatMusic 3s ease-in-out infinite;
+        }
+
+        @keyframes floatMusic {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        #music-btn { 
+            border: none; 
+            background: #ff6b81; 
+            color: white; 
+            border-radius: 50%; 
+            width: 45px; height: 45px; 
+            font-size: 1.2rem;
+            cursor: pointer; 
+            transition: transform 0.2s;
+            display: flex; justify-content: center; align-items: center;
+        }
+        #music-btn:hover { transform: scale(1.1); }
+
+        .vinyl-disc {
+            width: 55px; height: 55px; 
+            background: radial-gradient(circle, #333 40%, #111 50%);
+            border-radius: 50%; 
+            border: 3px solid black; 
+            animation: rotateVinyl 3s linear infinite paused;
+            position: relative;
+        }
+        .vinyl-disc::after {
+            content: ''; position: absolute; top: 10%; left: 10%; width: 40%; height: 40%;
+            border-radius: 50%; border-top: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .vinyl-disc.playing { animation-play-state: running; }
+        @keyframes rotateVinyl { to { transform: rotate(360deg); } }
+
+        /* ==================== 
+           LOGIN (ECRAN NOIR)
+           ==================== */
+        #login {
+            position: fixed; inset: 0;
+            background: #000000;
+            color: white;
+            display: flex; flex-direction: column;
+            justify-content: center; align-items: center;
+            z-index: 1000; cursor: pointer;
+            transition: 1s ease-out; overflow: hidden;
+        }
+        
+        #login h1 {
+            font-family: 'Times New Roman', Times, serif; 
+            font-size: 4rem; z-index: 10;
+            margin-bottom: 0;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+            letter-spacing: 2px;
+            animation: pulseTitle 3s infinite ease-in-out;
+        }
+        
+        @keyframes pulseTitle {
+            0%, 100% { opacity: 0.8; transform: scale(1); text-shadow: 0 0 20px rgba(255,255,255,0.8); }
+            50% { opacity: 1; transform: scale(1.05); text-shadow: 0 0 40px white, 0 0 10px #ff69b4; }
+        }
+
+        .star {
+            position: absolute; background: white; border-radius: 50%; opacity: 0.8;
+            animation: moveStar 60s linear infinite, twinkle var(--twinkle-dur) ease-in-out infinite;
+        }
+        @keyframes moveStar { from { transform: translateY(100vh); } to { transform: translateY(-10vh); } }
+        @keyframes twinkle { 0%, 100% { opacity: 0.2; transform: scale(0.5); } 50% { opacity: 1; transform: scale(1.2); box-shadow: 0 0 8px white; } }
+
+        .shooting-star {
+            position: absolute; height: 2px;
+            background: linear-gradient(-45deg, rgba(255,255,255,1), rgba(255,255,255,0));
+            width: 150px; 
+            border-radius: 999px; 
+            filter: drop-shadow(0 0 6px rgba(255,255,255,1));
+            animation: shooting 2.5s ease-in-out infinite; opacity: 0;
+            z-index: 5;
+        }
+        @keyframes shooting {
+            0% { transform: translateX(0) translateY(0) rotate(var(--angle)); opacity: 1; }
+            30% { opacity: 1; }
+            100% { transform: translateX(var(--travel)) translateY(var(--travel)) rotate(var(--angle)); opacity: 0; }
+        }
+
+        /* ==================== 
+           CADRE PRINCIPAL
+           ==================== */
+        #main-frame {
+            display: none; width: 95vw; max-width: 1100px; height: 85vh;
+            background: white; border-radius: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            display: flex; position: relative; overflow: hidden;
+            opacity: 0; transition: 1.2s; z-index: 10;
+        }
+
+        #photo-strip {
+            width: 260px; background: #1a1a1a;
+            display: flex; flex-direction: column;
+            padding: 15px; gap: 15px; justify-content: center; z-index: 5;
+            transition: transform 0.1s ease-out;
+        }
+        .photo {
+            flex: 1; background: #222; border-radius: 4px; overflow: hidden;
+            border: 6px solid white; transform: rotate(-3deg);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3); transition: 0.3s;
+            cursor: zoom-in;
+        }
+        .photo:hover { transform: scale(1.05) rotate(0deg); z-index: 10; }
+        .photo:nth-child(2) { transform: rotate(3deg); }
+        .photo img { width: 100%; height: 100%; object-fit: cover; }
+
+        #content {
+            flex: 1; position: relative; display: flex;
+            flex-direction: column; align-items: center; justify-content: center;
+            background: radial-gradient(circle, #fff0f5 20%, #ffdde1 100%);
+            perspective: 1000px;
+        }
+
+        /* BOUQUET */
+        .bouquet-container {
+            position: relative; width: 260px; height: 300px;
+            margin-bottom: -50px;
+            transition: transform 0.1s ease-out;
+            z-index: 5; pointer-events: none; 
+        }
+        .paper-cone {
+            position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+            width: 0; height: 0;
+            border-left: 90px solid transparent; border-right: 90px solid transparent;
+            border-top: 240px solid var(--paper-color);
+            border-radius: 10px; filter: drop-shadow(0 10px 10px rgba(0,0,0,0.15));
+            pointer-events: auto;
+        }
+        .flowers {
+            position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+            width: 240px; height: 160px; pointer-events: none;
+        }
+        .rose {
+            position: absolute; width: 65px; height: 65px;
+            background: radial-gradient(circle at 30% 30%, #ff6b81, var(--rose-color));
+            border-radius: 50%; box-shadow: inset -2px -2px 6px rgba(0,0,0,0.2);
+            cursor: pointer; pointer-events: auto; transition: transform 0.2s; z-index: 10;
+        }
+        .rose:active { transform: scale(0.9); }
+        .rose::after {
+            content: ''; position: absolute; top: 18%; left: 18%; width: 64%; height: 64%;
+            border: 4px solid rgba(255,255,255,0.4); border-radius: 50%;
+            border-bottom-color: transparent; transform: rotate(45deg);
+        }
+        .r1 { top: 10px; left: 85px; } .r2 { top: 50px; left: 35px; } .r3 { top: 50px; left: 135px; }
+        .r4 { top: 90px; left: 85px; background: radial-gradient(circle at 30% 30%, #ff4757, #c0392b); }
+        .r5 { top: -10px; left: 50px; transform: scale(0.9); z-index: 5; } .r6 { top: -10px; left: 120px; transform: scale(0.9); z-index: 5; }
+        .leaf {
+            position: absolute; width: 40px; height: 40px;
+            background: var(--leaf-color); border-radius: 0 25px 0 25px; z-index: 1;
+        }
+        .l1 { top: 80px; left: 10px; transform: rotate(-60deg); } .l2 { top: 80px; right: 10px; transform: rotate(60deg); } .l3 { top: 20px; left: 20px; transform: rotate(-30deg); }
+
+        .pop-word {
+            position: absolute; top: -40px; left: 50%; transform: translateX(-50%);
+            background: white; padding: 5px 12px; border-radius: 15px;
+            font-family: 'Dancing Script', cursive; color: var(--rose-dark);
+            font-size: 1.2rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            pointer-events: none; opacity: 1; white-space: nowrap; z-index: 100;
+            animation: floatUpWord 1.5s ease-out forwards;
+        }
+        @keyframes floatUpWord {
+            0% { transform: translateX(-50%) translateY(0) scale(0.5); opacity: 0; }
+            20% { transform: translateX(-50%) translateY(0) scale(1.1); opacity: 1; }
+            100% { transform: translateX(-50%) translateY(-50px); opacity: 0; }
+        }
+
+        /* ENVELOPPE */
+        .envelope-wrapper {
+            position: relative; width: 300px; height: 200px;
+            margin-top: -40px; cursor: pointer; z-index: 20;
+            transition: transform 0.3s;
+        }
+        .envelope-wrapper:hover { transform: scale(1.02); }
+        .envelope {
+            position: relative; width: 100%; height: 100%;
+            background: var(--envelope-color); border-radius: 5px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2); z-index: 2;
+        }
+        .envelope::after { /* Rabat bas */
+            content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 0;
+            border-left: 150px solid var(--envelope-color); border-right: 150px solid var(--envelope-color);
+            border-top: 100px solid transparent; z-index: 3; filter: brightness(0.95);
+        }
+        .envelope::before { /* Fond */
+            content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 0;
+            border-left: 150px solid transparent; border-right: 150px solid transparent;
+            border-bottom: 100px solid #ff8fa8; z-index: 4;
+        }
+        .flap { /* Rabat haut */
+            position: absolute; top: 0; left: 0; width: 0; height: 0;
+            border-left: 150px solid transparent; border-right: 150px solid transparent;
+            border-top: 110px solid #ffb3c6; transform-origin: top;
+            transition: 0.6s ease-in-out; z-index: 5;
+        }
+        .letter {
+            position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+            width: 90%; height: 85%; background: var(--letter-color);
+            border-radius: 5px; transition: 0.8s ease-in-out; z-index: 1;
+            display: flex; justify-content: center; align-items: center;
+            box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+            padding: 10px; box-sizing: border-box;
+            overflow-y: auto;
+        }
+        #typewriter-text {
+            font-family: 'Dancing Script', cursive; 
+            font-size: 1rem; 
+            color: var(--rose-dark); 
+            margin: 0;
+            white-space: pre-wrap;
+            text-align: center;
+            line-height: 1.3;
+        }
+        .envelope-wrapper.open .flap { transform: rotateX(180deg); z-index: 0; }
+        .envelope-wrapper.open .letter { transform: translateX(-50%) translateY(-120px); z-index: 6; }
+
+        /* UI ELEMENTS */
+        #lightbox {
+            display: none; position: fixed; inset: 0;
+            background: rgba(0,0,0,0.9); z-index: 2000;
+            justify-content: center; align-items: center;
+            backdrop-filter: blur(5px); cursor: pointer;
+        }
+        #lightbox img {
+            max-width: 90%; max-height: 90%; border: 10px solid white;
+            border-radius: 10px; box-shadow: 0 0 50px rgba(0,0,0,0.5);
+            animation: zoomIn 0.3s ease;
+        }
+        @keyframes zoomIn { from { transform: scale(0); } to { transform: scale(1); } }
+
+        .confetti {
+            position: absolute; width: 10px; height: 10px;
+            animation: confetti-fall 3s linear forwards; z-index: 50;
+        }
+        @keyframes confetti-fall {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+        }
+
+        .firefly {
+            position: absolute; width: 4px; height: 4px;
+            background-color: #ffd700; border-radius: 50%;
+            box-shadow: 0 0 10px #ffd700; opacity: 0; pointer-events: none;
+            animation: fly 10s infinite ease-in-out; z-index: 25;
+        }
+        @keyframes fly {
+            0% { transform: translate(0, 0); opacity: 0; }
+            20% { opacity: 1; }
+            50% { transform: translate(30px, -40px); opacity: 0.8; }
+            80% { opacity: 1; }
+            100% { transform: translate(-20px, -80px); opacity: 0; }
+        }
+
+        .popup-overlay {
+            display: none; position: fixed; inset: 0;
+            background: rgba(0,0,0,0.7); z-index: 1500;
+            justify-content: center; align-items: center;
+            opacity: 0; transition: opacity 0.3s ease;
+        }
+        .popup-overlay.active { display: flex; opacity: 1; }
+        .popup-content {
+            background: white; padding: 30px; border-radius: 15px;
+            max-width: 90%; max-height: 80vh; overflow-y: auto;
+            position: relative; box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transform: translateY(20px); opacity: 0; transition: transform 0.3s ease, opacity 0.3s ease;
+            width: 400px; 
+        }
+        .popup-overlay.active .popup-content { transform: translateY(0); opacity: 1; }
+        .popup-close {
+            position: absolute; top: 15px; right: 15px;
+            background: none; border: none; font-size: 1.5rem;
+            cursor: pointer; color: #555;
+        }
+
+        #timeline-content h2 { color: var(--rose-dark); text-align: center; margin-bottom: 25px; font-family: 'Dancing Script', cursive; font-size: 2rem; }
+        .timeline-item {
+            display: flex; align-items: flex-start; margin-bottom: 15px;
+            position: relative; padding-left: 20px;
+            border-left: 2px solid #ffb7c5;
+        }
+        .timeline-item::before {
+            content: '❤️'; position: absolute; left: -9px; top: 0;
+            font-size: 1rem; background: white;
+        }
+        .timeline-date { font-weight: bold; color: var(--rose-color); font-size: 0.9em; width: 60px; flex-shrink: 0; margin-left: 10px; }
+        .timeline-event { margin-left: 10px; color: #555; font-size: 0.95em; }
+        
+        #scratch-card-container {
+            position: relative;
+            width: 300px; height: 150px;
+            background-color: #f0f0f0; 
+            border-radius: 10px;
+            overflow: hidden;
+            user-select: none;
+            cursor: default;
+            margin: 20px auto;
+        }
+        #scratch-canvas { position: absolute; inset: 0; z-index: 2; }
+        #scratch-reveal-text {
+            position: absolute; inset: 0;
+            display: flex; justify-content: center; align-items: center;
+            font-family: 'Dancing Script', cursive; font-size: 2.5rem;
+            color: var(--rose-dark); text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        #timer { position: absolute; bottom: 20px; display: flex; gap: 12px; z-index: 20; }
+        .timer-circle {
+            width: 60px; height: 60px; background: rgba(255,255,255,0.4);
+            border: 1px solid white; border-radius: 50%;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+        }
+        .time-val { font-size: 1.2rem; font-weight: 600; color: #ff6b81; }
+        .time-label { font-size: 0.5rem; text-transform: uppercase; }
+
+        .heart-particle { position: fixed; top: -20px; pointer-events: none; animation: fall linear forwards; font-size: 20px; z-index: 100; }
+        @keyframes fall { to { transform: translateY(110vh); } }
+
+        .bottom-buttons {
+            position: absolute; bottom: 50px; left: 50px; 
+            transform: none; display: flex; flex-direction: column; 
+            gap: 15px; z-index: 20; width: auto;
+        }
+        .action-button {
+            background: #ff69b4; color: white; border: none;
+            padding: 12px 25px; border-radius: 50px;
+            font-size: 1rem; cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: background 0.3s, transform 0.2s;
+            text-align: left; 
+        }
+        .action-button:hover { background: #e05c9f; transform: translateX(5px); }
+        .action-button:active { transform: translateX(0); }
+    </style>
+</head>
+<body>
+
+    <div id="lightbox" onclick="this.style.display='none'">
+        <img id="lightbox-img" src="">
+    </div>
+
+    <div id="timeline-popup" class="popup-overlay" onclick="closePopup(this)">
+        <div class="popup-content" onclick="event.stopPropagation()">
+            <button class="popup-close" onclick="closePopup(document.getElementById('timeline-popup'))">❌</button>
+            <h2>Date Fanny ❤️</h2>
+            <div id="timeline-content"></div>
+        </div>
+    </div>
+
+    <div id="scratch-popup" class="popup-overlay" onclick="closePopup(this)">
+        <div class="popup-content" onclick="event.stopPropagation()">
+            <button class="popup-close" onclick="closePopup(document.getElementById('scratch-popup'))">❌</button>
+            <h2>Un petit secret...</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 20px;">Gratte la surface avec ta souris (ou ton doigt) !</p>
+            <div id="scratch-card-container">
+                <canvas id="scratch-canvas"></canvas>
+                <div id="scratch-reveal-text">Je t'aime !</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="login" onclick="start()">
+        <h1>Louka X Fanny</h1>
+    </div>
+
+    <div id="main-frame">
+        <div id="photo-strip">
+            <div class="photo" onclick="zoomPhoto('photo1.jpg')"><img src="photo1.jpg" alt="Nous"></div>
+            <div class="photo" onclick="zoomPhoto('photo2.jpg')"><img src="photo2.jpg" alt="Nous"></div>
+            <div class="photo" onclick="zoomPhoto('photo3.jpg')"><img src="photo3.jpg" alt="Nous"></div>
+        </div>
+
+        <div id="content">
+            <div id="music-box">
+                <div class="vinyl-disc" id="vinyl"></div>
+                <button id="music-btn" onclick="toggleMusic()">▶</button>
+                <audio id="player" src="musique.mp3" loop></audio>
+            </div>
+
+            <div class="bouquet-container">
+                <div class="flowers">
+                    <div class="leaf l1"></div><div class="leaf l2"></div><div class="leaf l3"></div>
+                    <div class="rose r5" onclick="showWord(this, 'Pour toujours')"></div>
+                    <div class="rose r6" onclick="showWord(this, 'Mon cœur')"></div>
+                    <div class="rose r2" onclick="showWord(this, 'Passion')"></div>
+                    <div class="rose r3" onclick="showWord(this, 'Bonheur')"></div>
+                    <div class="rose r1" onclick="showWord(this, 'Amour')"></div>
+                    <div class="rose r4" onclick="showWord(this, 'Toi & Moi')"></div>
+                </div>
+                <div class="paper-cone"></div>
+            </div>
+
+            <div class="envelope-wrapper" onclick="toggleLetter()">
+                <div class="envelope">
+                    <div class="flap"></div>
+                </div>
+                <div class="letter">
+                    <div id="typewriter-text"></div> </div>
+            </div>
+
+            <div id="timer">
+                <div class="timer-circle"><span class="time-val" id="d">00</span><span class="time-label">Jours</span></div>
+                <div class="timer-circle"><span class="time-val" id="h">00</span><span class="time-label">Hrs</span></div>
+                <div class="timer-circle"><span class="time-val" id="m">00</span><span class="time-label">Min</span></div>
+                <div class="timer-circle"><span class="time-val" id="s">00</span><span class="time-label">Sec</span></div>
+            </div>
+
+            <div class="bottom-buttons">
+                <button class="action-button" onclick="openTimeline()">Notre Histoire ➕</button>
+                <button class="action-button" onclick="openScratchCard()">Gratte-moi ! 🍀</button>
+            </div>
+        </div>
+
+        <img src="calin.png" alt="Câlin" class="image-calin-fixe">
+    </div>
+
+    <script>
+        const startRel = new Date("2025-04-28T22:23:00");
+        const clickSound = new Audio('https://www.soundjay.com/buttons/sounds/button-50.mp3');
+        
+        const messageFinal = "Fanny, tu es la première…\net pourquoi pas la dernière.\n\nCette relation de rêve,\nc’est toi qui me l’as apportée.\n\nMerci à cette vague de nous\navoir guidés l’un vers l’autre.\n\nLes moments passés à tes côtés\nou à t’écouter, je ne les\noublierai jamais.\n\nJe kiffe tellement tout ce que\nnous faisons ensemble.\n\nJe t'aime ❤️";
+        
+        let textIndex = 0;
+        let secretCode = '';
+        const secretWord = 'LOVE';
+
+        const datesTimeline = [
+            { date: "09/05", event: "Étang-Salé" },
+            { date: "11/05", event: "Open" },
+            { date: "", event: "St-Pierre Terre Sainte" },
+            { date: "25/05", event: "St-Leu (5min)" },
+            { date: "01/06", event: "St-Leu Fleurs" },
+            { date: "", event: "St-Pierre KFC" },
+            { date: "08/06", event: "St-Leu côté lagon" },
+            { date: "09/06", event: "St-Leu Anniv" },
+            { date: "13/06", event: "St-Pierre Bac" },
+            { date: "15/06", event: "St-Leu Potes" },
+            { date: "18/06", event: "St-Pierre shopping maman" },
+            { date: "22/06", event: "St-Leu" },
+            { date: "24/06", event: "Chez Fanny préli/ciné" },
+            { date: "27/06", event: "St-Pierre Papa" },
+            { date: "03/07", event: "Chez Fanny enfants" },
+            { date: "06/07", event: "Étang-Salé" },
+            { date: "07/07", event: "Chez Fanny" },
+            { date: "10/07", event: "Chez Fanny papa maman" },
+            { date: "16/07", event: "Chez Louka papa maman" },
+            { date: "01/08", event: "Chez Louka Lego" },
+            { date: "04/08", event: "Chez Fanny" },
+            { date: "09/08", event: "Chez Louka, Kelonia" },
+            { date: "11/08", event: "Chez Fanny soir" },
+            { date: "17/08", event: "Chez Fanny, balade familiale" },
+            { date: "20/08", event: "Chez Fanny pique-nique" },
+            { date: "23/08", event: "Trou d’eau" },
+            { date: "24/08", event: "Chez Fanny courses" },
+            { date: "28/08", event: "Aquarium" },
+            { date: "06/09", event: "Chez Louka, Pointe au Sel" },
+            { date: "07/09", event: "Match chez Fanny révisions" },
+            { date: "13/09", event: "Cormo, match, chez Louka" },
+            { date: "14/09", event: "Chez Fanny TikTok" },
+            { date: "18/09", event: "Ciné, Étang-Salé" },
+            { date: "20/09", event: "Chez Fanny, match, saleté" },
+            { date: "24/09", event: "Lave voiture, trampo, chez Fanny" },
+            { date: "27/09", event: "Match, pote, chez Fanny" },
+            { date: "28/09", event: "Boucan, chez Fanny" },
+            { date: "12/10", event: "Dodo Fanny" },
+            { date: "13/10", event: "Florilèges, soirée mousse" },
+            { date: "16/10", event: "Dodo Fanny, départ Grand Raid" },
+            { date: "17/10", event: "Malade Louka" },
+            { date: "20/10", event: "Louka" },
+            { date: "21/10", event: "Dodo Fanny, Grand Bassin" },
+            { date: "22/10", event: "Chez Fanny, ramène Louka" },
+            { date: "01/11", event: "Anniv Fanny, Karting, dodo Fanny" },
+            { date: "02/11", event: "Chill chez Fanny" },
+            { date: "09/11", event: "Chill St-Leu soir" },
+            { date: "19/11", event: "Chez Fanny, Keyla, Décathlon" },
+            { date: "21/11", event: "Chez Fanny dodo, rencontre Franck" },
+            { date: "22/11", event: "Chez Fanny chill" },
+            { date: "30/11", event: "Chez Fanny calendrier de l’avent" },
+            { date: "05/12", event: "Chez Fanny, ciné, dodo" },
+            { date: "", event: "Chez Fanny, chill" },
+            { date: "14/12", event: "St-Leu, chill" },
+            { date: "20/12", event: "St-Leu chill, Yanis" },
+            { date: "22/12", event: "Bassin Sud" }
+        ];
+
+        function initStars() {
+            const login = document.getElementById('login');
+            for(let i=0; i<200; i++) {
+                const s = document.createElement('div');
+                s.className = 'star';
+                const size = Math.random() * 3; 
+                s.style.width = size + 'px'; s.style.height = size + 'px';
+                s.style.left = Math.random() * 100 + '%'; 
+                s.style.top = Math.random() * 100 + '%';
+                s.style.setProperty('--twinkle-dur', (Math.random() * 2 + 1) + 's');
+                s.style.animationDelay = Math.random() * 5 + 's'; 
+                login.appendChild(s);
+            }
+        }
+        
+        function spawnShootingStar() {
+            const login = document.getElementById('login');
+            if(login.style.display === 'none') return;
+            const star = document.createElement('div');
+            star.className = 'shooting-star';
+            star.style.top = Math.random() * 50 + '%';
+            star.style.left = Math.random() * 80 + '%';
+            star.style.setProperty('--angle', '45deg');
+            star.style.setProperty('--travel', (300 + Math.random() * 400) + 'px');
+            login.appendChild(star);
+            setTimeout(() => star.remove(), 2500);
+        }
+
+        function initFireflies() {
+            const content = document.getElementById('content');
+            for(let i=0; i<15; i++) {
+                const f = document.createElement('div');
+                f.className = 'firefly';
+                f.style.left = (40 + Math.random() * 20) + '%';
+                f.style.top = (60 + Math.random() * 20) + '%';
+                f.style.animationDelay = Math.random() * 5 + 's';
+                f.style.animationDuration = (8 + Math.random() * 5) + 's';
+                content.appendChild(f);
+            }
+        }
+
+        initStars();
+        setInterval(spawnShootingStar, 1000);
+
+        function start() {
+            const pass = prompt("Mot de passe :");
+            if(pass === "skopya" || pass === "amour") {
+                const login = document.getElementById('login');
+                login.style.opacity = '0';
+                setTimeout(() => {
+                    login.style.display = 'none';
+                    const frame = document.getElementById('main-frame');
+                    frame.style.display = 'flex';
+                    setTimeout(() => frame.style.opacity = '1', 50);
+                }, 1000);
+                initContent();
+            }
+        }
+
+        function initContent() {
+            initFireflies();
+            setInterval(updateTimer, 1000);
+            setInterval(creerCoeur, 800);
+        }
+
+        function typeWriter() {
+            if (textIndex < messageFinal.length) {
+                document.getElementById("typewriter-text").innerHTML += messageFinal.charAt(textIndex);
+                textIndex++;
+                setTimeout(typeWriter, 50); 
+            }
+        }
+
+        function lancerConfettis() {
+            const colors = ['#ff6b81', '#ff4757', '#2ecc71', '#f1c40f', '#3498db'];
+            for (let i = 0; i < 50; i++) {
+                const conf = document.createElement('div');
+                conf.classList.add('confetti');
+                conf.style.left = Math.random() * 100 + 'vw';
+                conf.style.top = Math.random() * 50 + '%'; 
+                conf.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                conf.style.animationDuration = (Math.random() * 2 + 2) + 's';
+                document.body.appendChild(conf);
+                setTimeout(() => conf.remove(), 4000);
+            }
+        }
+
+        function toggleLetter() {
+            const env = document.querySelector('.envelope-wrapper');
+            clickSound.currentTime = 0; clickSound.play();
+            env.classList.toggle('open');
+            
+            if(env.classList.contains('open')) {
+                document.getElementById("typewriter-text").innerHTML = "";
+                textIndex = 0;
+                lancerConfettis();
+                setTimeout(typeWriter, 800);
+            }
+        }
+
+        function openTimeline() {
+            const container = document.getElementById('timeline-content');
+            container.innerHTML = '';
+            
+            datesTimeline.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'timeline-item';
+                div.innerHTML = `<span class="timeline-date">${item.date}</span><span class="timeline-event">${item.event}</span>`;
+                container.appendChild(div);
+            });
+            
+            const popup = document.getElementById('timeline-popup');
+            popup.classList.add('active');
+        }
+
+        let isDrawing = false;
+        
+        function openScratchCard() {
+            const popup = document.getElementById('scratch-popup');
+            popup.classList.add('active');
+            
+            const canvas = document.getElementById('scratch-canvas');
+            const ctx = canvas.getContext('2d');
+            const parent = document.getElementById('scratch-card-container');
+            
+            canvas.width = parent.offsetWidth;
+            canvas.height = parent.offsetHeight;
+            
+            ctx.fillStyle = '#CCCCCC';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            ctx.fillStyle = '#666';
+            ctx.font = '20px Fredoka';
+            ctx.fillText("? ? ?", canvas.width/2 - 20, canvas.height/2);
+
+            // AJOUT : EVENEMENTS POUR SOURIS ET TELEPHONE
+            // Souris
+            canvas.onmousedown = function(e) { isDrawing = true; scratch(e, canvas, ctx); };
+            canvas.onmousemove = function(e) { if(isDrawing) scratch(e, canvas, ctx); };
+            canvas.onmouseup = function() { isDrawing = false; };
+            
+            // Tactile (Téléphone)
+            canvas.ontouchstart = function(e) { 
+                isDrawing = true; 
+                e.preventDefault(); 
+                scratch(e.touches[0], canvas, ctx); 
+            };
+            canvas.ontouchmove = function(e) { 
+                if(isDrawing) {
+                    e.preventDefault(); 
+                    scratch(e.touches[0], canvas, ctx); 
+                }
+            };
+            canvas.ontouchend = function() { isDrawing = false; };
+        }
+
+        function scratch(e, canvas, ctx) {
+            const rect = canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            ctx.globalCompositeOperation = 'destination-out';
+            ctx.beginPath();
+            ctx.arc(x, y, 15, 0, Math.PI * 2);
+            ctx.fill();
+        }
+
+        function closePopup(el) {
+            if(el.classList.contains('popup-overlay')) {
+                el.classList.remove('active');
+            }
+        }
+
+        function showWord(element, text) {
+            event.stopPropagation();
+            clickSound.currentTime = 0; clickSound.play();
+            const word = document.createElement('div');
+            word.className = 'pop-word';
+            word.innerText = text;
+            element.appendChild(word);
+            setTimeout(() => word.remove(), 1500);
+        }
+
+        function zoomPhoto(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+
+        function toggleMusic() {
+            const p = document.getElementById('player');
+            const v = document.getElementById('vinyl');
+            const b = document.getElementById('music-btn');
+            if(p.paused) { p.play(); v.classList.add('playing'); b.innerText = '❚❚'; }
+            else { p.pause(); v.classList.remove('playing'); b.innerText = '▶'; }
+        }
+
+        function updateTimer() {
+            let diff = Math.floor((new Date() - startRel) / 1000);
+            if (diff < 0) diff = 0;
+            document.getElementById('d').innerText = Math.floor(diff / 86400);
+            document.getElementById('h').innerText = Math.floor((diff % 86400) / 3600).toString().padStart(2,'0');
+            document.getElementById('m').innerText = Math.floor((diff % 3600) / 60).toString().padStart(2,'0');
+            document.getElementById('s').innerText = (diff % 60).toString().padStart(2,'0');
+        }
+
+        function creerCoeur() {
+            const h = document.createElement('div');
+            h.classList.add('heart-particle');
+            h.innerHTML = '❤️';
+            h.style.left = Math.random() * 100 + "vw";
+            h.style.opacity = Math.random() * 0.5 + 0.3;
+            h.style.animationDuration = (Math.random() * 3 + 4) + "s";
+            document.body.appendChild(h);
+            setTimeout(() => h.remove(), 7000);
+        }
+
+        document.addEventListener('keydown', (e) => {
+            secretCode += e.key.toUpperCase();
+            secretCode = secretCode.slice(-secretWord.length);
+            if (secretCode === secretWord) {
+                alert("Code secret activé ! ❤️");
+                lancerConfettis();
+            }
+        });
+        
+        document.addEventListener('mousemove', (e) => {
+            if(document.getElementById('login').style.display !== 'none') return;
+            const x = (window.innerWidth - e.pageX) / 60;
+            const y = (window.innerHeight - e.pageY) / 60;
+            const bouquet = document.querySelector('.bouquet-container');
+            const photos = document.querySelector('#photo-strip');
+            if(bouquet) bouquet.style.transform = `translate(${x}px, ${y}px)`;
+            if(photos) photos.style.transform = `translate(${-x}px, ${-y}px)`;
+        });
+
+        // AJOUT : CHANGEMENT DE TITRE QUAND ON QUITTE LA PAGE
+        let docTitle = document.title;
+        window.addEventListener("blur", () => {
+            document.title = "Reviens vite ! 🥺";
+        });
+        window.addEventListener("focus", () => {
+            document.title = docTitle;
+        });
+    </script>
+</body>
+</html>
