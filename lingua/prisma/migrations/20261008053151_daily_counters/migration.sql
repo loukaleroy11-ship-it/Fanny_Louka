@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE "DailyGoal" ADD COLUMN     "convSeconds" INTEGER NOT NULL DEFAULT 0,
+ADD COLUMN     "hardCards" INTEGER NOT NULL DEFAULT 0,
+ADD COLUMN     "mistakeCards" INTEGER NOT NULL DEFAULT 0;

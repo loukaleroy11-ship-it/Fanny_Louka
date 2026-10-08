@@ -1,0 +1,139 @@
+stub|eye|noun|A1|aɪ|œil|She has green eyes.|Elle a les yeux verts.
+stub|hour|noun|A1|ˈaʊə|heure (durée)|The film lasts two hours.|Le film dure deux heures.
+stub|month|noun|A1|mʌnθ|mois|I start work next month.|Je commence à travailler le mois prochain.
+phrasal|get up|phrasal_verb|A1|ɡet ʌp|se lever|I get up at seven.|Je me lève à sept heures.
+phrasal|wake up|phrasal_verb|A1|weɪk ʌp|se réveiller|I wake up early.|Je me réveille tôt.
+phrasal|sit down|phrasal_verb|A1|sɪt daʊn|s'asseoir|Please sit down.|Asseyez-vous, s'il vous plaît.
+phrasal|turn on|phrasal_verb|A1|tɜːn ɒn|allumer|Turn on the TV.|Allume la télé.
+phrasal|turn off|phrasal_verb|A1|tɜːn ɒf|éteindre|Turn off the light.|Éteins la lumière.
+phrasal|look for|phrasal_verb|A2|lʊk fɔː|chercher|I'm looking for my keys.|Je cherche mes clés.
+phrasal|look after|phrasal_verb|B1|lʊk ˈɑːftə|s'occuper de|She looks after her grandmother.|Elle s'occupe de sa grand-mère.
+phrasal|find out|phrasal_verb|B1|faɪnd aʊt|découvrir|I found out the truth.|J'ai découvert la vérité.
+phrasal|give up|phrasal_verb|B1|ɡɪv ʌp|abandonner|Don't give up!|N'abandonne pas !
+phrasal|come back|phrasal_verb|A2|kʌm bæk|revenir|When will you come back?|Quand reviendras-tu ?
+phrasal|go on|phrasal_verb|B1|ɡəʊ ɒn|continuer, se passer|Go on, I'm listening.|Continue, j'écoute.
+phrasal|pick up|phrasal_verb|B1|pɪk ʌp|ramasser, aller chercher|I'll pick you up at six.|Je passerai te chercher à six heures.
+phrasal|put on|phrasal_verb|A2|pʊt ɒn|mettre (vêtement)|Put on your coat.|Mets ton manteau.
+phrasal|take off|phrasal_verb|A2|teɪk ɒf|enlever, décoller|The plane takes off at noon.|L'avion décolle à midi.
+phrasal|put off|phrasal_verb|B2|pʊt ɒf|repousser, reporter|Don't put off your homework.|Ne remets pas tes devoirs à plus tard.
+phrasal|set up|phrasal_verb|B1|set ʌp|installer, créer|He set up a new company.|Il a créé une nouvelle entreprise.
+phrasal|work out|phrasal_verb|B1|wɜːk aʊt|faire du sport, résoudre|I work out three times a week.|Je fais du sport trois fois par semaine.
+phrasal|figure out|phrasal_verb|B2|ˈfɪɡər aʊt|comprendre, trouver|I can't figure out this problem.|Je n'arrive pas à comprendre ce problème.
+phrasal|carry on|phrasal_verb|B1|ˈkæri ɒn|continuer|Carry on with your work.|Continuez votre travail.
+phrasal|break down|phrasal_verb|B1|breɪk daʊn|tomber en panne|My car broke down.|Ma voiture est tombée en panne.
+phrasal|check in|phrasal_verb|A2|tʃek ɪn|s'enregistrer|We check in at the hotel at two.|Nous nous enregistrons à l'hôtel à deux heures.
+phrasal|check out|phrasal_verb|B1|tʃek aʊt|quitter l'hôtel, vérifier|Check out this video!|Regarde cette vidéo !
+phrasal|grow up|phrasal_verb|A2|ɡrəʊ ʌp|grandir|I grew up in Lyon.|J'ai grandi à Lyon.
+phrasal|run out of|phrasal_verb|B1|rʌn aʊt ɒv|manquer de|We ran out of milk.|Nous n'avons plus de lait.
+phrasal|bring up|phrasal_verb|B2|brɪŋ ʌp|élever, évoquer|She brought up an interesting point.|Elle a soulevé un point intéressant.
+phrasal|call off|phrasal_verb|B2|kɔːl ɒf|annuler|They called off the meeting.|Ils ont annulé la réunion.
+phrasal|get along|phrasal_verb|B1|ɡet əˈlɒŋ|s'entendre|I get along well with my sister.|Je m'entends bien avec ma sœur.
+phrasal|hang out|phrasal_verb|B1|hæŋ aʊt|traîner, sortir ensemble|We hang out on weekends.|Nous sortons ensemble le week-end.
+phrasal|show up|phrasal_verb|B2|ʃəʊ ʌp|se pointer, arriver|He didn't show up.|Il ne s'est pas montré.
+expressions|Of course|expression|A1|əv kɔːs|bien sûr|Of course you can come!|Bien sûr que tu peux venir !
+expressions|How are you?|expression|A1|haʊ ɑː juː|comment vas-tu ?|Hi! How are you?|Salut ! Comment vas-tu ?
+expressions|Nice to meet you|expression|A1|naɪs tə miːt juː|enchanté|Nice to meet you, Tom.|Enchanté, Tom.
+expressions|See you later|expression|A1|siː juː ˈleɪtə|à plus tard|Bye, see you later!|Au revoir, à plus tard !
+expressions|No problem|expression|A1|nəʊ ˈprɒbləm|pas de souci|No problem, I can wait.|Pas de souci, je peux attendre.
+expressions|I'm looking forward to it|expression|B1|aɪm ˈlʊkɪŋ ˈfɔːwəd tə ɪt|j'ai hâte|The trip is next week. I'm looking forward to it.|Le voyage est la semaine prochaine. J'ai hâte.
+expressions|By the way|expression|A2|baɪ ðə weɪ|au fait|By the way, where is Anna?|Au fait, où est Anna ?
+expressions|It depends|expression|A2|ɪt dɪˈpendz|ça dépend|"Do you like spicy food?" "It depends."|« Tu aimes les plats épicés ? » « Ça dépend. »
+expressions|As soon as possible|expression|B1|æz suːn æz ˈpɒsəbl|dès que possible|Please reply as soon as possible.|Réponds dès que possible, s'il te plaît.
+expressions|I don't mind|expression|A2|aɪ dəʊnt maɪnd|ça m'est égal|"Tea or coffee?" "I don't mind."|« Thé ou café ? » « Ça m'est égal. »
+expressions|What do you mean?|expression|A2|wɒt də juː miːn|que veux-tu dire ?|What do you mean by that?|Que veux-tu dire par là ?
+expressions|It's up to you|expression|B1|ɪts ʌp tə juː|c'est à toi de décider|Where shall we eat? It's up to you.|Où mange-t-on ? C'est toi qui décides.
+expressions|Never mind|expression|A2|ˈnevə maɪnd|peu importe, laisse tomber|Never mind, it's not important.|Laisse tomber, ce n'est pas important.
+expressions|Sounds good|expression|A2|saʊndz ɡʊd|ça me va|Dinner at eight? Sounds good.|Dîner à vingt heures ? Ça me va.
+expressions|Take it easy|expression|B1|teɪk ɪt ˈiːzi|détends-toi, vas-y doucement|Take it easy, you'll be fine.|Détends-toi, tout ira bien.
+expressions|In the end|expression|B1|ɪn ði end|à la fin, finalement|In the end, we stayed home.|Finalement, nous sommes restés à la maison.
+expressions|On the other hand|expression|B2|ɒn ði ˈʌðə hænd|d'un autre côté|On the other hand, it's cheaper.|D'un autre côté, c'est moins cher.
+expressions|Break a leg|expression|B2|breɪk ə leɡ|bonne chance (théâtre)|Break a leg tonight!|Bonne chance pour ce soir !
+expressions|It's a piece of cake|expression|B2|ɪts ə piːs əv keɪk|c'est du gâteau|The exam was a piece of cake.|L'examen était du gâteau.
+expressions|Fingers crossed|expression|B1|ˈfɪŋɡəz krɒst|croisons les doigts|Fingers crossed for tomorrow!|Croisons les doigts pour demain !
+travel|passport|noun|A1|ˈpɑːspɔːt|passeport|Don't forget your passport.|N'oublie pas ton passeport.
+travel|ticket|noun|A1|ˈtɪkɪt|billet|I need a train ticket.|J'ai besoin d'un billet de train.
+travel|luggage|noun|A2|ˈlʌɡɪdʒ|bagages|My luggage is heavy.|Mes bagages sont lourds.
+travel|flight|noun|A2|flaɪt|vol|Our flight leaves at nine.|Notre vol part à neuf heures.
+travel|airport|noun|A1|ˈeəpɔːt|aéroport|The airport is far from here.|L'aéroport est loin d'ici.
+travel|gate|noun|A2|ɡeɪt|porte (d'embarquement)|Go to gate twelve.|Rendez-vous porte douze.
+travel|delay|noun|B1|dɪˈleɪ|retard|There is a two-hour delay.|Il y a deux heures de retard.
+travel|hotel|noun|A1|həʊˈtel|hôtel|We stayed at a small hotel.|Nous avons séjourné dans un petit hôtel.
+travel|reservation|noun|A2|ˌrezəˈveɪʃn|réservation|I have a reservation under Martin.|J'ai une réservation au nom de Martin.
+travel|single room|noun|A2|ˈsɪŋɡl ruːm|chambre simple|I'd like a single room, please.|Je voudrais une chambre simple, s'il vous plaît.
+travel|map|noun|A1|mæp|carte, plan|Can I see the map?|Puis-je voir la carte ?
+travel|tourist|noun|A2|ˈtʊərɪst|touriste|The city is full of tourists.|La ville est pleine de touristes.
+travel|journey|noun|B1|ˈdʒɜːni|voyage, trajet|It was a long journey.|Ce fut un long voyage.
+travel|beach|noun|A1|biːtʃ|plage|We spent the day at the beach.|Nous avons passé la journée à la plage.
+travel|currency|noun|B1|ˈkʌrənsi|monnaie, devise|What is the local currency?|Quelle est la monnaie locale ?
+travel|exchange|verb|B1|ɪksˈtʃeɪndʒ|échanger, changer (argent)|I need to exchange some money.|Je dois changer de l'argent.
+travel|book|verb|A2|bʊk|réserver|I booked a table for two.|J'ai réservé une table pour deux.
+travel|arrive|verb|A1|əˈraɪv|arriver|We arrive at noon.|Nous arrivons à midi.
+travel|depart|verb|B1|dɪˈpɑːt|partir|The train departs at six.|Le train part à six heures.
+travel|sightseeing|noun|B1|ˈsaɪtsiːɪŋ|visite touristique|We went sightseeing in Rome.|Nous avons visité Rome.
+travel|souvenir|noun|B1|ˌsuːvəˈnɪə|souvenir (objet)|I bought a souvenir for my mother.|J'ai acheté un souvenir pour ma mère.
+travel|customs|noun|B1|ˈkʌstəmz|douane|We went through customs.|Nous sommes passés à la douane.
+travel|boarding pass|noun|B1|ˈbɔːdɪŋ pɑːs|carte d'embarquement|Show your boarding pass, please.|Montrez votre carte d'embarquement, s'il vous plaît.
+travel|directions|noun|A2|dɪˈrekʃnz|indications (itinéraire)|Can you give me directions?|Pouvez-vous m'indiquer le chemin ?
+travel|menu|noun|A1|ˈmenjuː|menu, carte|Can I see the menu, please?|Puis-je voir la carte, s'il vous plaît ?
+travel|bill|noun|A2|bɪl|addition, facture|Can we have the bill, please?|Pouvons-nous avoir l'addition, s'il vous plaît ?
+travel|tip|noun|B1|tɪp|pourboire, conseil|Should I leave a tip?|Dois-je laisser un pourboire ?
+travel|receipt|noun|B1|rɪˈsiːt|reçu, ticket de caisse|Keep the receipt.|Garde le ticket de caisse.
+travel|discount|noun|B1|ˈdɪskaʊnt|réduction|Is there a student discount?|Y a-t-il une réduction étudiante ?
+work|meeting|noun|A2|ˈmiːtɪŋ|réunion|I have a meeting at ten.|J'ai une réunion à dix heures.
+work|colleague|noun|B1|ˈkɒliːɡ|collègue|My colleague is very helpful.|Mon collègue est très serviable.
+work|boss|noun|A2|bɒs|patron|My boss is on holiday.|Mon patron est en vacances.
+work|salary|noun|B1|ˈsæləri|salaire|The salary is good.|Le salaire est bon.
+work|deadline|noun|B1|ˈdedlaɪn|date limite|The deadline is Friday.|La date limite est vendredi.
+work|schedule|noun|B1|ˈʃedjuːl|emploi du temps, planning|My schedule is full today.|Mon planning est complet aujourd'hui.
+work|interview|noun|A2|ˈɪntəvjuː|entretien|I have a job interview tomorrow.|J'ai un entretien d'embauche demain.
+work|resume|noun|B1|ˈrezjumeɪ|CV (US)|I updated my resume.|J'ai mis à jour mon CV.
+work|apply|verb|B1|əˈplaɪ|postuler, s'appliquer|I want to apply for this job.|Je veux postuler à cet emploi.
+work|hire|verb|B1|ˈhaɪə|embaucher|They hired three new people.|Ils ont embauché trois nouvelles personnes.
+work|project|noun|A2|ˈprɒdʒekt|projet|We are working on a new project.|Nous travaillons sur un nouveau projet.
+work|customer|noun|A2|ˈkʌstəmə|client|The customer is always right.|Le client a toujours raison.
+work|manager|noun|A2|ˈmænɪdʒə|responsable, directeur|The manager wants to see you.|Le responsable veut te voir.
+work|email|noun|A1|ˈiːmeɪl|e-mail|I'll send you an email.|Je t'enverrai un e-mail.
+work|report|noun|B1|rɪˈpɔːt|rapport|I need to finish the report.|Je dois terminer le rapport.
+work|experience|noun|B1|ɪkˈspɪəriəns|expérience|I have five years of experience.|J'ai cinq ans d'expérience.
+work|skill|noun|B1|skɪl|compétence|Communication is an important skill.|La communication est une compétence importante.
+work|promotion|noun|B2|prəˈməʊʃn|promotion|She got a promotion.|Elle a eu une promotion.
+work|agree|verb|A2|əˈɡriː|être d'accord|I agree with you.|Je suis d'accord avec toi.
+work|available|adjective|B1|əˈveɪləbl|disponible|Are you available on Monday?|Es-tu disponible lundi ?
+work|busy|adjective|A1|ˈbɪzi|occupé|I'm busy right now.|Je suis occupé en ce moment.
+work|part-time|adjective|B1|ˌpɑːt ˈtaɪm|à temps partiel|She works part-time.|Elle travaille à temps partiel.
+work|retire|verb|B2|rɪˈtaɪə|prendre sa retraite|He retires next year.|Il prend sa retraite l'année prochaine.
+work|colleagues|noun|B1|ˈkɒliːɡz|collègues|I have lunch with my colleagues.|Je déjeune avec mes collègues.
+work|presentation|noun|B1|ˌprezənˈteɪʃn|présentation|I have to give a presentation.|Je dois faire une présentation.
+work|negotiate|verb|B2|nɪˈɡəʊʃieɪt|négocier|They negotiated a better price.|Ils ont négocié un meilleur prix.
+work|achieve|verb|B2|əˈtʃiːv|réaliser, atteindre|She achieved her goal.|Elle a atteint son objectif.
+work|improve|verb|B1|ɪmˈpruːv|améliorer|I want to improve my English.|Je veux améliorer mon anglais.
+work|responsible|adjective|B2|rɪˈspɒnsəbl|responsable|He is responsible for the team.|Il est responsable de l'équipe.
+b1|although|conjunction|B1|ɔːlˈðəʊ|bien que|Although it was raining, we went outside.|Bien qu'il pleuve, nous sommes sortis.
+b1|however|adverb|B1|haʊˈevə|cependant|I like it. However, it's expensive.|Je l'aime bien. Cependant, c'est cher.
+b1|therefore|adverb|B2|ˈðeəfɔː|donc, par conséquent|It was late; therefore, we left.|Il était tard ; nous sommes donc partis.
+b1|whether|conjunction|B1|ˈweðə|si (alternative)|I don't know whether he will come.|Je ne sais pas s'il viendra.
+b1|unless|conjunction|B1|ənˈles|à moins que|I'll go unless it rains.|J'irai à moins qu'il pleuve.
+b1|during|preposition|A2|ˈdjʊərɪŋ|pendant|I slept during the film.|J'ai dormi pendant le film.
+b1|despite|preposition|B1|dɪˈspaɪt|malgré|We went out despite the rain.|Nous sommes sortis malgré la pluie.
+b1|achievement|noun|B1|əˈtʃiːvmənt|réussite|Finishing the race was a great achievement.|Terminer la course fut une belle réussite.
+b1|advice|noun|B1|ədˈvaɪs|conseil(s)|Can I ask you for some advice?|Puis-je te demander conseil ?
+b1|opportunity|noun|B1|ˌɒpəˈtjuːnəti|occasion, opportunité|This is a great opportunity.|C'est une excellente opportunité.
+b1|environment|noun|B1|ɪnˈvaɪrənmənt|environnement|We must protect the environment.|Nous devons protéger l'environnement.
+b1|experience|noun|B1|ɪkˈspɪəriəns|expérience|It was an amazing experience.|Ce fut une expérience incroyable.
+b1|improve|verb|B1|ɪmˈpruːv|améliorer|My English is improving.|Mon anglais s'améliore.
+b1|manage|verb|B1|ˈmænɪdʒ|réussir à, gérer|I managed to finish on time.|J'ai réussi à finir à temps.
+b1|suggest|verb|B1|səˈdʒest|suggérer|I suggest we leave now.|Je suggère que nous partions maintenant.
+b1|prefer|verb|A2|prɪˈfɜː|préférer|I prefer tea to coffee.|Je préfère le thé au café.
+b1|reduce|verb|B1|rɪˈdjuːs|réduire|We want to reduce costs.|Nous voulons réduire les coûts.
+b1|available|adjective|B1|əˈveɪləbl|disponible|Is this room available?|Cette salle est-elle disponible ?
+b1|comfortable|adjective|B1|ˈkʌmftəbl|confortable|This chair is very comfortable.|Cette chaise est très confortable.
+b1|dangerous|adjective|A2|ˈdeɪndʒərəs|dangereux|The road is dangerous at night.|La route est dangereuse la nuit.
+b1|embarrassed|adjective|B1|ɪmˈbærəst|gêné|I felt embarrassed.|Je me suis senti gêné.
+b1|exhausted|adjective|B1|ɪɡˈzɔːstɪd|épuisé|I'm exhausted after the trip.|Je suis épuisé après le voyage.
+b1|familiar|adjective|B1|fəˈmɪliə|familier|This song sounds familiar.|Cette chanson me semble familière.
+b1|reliable|adjective|B2|rɪˈlaɪəbl|fiable|He is a reliable friend.|C'est un ami fiable.
+b1|rarely|adverb|B1|ˈreəli|rarement|I rarely eat meat.|Je mange rarement de la viande.
+b1|nearly|adverb|B1|ˈnɪəli|presque|I nearly missed the train.|J'ai failli rater le train.
+b1|especially|adverb|B1|ɪˈspeʃəli|surtout|I love fruit, especially apples.|J'adore les fruits, surtout les pommes.
+b1|eventually|adverb|B2|ɪˈventʃuəli|finalement|Eventually, we found the hotel.|Finalement, nous avons trouvé l'hôtel.
+b1|gradually|adverb|B2|ˈɡrædʒuəli|progressivement|Prices are gradually rising.|Les prix augmentent progressivement.

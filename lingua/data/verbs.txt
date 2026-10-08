@@ -1,0 +1,104 @@
+be|was/were|been|être|biː|A1|I want to be a teacher.|Je veux être professeur.
+have|had|had|avoir|hæv|A1|I have a brother.|J'ai un frère.
+do|did|done|faire|duː|A1|What do you do?|Que fais-tu dans la vie ?
+say|said|said|dire|seɪ|A1|What did she say?|Qu'a-t-elle dit ?
+go|went|gone|aller|ɡəʊ|A1|We go to the beach every summer.|Nous allons à la plage chaque été.
+get|got|got|obtenir, devenir|ɡet|A1|I get home at six.|J'arrive à la maison à six heures.
+make|made|made|faire, fabriquer|meɪk|A1|She makes great pasta.|Elle fait d'excellentes pâtes.
+know|knew|known|savoir, connaître|nəʊ|A1|I know this song.|Je connais cette chanson.
+think|thought|thought|penser|θɪŋk|A1|I think it's a good plan.|Je pense que c'est un bon plan.
+take|took|taken|prendre|teɪk|A1|Take a seat.|Prenez un siège.
+see|saw|seen|voir|siː|A1|I see a bird.|Je vois un oiseau.
+come|came|come|venir|kʌm|A1|Can you come tomorrow?|Peux-tu venir demain ?
+want|wanted|wanted|vouloir|wɒnt|A1|I want some water.|Je veux de l'eau.
+look|looked|looked|regarder|lʊk|A1|Look at the sky!|Regarde le ciel !
+use|used|used|utiliser|juːz|A1|I use my phone a lot.|J'utilise beaucoup mon téléphone.
+find|found|found|trouver|faɪnd|A1|I can't find my glasses.|Je ne trouve pas mes lunettes.
+give|gave|given|donner|ɡɪv|A1|Give me a call.|Appelle-moi.
+tell|told|told|dire, raconter|tel|A1|Tell me a secret.|Dis-moi un secret.
+work|worked|worked|travailler|wɜːk|A1|She works in a hospital.|Elle travaille dans un hôpital.
+call|called|called|appeler|kɔːl|A1|I'll call you tonight.|Je t'appellerai ce soir.
+try|tried|tried|essayer|traɪ|A1|Try again.|Réessaie.
+ask|asked|asked|demander|ɑːsk|A1|Ask him why.|Demande-lui pourquoi.
+need|needed|needed|avoir besoin de|niːd|A1|I need a break.|J'ai besoin d'une pause.
+feel|felt|felt|se sentir, ressentir|fiːl|A1|I feel great.|Je me sens très bien.
+become|became|become|devenir|bɪˈkʌm|B1|He became a pilot.|Il est devenu pilote.
+leave|left|left|partir, laisser|liːv|A2|The train leaves at nine.|Le train part à neuf heures.
+put|put|put|mettre, poser|pʊt|A1|Put your coat on.|Mets ton manteau.
+mean|meant|meant|signifier, vouloir dire|miːn|A2|What do you mean?|Que veux-tu dire ?
+keep|kept|kept|garder|kiːp|A2|Keep this for me.|Garde ça pour moi.
+let|let|let|laisser, permettre|let|A2|Let me explain.|Laisse-moi expliquer.
+begin|began|begun|commencer|bɪˈɡɪn|A2|The show begins at eight.|Le spectacle commence à huit heures.
+seem|seemed|seemed|sembler|siːm|B1|You seem happy.|Tu as l'air heureux.
+help|helped|helped|aider|help|A1|Help me, please.|Aide-moi, s'il te plaît.
+talk|talked|talked|parler|tɔːk|A1|We talked for hours.|Nous avons parlé pendant des heures.
+turn|turned|turned|tourner|tɜːn|A2|Turn left here.|Tourne à gauche ici.
+start|started|started|commencer|stɑːt|A1|Let's start now.|Commençons maintenant.
+show|showed|shown|montrer|ʃəʊ|A2|Show me the way.|Montre-moi le chemin.
+hear|heard|heard|entendre|hɪə|A1|Did you hear that?|As-tu entendu ça ?
+play|played|played|jouer|pleɪ|A1|They play tennis on Sundays.|Ils jouent au tennis le dimanche.
+run|ran|run|courir|rʌn|A1|I run in the park.|Je cours dans le parc.
+move|moved|moved|bouger, déménager|muːv|A2|Don't move!|Ne bouge pas !
+like|liked|liked|aimer|laɪk|A1|I like this film.|J'aime ce film.
+live|lived|lived|vivre, habiter|lɪv|A1|Where do you live?|Où habites-tu ?
+believe|believed|believed|croire|bɪˈliːv|A2|I believe in you.|Je crois en toi.
+hold|held|held|tenir|həʊld|B1|Hold my hand.|Tiens ma main.
+bring|brought|brought|apporter|brɪŋ|A2|Bring a friend.|Amène un ami.
+happen|happened|happened|arriver, se passer|ˈhæpən|A2|It happened yesterday.|C'est arrivé hier.
+write|wrote|written|écrire|raɪt|A1|Write your name here.|Écris ton nom ici.
+sit|sat|sat|s'asseoir|sɪt|A1|Sit down, please.|Asseyez-vous, s'il vous plaît.
+stand|stood|stood|se tenir debout|stænd|A2|Stand up!|Lève-toi !
+lose|lost|lost|perdre|luːz|A2|I always lose my keys.|Je perds toujours mes clés.
+pay|paid|paid|payer|peɪ|A2|I paid by card.|J'ai payé par carte.
+meet|met|met|rencontrer|miːt|A1|I met her in Paris.|Je l'ai rencontrée à Paris.
+continue|continued|continued|continuer|kənˈtɪnjuː|B1|Please continue.|Continuez, s'il vous plaît.
+set|set|set|mettre, régler|set|B1|Set the alarm for six.|Mets le réveil à six heures.
+learn|learned|learned|apprendre|lɜːn|A1|I learn English every day.|J'apprends l'anglais tous les jours.
+change|changed|changed|changer|tʃeɪndʒ|A2|Things change.|Les choses changent.
+lead|led|led|mener, diriger|liːd|B1|She leads the team.|Elle dirige l'équipe.
+understand|understood|understood|comprendre|ˌʌndəˈstænd|A1|Do you understand?|Comprends-tu ?
+watch|watched|watched|regarder|wɒtʃ|A1|We watched a film.|Nous avons regardé un film.
+follow|followed|followed|suivre|ˈfɒləʊ|A2|Follow me.|Suis-moi.
+stop|stopped|stopped|arrêter|stɒp|A1|Stop talking!|Arrête de parler !
+speak|spoke|spoken|parler|spiːk|A1|He speaks three languages.|Il parle trois langues.
+read|read|read|lire|riːd|A1|I read every night.|Je lis tous les soirs.
+spend|spent|spent|dépenser, passer (temps)|spend|A2|I spent the day at home.|J'ai passé la journée à la maison.
+grow|grew|grown|grandir, cultiver|ɡrəʊ|B1|Children grow fast.|Les enfants grandissent vite.
+open|opened|opened|ouvrir|ˈəʊpən|A1|Open the door.|Ouvre la porte.
+walk|walked|walked|marcher|wɔːk|A1|I walk to work.|Je vais au travail à pied.
+win|won|won|gagner|wɪn|A2|We won the match.|Nous avons gagné le match.
+remember|remembered|remembered|se souvenir|rɪˈmembə|A2|I remember that day.|Je me souviens de ce jour.
+love|loved|loved|aimer, adorer|lʌv|A1|I love music.|J'adore la musique.
+buy|bought|bought|acheter|baɪ|A1|She bought a dress.|Elle a acheté une robe.
+wait|waited|waited|attendre|weɪt|A1|Wait here.|Attends ici.
+die|died|died|mourir|daɪ|A2|The flowers died.|Les fleurs sont mortes.
+send|sent|sent|envoyer|send|A1|I sent you an email.|Je t'ai envoyé un e-mail.
+expect|expected|expected|s'attendre à|ɪkˈspekt|B1|I expect it to rain.|Je m'attends à ce qu'il pleuve.
+build|built|built|construire|bɪld|A2|They built a house.|Ils ont construit une maison.
+stay|stayed|stayed|rester|steɪ|A1|Stay with me.|Reste avec moi.
+fall|fell|fallen|tomber|fɔːl|A2|Leaves fall in autumn.|Les feuilles tombent en automne.
+cut|cut|cut|couper|kʌt|A2|Cut the cake.|Coupe le gâteau.
+sell|sold|sold|vendre|sel|A2|He sold his car.|Il a vendu sa voiture.
+decide|decided|decided|décider|dɪˈsaɪd|A2|I decided to leave.|J'ai décidé de partir.
+eat|ate|eaten|manger|iːt|A1|We eat at seven.|Nous mangeons à sept heures.
+drink|drank|drunk|boire|drɪŋk|A1|I drink tea.|Je bois du thé.
+sleep|slept|slept|dormir|sliːp|A1|I slept well.|J'ai bien dormi.
+forget|forgot|forgotten|oublier|fəˈɡet|A2|I forgot my umbrella.|J'ai oublié mon parapluie.
+choose|chose|chosen|choisir|tʃuːz|A2|Choose a colour.|Choisis une couleur.
+drive|drove|driven|conduire|draɪv|A2|She drives to work.|Elle va au travail en voiture.
+sing|sang|sung|chanter|sɪŋ|A1|He sings very well.|Il chante très bien.
+swim|swam|swum|nager|swɪm|A1|I swim every Sunday.|Je nage tous les dimanches.
+wear|wore|worn|porter (vêtement)|weə|A2|She wears a red coat.|Elle porte un manteau rouge.
+teach|taught|taught|enseigner|tiːtʃ|A2|He teaches maths.|Il enseigne les maths.
+catch|caught|caught|attraper|kætʃ|A2|Catch the ball!|Attrape la balle !
+break|broke|broken|casser|breɪk|A2|I broke my phone.|J'ai cassé mon téléphone.
+fly|flew|flown|voler (avion), prendre l'avion|flaɪ|A2|Birds fly south in winter.|Les oiseaux migrent vers le sud en hiver.
+fight|fought|fought|se battre|faɪt|B1|They fought for freedom.|Ils se sont battus pour la liberté.
+hit|hit|hit|frapper|hɪt|B1|He hit the ball.|Il a frappé la balle.
+hurt|hurt|hurt|faire mal, blesser|hɜːt|B1|My back hurts.|J'ai mal au dos.
+shut|shut|shut|fermer|ʃʌt|B1|Shut the window.|Ferme la fenêtre.
+bite|bit|bitten|mordre|baɪt|B1|The dog bit him.|Le chien l'a mordu.
+hide|hid|hidden|cacher|haɪd|B1|She hid the gift.|Elle a caché le cadeau.
+ride|rode|ridden|monter (vélo, cheval)|raɪd|A2|I ride my bike to school.|Je vais à l'école à vélo.
+throw|threw|thrown|jeter, lancer|θrəʊ|A2|Throw me the ball.|Lance-moi le ballon.
+wake|woke|woken|se réveiller|weɪk|A2|I woke up at six.|Je me suis réveillé à six heures.
