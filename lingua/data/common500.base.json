@@ -1,0 +1,2502 @@
+[
+{
+"rank": 1,
+"word": "you",
+"count": 28787591
+},
+{
+"rank": 2,
+"word": "i",
+"count": 27086011
+},
+{
+"rank": 3,
+"word": "the",
+"count": 22761659
+},
+{
+"rank": 4,
+"word": "to",
+"count": 17099834
+},
+{
+"rank": 5,
+"word": "a",
+"count": 14484562
+},
+{
+"rank": 6,
+"word": "it",
+"count": 13631703
+},
+{
+"rank": 7,
+"word": "and",
+"count": 10572938
+},
+{
+"rank": 8,
+"word": "that",
+"count": 10203742
+},
+{
+"rank": 9,
+"word": "of",
+"count": 8915110
+},
+{
+"rank": 10,
+"word": "is",
+"count": 7400675
+},
+{
+"rank": 11,
+"word": "in",
+"count": 7337058
+},
+{
+"rank": 12,
+"word": "what",
+"count": 6900164
+},
+{
+"rank": 13,
+"word": "we",
+"count": 6755687
+},
+{
+"rank": 14,
+"word": "me",
+"count": 6444985
+},
+{
+"rank": 15,
+"word": "this",
+"count": 5739788
+},
+{
+"rank": 16,
+"word": "he",
+"count": 5516364
+},
+{
+"rank": 17,
+"word": "for",
+"count": 5174060
+},
+{
+"rank": 18,
+"word": "my",
+"count": 4938948
+},
+{
+"rank": 19,
+"word": "on",
+"count": 4821861
+},
+{
+"rank": 20,
+"word": "have",
+"count": 4764010
+},
+{
+"rank": 21,
+"word": "your",
+"count": 4610945
+},
+{
+"rank": 22,
+"word": "do",
+"count": 4419883
+},
+{
+"rank": 23,
+"word": "was",
+"count": 4401531
+},
+{
+"rank": 24,
+"word": "no",
+"count": 4374975
+},
+{
+"rank": 25,
+"word": "not",
+"count": 4262273
+},
+{
+"rank": 26,
+"word": "be",
+"count": 4210868
+},
+{
+"rank": 27,
+"word": "are",
+"count": 4203821
+},
+{
+"rank": 28,
+"word": "know",
+"count": 3892394
+},
+{
+"rank": 29,
+"word": "can",
+"count": 3826118
+},
+{
+"rank": 30,
+"word": "with",
+"count": 3806977
+},
+{
+"rank": 31,
+"word": "but",
+"count": 3631462
+},
+{
+"rank": 32,
+"word": "all",
+"count": 3544700
+},
+{
+"rank": 33,
+"word": "so",
+"count": 3434152
+},
+{
+"rank": 34,
+"word": "just",
+"count": 3334392
+},
+{
+"rank": 35,
+"word": "there",
+"count": 3148528
+},
+{
+"rank": 36,
+"word": "here",
+"count": 3138591
+},
+{
+"rank": 37,
+"word": "they",
+"count": 3060204
+},
+{
+"rank": 38,
+"word": "like",
+"count": 2983027
+},
+{
+"rank": 39,
+"word": "get",
+"count": 2883193
+},
+{
+"rank": 40,
+"word": "she",
+"count": 2778359
+},
+{
+"rank": 41,
+"word": "go",
+"count": 2738504
+},
+{
+"rank": 42,
+"word": "if",
+"count": 2630800
+},
+{
+"rank": 43,
+"word": "right",
+"count": 2576821
+},
+{
+"rank": 44,
+"word": "out",
+"count": 2510010
+},
+{
+"rank": 45,
+"word": "about",
+"count": 2487348
+},
+{
+"rank": 46,
+"word": "up",
+"count": 2459855
+},
+{
+"rank": 47,
+"word": "at",
+"count": 2431398
+},
+{
+"rank": 48,
+"word": "him",
+"count": 2431059
+},
+{
+"rank": 49,
+"word": "now",
+"count": 2298830
+},
+{
+"rank": 50,
+"word": "one",
+"count": 2263956
+},
+{
+"rank": 51,
+"word": "come",
+"count": 2203919
+},
+{
+"rank": 52,
+"word": "well",
+"count": 2159909
+},
+{
+"rank": 53,
+"word": "her",
+"count": 2154982
+},
+{
+"rank": 54,
+"word": "how",
+"count": 2140365
+},
+{
+"rank": 55,
+"word": "will",
+"count": 1969807
+},
+{
+"rank": 56,
+"word": "got",
+"count": 1968389
+},
+{
+"rank": 57,
+"word": "want",
+"count": 1950845
+},
+{
+"rank": 58,
+"word": "think",
+"count": 1839473
+},
+{
+"rank": 59,
+"word": "as",
+"count": 1792220
+},
+{
+"rank": 60,
+"word": "see",
+"count": 1781493
+},
+{
+"rank": 61,
+"word": "did",
+"count": 1742764
+},
+{
+"rank": 62,
+"word": "good",
+"count": 1741730
+},
+{
+"rank": 63,
+"word": "who",
+"count": 1734491
+},
+{
+"rank": 64,
+"word": "why",
+"count": 1722797
+},
+{
+"rank": 65,
+"word": "from",
+"count": 1709582
+},
+{
+"rank": 66,
+"word": "let",
+"count": 1705262
+},
+{
+"rank": 67,
+"word": "his",
+"count": 1666361
+},
+{
+"rank": 68,
+"word": "yes",
+"count": 1634050
+},
+{
+"rank": 69,
+"word": "when",
+"count": 1531731
+},
+{
+"rank": 70,
+"word": "going",
+"count": 1520767
+},
+{
+"rank": 71,
+"word": "time",
+"count": 1453708
+},
+{
+"rank": 72,
+"word": "an",
+"count": 1449181
+},
+{
+"rank": 73,
+"word": "okay",
+"count": 1428884
+},
+{
+"rank": 74,
+"word": "back",
+"count": 1405024
+},
+{
+"rank": 75,
+"word": "look",
+"count": 1348467
+},
+{
+"rank": 76,
+"word": "us",
+"count": 1346903
+},
+{
+"rank": 77,
+"word": "would",
+"count": 1340070
+},
+{
+"rank": 78,
+"word": "them",
+"count": 1327509
+},
+{
+"rank": 79,
+"word": "where",
+"count": 1322226
+},
+{
+"rank": 80,
+"word": "were",
+"count": 1315964
+},
+{
+"rank": 81,
+"word": "take",
+"count": 1312232
+},
+{
+"rank": 82,
+"word": "then",
+"count": 1275502
+},
+{
+"rank": 83,
+"word": "had",
+"count": 1274537
+},
+{
+"rank": 84,
+"word": "or",
+"count": 1267646
+},
+{
+"rank": 85,
+"word": "been",
+"count": 1265150
+},
+{
+"rank": 86,
+"word": "our",
+"count": 1191941
+},
+{
+"rank": 87,
+"word": "tell",
+"count": 1176290
+},
+{
+"rank": 88,
+"word": "really",
+"count": 1174710
+},
+{
+"rank": 89,
+"word": "man",
+"count": 1173588
+},
+{
+"rank": 90,
+"word": "some",
+"count": 1166914
+},
+{
+"rank": 91,
+"word": "say",
+"count": 1153915
+},
+{
+"rank": 92,
+"word": "could",
+"count": 1111837
+},
+{
+"rank": 93,
+"word": "by",
+"count": 1090424
+},
+{
+"rank": 94,
+"word": "need",
+"count": 1040131
+},
+{
+"rank": 95,
+"word": "something",
+"count": 1038638
+},
+{
+"rank": 96,
+"word": "has",
+"count": 1035310
+},
+{
+"rank": 97,
+"word": "too",
+"count": 1022558
+},
+{
+"rank": 98,
+"word": "more",
+"count": 1010390
+},
+{
+"rank": 99,
+"word": "way",
+"count": 1000182
+},
+{
+"rank": 100,
+"word": "down",
+"count": 978966
+},
+{
+"rank": 101,
+"word": "make",
+"count": 963885
+},
+{
+"rank": 102,
+"word": "very",
+"count": 945653
+},
+{
+"rank": 103,
+"word": "never",
+"count": 930831
+},
+{
+"rank": 104,
+"word": "only",
+"count": 887363
+},
+{
+"rank": 105,
+"word": "people",
+"count": 885915
+},
+{
+"rank": 106,
+"word": "over",
+"count": 880841
+},
+{
+"rank": 107,
+"word": "because",
+"count": 880112
+},
+{
+"rank": 108,
+"word": "little",
+"count": 869522
+},
+{
+"rank": 109,
+"word": "please",
+"count": 842120
+},
+{
+"rank": 110,
+"word": "love",
+"count": 830324
+},
+{
+"rank": 111,
+"word": "should",
+"count": 823711
+},
+{
+"rank": 112,
+"word": "mean",
+"count": 821275
+},
+{
+"rank": 113,
+"word": "said",
+"count": 818878
+},
+{
+"rank": 114,
+"word": "sorry",
+"count": 818019
+},
+{
+"rank": 115,
+"word": "give",
+"count": 811919
+},
+{
+"rank": 116,
+"word": "off",
+"count": 799351
+},
+{
+"rank": 117,
+"word": "thank",
+"count": 773577
+},
+{
+"rank": 118,
+"word": "any",
+"count": 767968
+},
+{
+"rank": 119,
+"word": "two",
+"count": 764564
+},
+{
+"rank": 120,
+"word": "even",
+"count": 744544
+},
+{
+"rank": 121,
+"word": "much",
+"count": 738599
+},
+{
+"rank": 122,
+"word": "doing",
+"count": 732145
+},
+{
+"rank": 123,
+"word": "sure",
+"count": 709390
+},
+{
+"rank": 124,
+"word": "thing",
+"count": 697528
+},
+{
+"rank": 125,
+"word": "these",
+"count": 683128
+},
+{
+"rank": 126,
+"word": "help",
+"count": 666286
+},
+{
+"rank": 127,
+"word": "first",
+"count": 656387
+},
+{
+"rank": 128,
+"word": "into",
+"count": 655747
+},
+{
+"rank": 129,
+"word": "anything",
+"count": 640206
+},
+{
+"rank": 130,
+"word": "still",
+"count": 639540
+},
+{
+"rank": 131,
+"word": "find",
+"count": 626520
+},
+{
+"rank": 132,
+"word": "life",
+"count": 624596
+},
+{
+"rank": 133,
+"word": "nothing",
+"count": 622415
+},
+{
+"rank": 134,
+"word": "day",
+"count": 617674
+},
+{
+"rank": 135,
+"word": "work",
+"count": 611677
+},
+{
+"rank": 136,
+"word": "their",
+"count": 601171
+},
+{
+"rank": 137,
+"word": "again",
+"count": 590019
+},
+{
+"rank": 138,
+"word": "maybe",
+"count": 581087
+},
+{
+"rank": 139,
+"word": "must",
+"count": 580931
+},
+{
+"rank": 140,
+"word": "before",
+"count": 578606
+},
+{
+"rank": 141,
+"word": "other",
+"count": 577197
+},
+{
+"rank": 142,
+"word": "wait",
+"count": 574752
+},
+{
+"rank": 143,
+"word": "stop",
+"count": 574016
+},
+{
+"rank": 144,
+"word": "call",
+"count": 572997
+},
+{
+"rank": 145,
+"word": "after",
+"count": 572761
+},
+{
+"rank": 146,
+"word": "talk",
+"count": 567036
+},
+{
+"rank": 147,
+"word": "away",
+"count": 564268
+},
+{
+"rank": 148,
+"word": "than",
+"count": 561014
+},
+{
+"rank": 149,
+"word": "thought",
+"count": 558542
+},
+{
+"rank": 150,
+"word": "home",
+"count": 556894
+},
+{
+"rank": 151,
+"word": "night",
+"count": 556318
+},
+{
+"rank": 152,
+"word": "put",
+"count": 552246
+},
+{
+"rank": 153,
+"word": "great",
+"count": 545768
+},
+{
+"rank": 154,
+"word": "those",
+"count": 528404
+},
+{
+"rank": 155,
+"word": "last",
+"count": 527395
+},
+{
+"rank": 156,
+"word": "better",
+"count": 520328
+},
+{
+"rank": 157,
+"word": "everything",
+"count": 519795
+},
+{
+"rank": 158,
+"word": "told",
+"count": 517951
+},
+{
+"rank": 159,
+"word": "new",
+"count": 508486
+},
+{
+"rank": 160,
+"word": "things",
+"count": 503642
+},
+{
+"rank": 161,
+"word": "always",
+"count": 503417
+},
+{
+"rank": 162,
+"word": "keep",
+"count": 498392
+},
+{
+"rank": 163,
+"word": "long",
+"count": 496267
+},
+{
+"rank": 164,
+"word": "years",
+"count": 481860
+},
+{
+"rank": 165,
+"word": "leave",
+"count": 478282
+},
+{
+"rank": 166,
+"word": "does",
+"count": 478174
+},
+{
+"rank": 167,
+"word": "money",
+"count": 471643
+},
+{
+"rank": 168,
+"word": "around",
+"count": 471463
+},
+{
+"rank": 169,
+"word": "name",
+"count": 455543
+},
+{
+"rank": 170,
+"word": "place",
+"count": 444863
+},
+{
+"rank": 171,
+"word": "ever",
+"count": 444088
+},
+{
+"rank": 172,
+"word": "feel",
+"count": 444014
+},
+{
+"rank": 173,
+"word": "guys",
+"count": 442241
+},
+{
+"rank": 174,
+"word": "father",
+"count": 437537
+},
+{
+"rank": 175,
+"word": "guy",
+"count": 435832
+},
+{
+"rank": 176,
+"word": "made",
+"count": 433900
+},
+{
+"rank": 177,
+"word": "old",
+"count": 431911
+},
+{
+"rank": 178,
+"word": "which",
+"count": 422483
+},
+{
+"rank": 179,
+"word": "big",
+"count": 417218
+},
+{
+"rank": 180,
+"word": "lot",
+"count": 411660
+},
+{
+"rank": 181,
+"word": "done",
+"count": 408760
+},
+{
+"rank": 182,
+"word": "hello",
+"count": 405534
+},
+{
+"rank": 183,
+"word": "nice",
+"count": 405497
+},
+{
+"rank": 184,
+"word": "believe",
+"count": 403874
+},
+{
+"rank": 185,
+"word": "girl",
+"count": 402557
+},
+{
+"rank": 186,
+"word": "someone",
+"count": 401162
+},
+{
+"rank": 187,
+"word": "fine",
+"count": 400530
+},
+{
+"rank": 188,
+"word": "thanks",
+"count": 395690
+},
+{
+"rank": 189,
+"word": "wanted",
+"count": 392510
+},
+{
+"rank": 190,
+"word": "kind",
+"count": 392242
+},
+{
+"rank": 191,
+"word": "coming",
+"count": 389949
+},
+{
+"rank": 192,
+"word": "house",
+"count": 388585
+},
+{
+"rank": 193,
+"word": "every",
+"count": 388520
+},
+{
+"rank": 194,
+"word": "through",
+"count": 388127
+},
+{
+"rank": 195,
+"word": "being",
+"count": 386528
+},
+{
+"rank": 196,
+"word": "course",
+"count": 381816
+},
+{
+"rank": 197,
+"word": "stay",
+"count": 378726
+},
+{
+"rank": 198,
+"word": "left",
+"count": 378587
+},
+{
+"rank": 199,
+"word": "dad",
+"count": 378540
+},
+{
+"rank": 200,
+"word": "enough",
+"count": 376973
+},
+{
+"rank": 201,
+"word": "happened",
+"count": 375703
+},
+{
+"rank": 202,
+"word": "came",
+"count": 374486
+},
+{
+"rank": 203,
+"word": "may",
+"count": 373526
+},
+{
+"rank": 204,
+"word": "mother",
+"count": 372846
+},
+{
+"rank": 205,
+"word": "wrong",
+"count": 370949
+},
+{
+"rank": 206,
+"word": "world",
+"count": 370620
+},
+{
+"rank": 207,
+"word": "bad",
+"count": 369996
+},
+{
+"rank": 208,
+"word": "might",
+"count": 367145
+},
+{
+"rank": 209,
+"word": "three",
+"count": 366626
+},
+{
+"rank": 210,
+"word": "today",
+"count": 366395
+},
+{
+"rank": 211,
+"word": "listen",
+"count": 365791
+},
+{
+"rank": 212,
+"word": "another",
+"count": 365421
+},
+{
+"rank": 213,
+"word": "understand",
+"count": 365210
+},
+{
+"rank": 214,
+"word": "hear",
+"count": 360665
+},
+{
+"rank": 215,
+"word": "remember",
+"count": 358291
+},
+{
+"rank": 216,
+"word": "ask",
+"count": 354323
+},
+{
+"rank": 217,
+"word": "own",
+"count": 352542
+},
+{
+"rank": 218,
+"word": "same",
+"count": 348167
+},
+{
+"rank": 219,
+"word": "show",
+"count": 347408
+},
+{
+"rank": 220,
+"word": "else",
+"count": 340756
+},
+{
+"rank": 221,
+"word": "talking",
+"count": 337629
+},
+{
+"rank": 222,
+"word": "found",
+"count": 337382
+},
+{
+"rank": 223,
+"word": "next",
+"count": 335573
+},
+{
+"rank": 224,
+"word": "getting",
+"count": 331186
+},
+{
+"rank": 225,
+"word": "care",
+"count": 330956
+},
+{
+"rank": 226,
+"word": "car",
+"count": 330261
+},
+{
+"rank": 227,
+"word": "looking",
+"count": 326550
+},
+{
+"rank": 228,
+"word": "son",
+"count": 325997
+},
+{
+"rank": 229,
+"word": "try",
+"count": 325748
+},
+{
+"rank": 230,
+"word": "woman",
+"count": 324673
+},
+{
+"rank": 231,
+"word": "went",
+"count": 321824
+},
+{
+"rank": 232,
+"word": "hi",
+"count": 320316
+},
+{
+"rank": 233,
+"word": "dead",
+"count": 317589
+},
+{
+"rank": 234,
+"word": "many",
+"count": 314850
+},
+{
+"rank": 235,
+"word": "mind",
+"count": 312927
+},
+{
+"rank": 236,
+"word": "friend",
+"count": 308204
+},
+{
+"rank": 237,
+"word": "best",
+"count": 307071
+},
+{
+"rank": 238,
+"word": "mom",
+"count": 305139
+},
+{
+"rank": 239,
+"word": "morning",
+"count": 303550
+},
+{
+"rank": 240,
+"word": "trying",
+"count": 303288
+},
+{
+"rank": 241,
+"word": "boy",
+"count": 302508
+},
+{
+"rank": 242,
+"word": "together",
+"count": 302404
+},
+{
+"rank": 243,
+"word": "yourself",
+"count": 302013
+},
+{
+"rank": 244,
+"word": "job",
+"count": 298911
+},
+{
+"rank": 245,
+"word": "saw",
+"count": 297985
+},
+{
+"rank": 246,
+"word": "family",
+"count": 294543
+},
+{
+"rank": 247,
+"word": "real",
+"count": 294536
+},
+{
+"rank": 248,
+"word": "without",
+"count": 290509
+},
+{
+"rank": 249,
+"word": "baby",
+"count": 290496
+},
+{
+"rank": 250,
+"word": "room",
+"count": 290206
+},
+{
+"rank": 251,
+"word": "already",
+"count": 287837
+},
+{
+"rank": 252,
+"word": "move",
+"count": 283807
+},
+{
+"rank": 253,
+"word": "most",
+"count": 283006
+},
+{
+"rank": 254,
+"word": "seen",
+"count": 282420
+},
+{
+"rank": 255,
+"word": "live",
+"count": 281046
+},
+{
+"rank": 256,
+"word": "miss",
+"count": 280930
+},
+{
+"rank": 257,
+"word": "actually",
+"count": 279595
+},
+{
+"rank": 258,
+"word": "both",
+"count": 270720
+},
+{
+"rank": 259,
+"word": "heard",
+"count": 269851
+},
+{
+"rank": 260,
+"word": "once",
+"count": 269704
+},
+{
+"rank": 261,
+"word": "ready",
+"count": 267268
+},
+{
+"rank": 262,
+"word": "head",
+"count": 266844
+},
+{
+"rank": 263,
+"word": "called",
+"count": 264588
+},
+{
+"rank": 264,
+"word": "used",
+"count": 263566
+},
+{
+"rank": 265,
+"word": "idea",
+"count": 263097
+},
+{
+"rank": 266,
+"word": "knew",
+"count": 262988
+},
+{
+"rank": 267,
+"word": "hold",
+"count": 262367
+},
+{
+"rank": 268,
+"word": "happy",
+"count": 262141
+},
+{
+"rank": 269,
+"word": "door",
+"count": 261118
+},
+{
+"rank": 270,
+"word": "such",
+"count": 261104
+},
+{
+"rank": 271,
+"word": "brother",
+"count": 259877
+},
+{
+"rank": 272,
+"word": "also",
+"count": 259803
+},
+{
+"rank": 273,
+"word": "pretty",
+"count": 259500
+},
+{
+"rank": 274,
+"word": "bit",
+"count": 258929
+},
+{
+"rank": 275,
+"word": "took",
+"count": 258808
+},
+{
+"rank": 276,
+"word": "yet",
+"count": 257947
+},
+{
+"rank": 277,
+"word": "men",
+"count": 257319
+},
+{
+"rank": 278,
+"word": "whole",
+"count": 257109
+},
+{
+"rank": 279,
+"word": "start",
+"count": 256417
+},
+{
+"rank": 280,
+"word": "use",
+"count": 256079
+},
+{
+"rank": 281,
+"word": "while",
+"count": 255970
+},
+{
+"rank": 282,
+"word": "since",
+"count": 254427
+},
+{
+"rank": 283,
+"word": "wife",
+"count": 254038
+},
+{
+"rank": 284,
+"word": "days",
+"count": 253171
+},
+{
+"rank": 285,
+"word": "guess",
+"count": 250320
+},
+{
+"rank": 286,
+"word": "tomorrow",
+"count": 248729
+},
+{
+"rank": 287,
+"word": "matter",
+"count": 247812
+},
+{
+"rank": 288,
+"word": "meet",
+"count": 247466
+},
+{
+"rank": 289,
+"word": "bring",
+"count": 247343
+},
+{
+"rank": 290,
+"word": "tonight",
+"count": 246514
+},
+{
+"rank": 291,
+"word": "everyone",
+"count": 246032
+},
+{
+"rank": 292,
+"word": "run",
+"count": 244200
+},
+{
+"rank": 293,
+"word": "hard",
+"count": 242871
+},
+{
+"rank": 294,
+"word": "alone",
+"count": 240475
+},
+{
+"rank": 295,
+"word": "myself",
+"count": 240460
+},
+{
+"rank": 296,
+"word": "school",
+"count": 240176
+},
+{
+"rank": 297,
+"word": "gone",
+"count": 240082
+},
+{
+"rank": 298,
+"word": "end",
+"count": 237387
+},
+{
+"rank": 299,
+"word": "saying",
+"count": 236600
+},
+{
+"rank": 300,
+"word": "phone",
+"count": 235246
+},
+{
+"rank": 301,
+"word": "play",
+"count": 233865
+},
+{
+"rank": 302,
+"word": "looks",
+"count": 233814
+},
+{
+"rank": 303,
+"word": "problem",
+"count": 232325
+},
+{
+"rank": 304,
+"word": "few",
+"count": 231375
+},
+{
+"rank": 305,
+"word": "friends",
+"count": 230464
+},
+{
+"rank": 306,
+"word": "ago",
+"count": 229751
+},
+{
+"rank": 307,
+"word": "open",
+"count": 229669
+},
+{
+"rank": 308,
+"word": "anyone",
+"count": 228332
+},
+{
+"rank": 309,
+"word": "hope",
+"count": 226993
+},
+{
+"rank": 310,
+"word": "face",
+"count": 225482
+},
+{
+"rank": 311,
+"word": "until",
+"count": 225171
+},
+{
+"rank": 312,
+"word": "lost",
+"count": 222398
+},
+{
+"rank": 313,
+"word": "police",
+"count": 221380
+},
+{
+"rank": 314,
+"word": "excuse",
+"count": 219855
+},
+{
+"rank": 315,
+"word": "turn",
+"count": 218563
+},
+{
+"rank": 316,
+"word": "business",
+"count": 215855
+},
+{
+"rank": 317,
+"word": "case",
+"count": 215274
+},
+{
+"rank": 318,
+"word": "wants",
+"count": 215149
+},
+{
+"rank": 319,
+"word": "says",
+"count": 215090
+},
+{
+"rank": 320,
+"word": "true",
+"count": 214773
+},
+{
+"rank": 321,
+"word": "die",
+"count": 214062
+},
+{
+"rank": 322,
+"word": "heart",
+"count": 213914
+},
+{
+"rank": 323,
+"word": "soon",
+"count": 213279
+},
+{
+"rank": 324,
+"word": "each",
+"count": 211943
+},
+{
+"rank": 325,
+"word": "worry",
+"count": 211329
+},
+{
+"rank": 326,
+"word": "later",
+"count": 208878
+},
+{
+"rank": 327,
+"word": "year",
+"count": 208705
+},
+{
+"rank": 328,
+"word": "watch",
+"count": 207949
+},
+{
+"rank": 329,
+"word": "music",
+"count": 207205
+},
+{
+"rank": 330,
+"word": "hand",
+"count": 206247
+},
+{
+"rank": 331,
+"word": "having",
+"count": 206106
+},
+{
+"rank": 332,
+"word": "probably",
+"count": 202736
+},
+{
+"rank": 333,
+"word": "beautiful",
+"count": 200811
+},
+{
+"rank": 334,
+"word": "doctor",
+"count": 198424
+},
+{
+"rank": 335,
+"word": "sit",
+"count": 198149
+},
+{
+"rank": 336,
+"word": "eat",
+"count": 197654
+},
+{
+"rank": 337,
+"word": "thinking",
+"count": 195875
+},
+{
+"rank": 338,
+"word": "young",
+"count": 194810
+},
+{
+"rank": 339,
+"word": "second",
+"count": 193687
+},
+{
+"rank": 340,
+"word": "working",
+"count": 193172
+},
+{
+"rank": 341,
+"word": "water",
+"count": 193014
+},
+{
+"rank": 342,
+"word": "person",
+"count": 192652
+},
+{
+"rank": 343,
+"word": "part",
+"count": 192248
+},
+{
+"rank": 344,
+"word": "kids",
+"count": 192050
+},
+{
+"rank": 345,
+"word": "late",
+"count": 191989
+},
+{
+"rank": 346,
+"word": "stuff",
+"count": 190629
+},
+{
+"rank": 347,
+"word": "exactly",
+"count": 189513
+},
+{
+"rank": 348,
+"word": "under",
+"count": 189347
+},
+{
+"rank": 349,
+"word": "death",
+"count": 189000
+},
+{
+"rank": 350,
+"word": "minute",
+"count": 188958
+},
+{
+"rank": 351,
+"word": "pay",
+"count": 188822
+},
+{
+"rank": 352,
+"word": "crazy",
+"count": 188767
+},
+{
+"rank": 353,
+"word": "forget",
+"count": 188628
+},
+{
+"rank": 354,
+"word": "everybody",
+"count": 188532
+},
+{
+"rank": 355,
+"word": "kid",
+"count": 187858
+},
+{
+"rank": 356,
+"word": "change",
+"count": 186962
+},
+{
+"rank": 357,
+"word": "gave",
+"count": 186445
+},
+{
+"rank": 358,
+"word": "happen",
+"count": 186041
+},
+{
+"rank": 359,
+"word": "five",
+"count": 183626
+},
+{
+"rank": 360,
+"word": "drink",
+"count": 182580
+},
+{
+"rank": 361,
+"word": "far",
+"count": 182287
+},
+{
+"rank": 362,
+"word": "knows",
+"count": 181663
+},
+{
+"rank": 363,
+"word": "its",
+"count": 180594
+},
+{
+"rank": 364,
+"word": "whatever",
+"count": 180082
+},
+{
+"rank": 365,
+"word": "eyes",
+"count": 179260
+},
+{
+"rank": 366,
+"word": "shut",
+"count": 178378
+},
+{
+"rank": 367,
+"word": "hit",
+"count": 177770
+},
+{
+"rank": 368,
+"word": "taking",
+"count": 177667
+},
+{
+"rank": 369,
+"word": "easy",
+"count": 177337
+},
+{
+"rank": 370,
+"word": "times",
+"count": 176522
+},
+{
+"rank": 371,
+"word": "check",
+"count": 176507
+},
+{
+"rank": 372,
+"word": "hands",
+"count": 176291
+},
+{
+"rank": 373,
+"word": "minutes",
+"count": 175091
+},
+{
+"rank": 374,
+"word": "deal",
+"count": 174929
+},
+{
+"rank": 375,
+"word": "different",
+"count": 174657
+},
+{
+"rank": 376,
+"word": "means",
+"count": 174311
+},
+{
+"rank": 377,
+"word": "point",
+"count": 174205
+},
+{
+"rank": 378,
+"word": "inside",
+"count": 174081
+},
+{
+"rank": 379,
+"word": "makes",
+"count": 172281
+},
+{
+"rank": 380,
+"word": "asked",
+"count": 171740
+},
+{
+"rank": 381,
+"word": "somebody",
+"count": 171596
+},
+{
+"rank": 382,
+"word": "mine",
+"count": 170636
+},
+{
+"rank": 383,
+"word": "making",
+"count": 169037
+},
+{
+"rank": 384,
+"word": "body",
+"count": 168798
+},
+{
+"rank": 385,
+"word": "afraid",
+"count": 168774
+},
+{
+"rank": 386,
+"word": "sleep",
+"count": 168103
+},
+{
+"rank": 387,
+"word": "chance",
+"count": 167981
+},
+{
+"rank": 388,
+"word": "dear",
+"count": 167351
+},
+{
+"rank": 389,
+"word": "quite",
+"count": 166980
+},
+{
+"rank": 390,
+"word": "four",
+"count": 166957
+},
+{
+"rank": 391,
+"word": "anyway",
+"count": 166702
+},
+{
+"rank": 392,
+"word": "close",
+"count": 166677
+},
+{
+"rank": 393,
+"word": "party",
+"count": 166137
+},
+{
+"rank": 394,
+"word": "fun",
+"count": 165693
+},
+{
+"rank": 395,
+"word": "against",
+"count": 165033
+},
+{
+"rank": 396,
+"word": "word",
+"count": 164938
+},
+{
+"rank": 397,
+"word": "comes",
+"count": 164503
+},
+{
+"rank": 398,
+"word": "important",
+"count": 164386
+},
+{
+"rank": 399,
+"word": "set",
+"count": 164165
+},
+{
+"rank": 400,
+"word": "shall",
+"count": 164162
+},
+{
+"rank": 401,
+"word": "story",
+"count": 164040
+},
+{
+"rank": 402,
+"word": "number",
+"count": 163259
+},
+{
+"rank": 403,
+"word": "daughter",
+"count": 163071
+},
+{
+"rank": 404,
+"word": "least",
+"count": 162905
+},
+{
+"rank": 405,
+"word": "waiting",
+"count": 162571
+},
+{
+"rank": 406,
+"word": "hurt",
+"count": 161421
+},
+{
+"rank": 407,
+"word": "wish",
+"count": 160204
+},
+{
+"rank": 408,
+"word": "moment",
+"count": 159995
+},
+{
+"rank": 409,
+"word": "fight",
+"count": 159911
+},
+{
+"rank": 410,
+"word": "week",
+"count": 159444
+},
+{
+"rank": 411,
+"word": "husband",
+"count": 159394
+},
+{
+"rank": 412,
+"word": "girls",
+"count": 159061
+},
+{
+"rank": 413,
+"word": "rest",
+"count": 158976
+},
+{
+"rank": 414,
+"word": "married",
+"count": 157817
+},
+{
+"rank": 415,
+"word": "fire",
+"count": 157532
+},
+{
+"rank": 416,
+"word": "game",
+"count": 157501
+},
+{
+"rank": 417,
+"word": "nobody",
+"count": 157014
+},
+{
+"rank": 418,
+"word": "children",
+"count": 156181
+},
+{
+"rank": 419,
+"word": "side",
+"count": 155667
+},
+{
+"rank": 420,
+"word": "stand",
+"count": 155391
+},
+{
+"rank": 421,
+"word": "read",
+"count": 154667
+},
+{
+"rank": 422,
+"word": "though",
+"count": 154479
+},
+{
+"rank": 423,
+"word": "cut",
+"count": 154407
+},
+{
+"rank": 424,
+"word": "started",
+"count": 154345
+},
+{
+"rank": 425,
+"word": "sister",
+"count": 154095
+},
+{
+"rank": 426,
+"word": "supposed",
+"count": 153117
+},
+{
+"rank": 427,
+"word": "between",
+"count": 152520
+},
+{
+"rank": 428,
+"word": "child",
+"count": 151864
+},
+{
+"rank": 429,
+"word": "goes",
+"count": 151195
+},
+{
+"rank": 430,
+"word": "hours",
+"count": 151156
+},
+{
+"rank": 431,
+"word": "speak",
+"count": 150927
+},
+{
+"rank": 432,
+"word": "women",
+"count": 150803
+},
+{
+"rank": 433,
+"word": "behind",
+"count": 148469
+},
+{
+"rank": 434,
+"word": "almost",
+"count": 148405
+},
+{
+"rank": 435,
+"word": "truth",
+"count": 148389
+},
+{
+"rank": 436,
+"word": "blood",
+"count": 147913
+},
+{
+"rank": 437,
+"word": "able",
+"count": 147205
+},
+{
+"rank": 438,
+"word": "lady",
+"count": 147121
+},
+{
+"rank": 439,
+"word": "anymore",
+"count": 146903
+},
+{
+"rank": 440,
+"word": "playing",
+"count": 146615
+},
+{
+"rank": 441,
+"word": "gets",
+"count": 146064
+},
+{
+"rank": 442,
+"word": "shot",
+"count": 144772
+},
+{
+"rank": 443,
+"word": "reason",
+"count": 144399
+},
+{
+"rank": 444,
+"word": "trouble",
+"count": 143235
+},
+{
+"rank": 445,
+"word": "break",
+"count": 143107
+},
+{
+"rank": 446,
+"word": "war",
+"count": 142825
+},
+{
+"rank": 447,
+"word": "city",
+"count": 142573
+},
+{
+"rank": 448,
+"word": "walk",
+"count": 142055
+},
+{
+"rank": 449,
+"word": "town",
+"count": 141835
+},
+{
+"rank": 450,
+"word": "trust",
+"count": 141327
+},
+{
+"rank": 451,
+"word": "met",
+"count": 141208
+},
+{
+"rank": 452,
+"word": "office",
+"count": 141140
+},
+{
+"rank": 453,
+"word": "question",
+"count": 140970
+},
+{
+"rank": 454,
+"word": "brought",
+"count": 140661
+},
+{
+"rank": 455,
+"word": "yours",
+"count": 140553
+},
+{
+"rank": 456,
+"word": "welcome",
+"count": 140327
+},
+{
+"rank": 457,
+"word": "high",
+"count": 140078
+},
+{
+"rank": 458,
+"word": "couple",
+"count": 138996
+},
+{
+"rank": 459,
+"word": "half",
+"count": 138527
+},
+{
+"rank": 460,
+"word": "died",
+"count": 138432
+},
+{
+"rank": 461,
+"word": "cool",
+"count": 138139
+},
+{
+"rank": 462,
+"word": "free",
+"count": 137598
+},
+{
+"rank": 463,
+"word": "either",
+"count": 137448
+},
+{
+"rank": 464,
+"word": "seems",
+"count": 136699
+},
+{
+"rank": 465,
+"word": "power",
+"count": 136611
+},
+{
+"rank": 466,
+"word": "bye",
+"count": 136276
+},
+{
+"rank": 467,
+"word": "buy",
+"count": 136137
+},
+{
+"rank": 468,
+"word": "telling",
+"count": 136109
+},
+{
+"rank": 469,
+"word": "honey",
+"count": 135631
+},
+{
+"rank": 470,
+"word": "tried",
+"count": 135401
+},
+{
+"rank": 471,
+"word": "front",
+"count": 135341
+},
+{
+"rank": 472,
+"word": "team",
+"count": 134358
+},
+{
+"rank": 473,
+"word": "answer",
+"count": 134088
+},
+{
+"rank": 474,
+"word": "gun",
+"count": 133072
+},
+{
+"rank": 475,
+"word": "boys",
+"count": 132594
+},
+{
+"rank": 476,
+"word": "line",
+"count": 132433
+},
+{
+"rank": 477,
+"word": "send",
+"count": 131999
+},
+{
+"rank": 478,
+"word": "news",
+"count": 131599
+},
+{
+"rank": 479,
+"word": "stupid",
+"count": 131497
+},
+{
+"rank": 480,
+"word": "bed",
+"count": 131445
+},
+{
+"rank": 481,
+"word": "hurry",
+"count": 130182
+},
+{
+"rank": 482,
+"word": "full",
+"count": 129735
+},
+{
+"rank": 483,
+"word": "months",
+"count": 129732
+},
+{
+"rank": 484,
+"word": "save",
+"count": 129390
+},
+{
+"rank": 485,
+"word": "sometimes",
+"count": 128779
+},
+{
+"rank": 486,
+"word": "become",
+"count": 128716
+},
+{
+"rank": 487,
+"word": "along",
+"count": 128220
+},
+{
+"rank": 488,
+"word": "hate",
+"count": 128153
+},
+{
+"rank": 489,
+"word": "food",
+"count": 127657
+},
+{
+"rank": 490,
+"word": "outside",
+"count": 127251
+},
+{
+"rank": 491,
+"word": "light",
+"count": 126657
+},
+{
+"rank": 492,
+"word": "needs",
+"count": 126398
+},
+{
+"rank": 493,
+"word": "dog",
+"count": 125769
+},
+{
+"rank": 494,
+"word": "country",
+"count": 125731
+},
+{
+"rank": 495,
+"word": "clear",
+"count": 125730
+},
+{
+"rank": 496,
+"word": "order",
+"count": 125446
+},
+{
+"rank": 497,
+"word": "fact",
+"count": 124995
+},
+{
+"rank": 498,
+"word": "captain",
+"count": 124874
+},
+{
+"rank": 499,
+"word": "six",
+"count": 124087
+},
+{
+"rank": 500,
+"word": "hot",
+"count": 123994
+}
+]

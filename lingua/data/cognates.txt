@@ -1,0 +1,142 @@
+C|important|important|A1|This is an important meeting.
+C|possible|possible|A1|Is it possible to come earlier?
+C|different|différent|A1|We have different ideas.
+C|information|information|A1|I need more information.
+C|culture|culture|A2|I love learning about other cultures.
+C|family|famille|A1|My family lives in Lyon.
+C|animal|animal|A1|A dog is a friendly animal.
+C|table|table|A1|The keys are on the table.
+C|restaurant|restaurant|A1|Let's go to a restaurant.
+C|hotel|hôtel|A1|The hotel is near the station.
+C|music|musique|A1|I listen to music every day.
+C|dentist|dentiste|A1|I have an appointment with the dentist.
+C|doctor|docteur|A1|The doctor is very kind.
+C|problem|problème|A1|We have a small problem.
+C|question|question|A1|Can I ask a question?
+C|number|nombre|A1|Choose a number between one and ten.
+C|color|couleur|A1|What is your favourite colour?
+C|region|région|A2|This region is famous for its wine.
+C|nation|nation|A2|It is a small nation.
+C|president|président|A2|The president gave a speech.
+C|police|police|A1|Call the police!
+C|taxi|taxi|A1|We took a taxi to the airport.
+C|tourist|touriste|A2|Many tourists visit Paris.
+C|photo|photo|A1|Can you take a photo of us?
+C|telephone|téléphone|A1|The telephone is ringing.
+C|chocolate|chocolat|A1|I love dark chocolate.
+C|vegetable|légume|A2|Eat more vegetables.
+C|fruit|fruit|A1|An apple is a fruit.
+C|natural|naturel|A2|It's a natural reaction.
+C|special|spécial|A1|Today is a special day.
+C|normal|normal|A2|That's perfectly normal.
+C|simple|simple|A1|The recipe is simple.
+C|difficult|difficile|A1|The test was difficult.
+C|interesting|intéressant|A1|The book is very interesting.
+C|exact|exact|B1|I need the exact time.
+C|perfect|parfait|A2|The weather is perfect.
+C|moment|moment|A1|Wait a moment.
+C|minute|minute|A1|It takes one minute.
+C|second|seconde|A1|Wait one second.
+C|moderate|modéré|B2|He is a moderate drinker.
+C|communication|communication|B1|Good communication is important.
+C|education|éducation|B1|Education is the key to success.
+C|situation|situation|B1|The situation is under control.
+C|decision|décision|B1|It was a difficult decision.
+C|attention|attention|A2|Pay attention to the road.
+C|conversation|conversation|A2|We had a long conversation.
+C|description|description|B1|Write a short description.
+C|direction|direction|A2|Which direction is the station?
+C|discussion|discussion|B1|We had a long discussion.
+C|explanation|explication|B1|I need an explanation.
+C|organization|organisation|B1|She works for a large organization.
+C|reservation|réservation|A2|I made a reservation for tonight.
+C|solution|solution|B1|We found a solution.
+C|tradition|tradition|B1|It's an old tradition.
+C|national|national|B1|The national team won.
+C|international|international|B1|It's an international airport.
+C|economic|économique|B2|The economic situation is difficult.
+C|political|politique|B2|He is interested in political news.
+C|technology|technologie|B1|Technology changes our lives.
+C|modern|moderne|A2|It's a modern building.
+C|capital|capitale|A2|Paris is the capital of France.
+C|center|centre|A2|The shop is in the city center.
+C|danger|danger|A2|Keep away, there's danger.
+C|courage|courage|B1|It takes courage to speak up.
+C|memory|mémoire|B1|I have a good memory for faces.
+C|nature|nature|A2|I love nature.
+C|object|objet|B1|What is this object?
+C|opinion|opinion|B1|What is your opinion?
+C|permission|permission|B1|You need permission to enter.
+C|position|position|B1|What is your position on this?
+C|practice|pratique|B1|Practice makes perfect.
+C|religion|religion|B2|Religion is a personal choice.
+C|silence|silence|A2|There was a long silence.
+C|visit|visite|A1|We visit my grandparents on Sundays.
+C|voyage|voyage|B2|They set off on a long voyage.
+C|accident|accident|A2|He had an accident.
+C|adventure|aventure|B1|It was a great adventure.
+C|contrast|contraste|B2|There is a strong contrast.
+C|energy|énergie|A2|Solar energy is clean.
+C|exercise|exercice|A2|Do your exercises.
+C|history|histoire|A2|I like studying history.
+C|impossible|impossible|A2|That's impossible!
+C|example|exemple|A1|Give me an example.
+C|probably|probablement|B1|It will probably rain.
+C|absolutely|absolument|B1|You are absolutely right.
+C|certainly|certainement|B1|I will certainly come.
+C|finally|finalement|A2|Finally, we arrived.
+C|generally|généralement|B1|Generally, I wake up early.
+C|immediately|immédiatement|B1|Call me immediately.
+C|particularly|particulièrement|B2|I particularly like this one.
+C|regular|régulier|B1|He takes regular breaks.
+C|rare|rare|B1|This bird is very rare.
+C|curious|curieux|B1|I'm curious about this.
+C|serious|sérieux|A2|This is a serious problem.
+C|delicious|délicieux|A2|The cake is delicious.
+C|famous|fameux|A2|She is a famous singer.
+C|nervous|nerveux|B1|I'm nervous about the exam.
+C|patient|patient|B1|Be patient, please.
+C|popular|populaire|A2|This song is very popular.
+C|universal|universel|B2|Music is a universal language.
+F|actually|actuellement|En fait, réellement (≠ actuellement : currently / at the moment)|"Actually, I disagree." / "Currently, I live in Paris."
+F|library|librairie|Bibliothèque (≠ librairie : bookshop / bookstore)|I borrowed a book from the library.
+F|eventually|éventuellement|Finalement, à la fin (≠ éventuellement : possibly / maybe)|Eventually, we found the hotel.
+F|sensible|sensible|Raisonnable, sensé (≠ sensible : sensitive)|That's a sensible idea.
+F|sensitive|sensitif|Sensible, susceptible (≠ sensitif : sensory)|She is very sensitive.
+F|journey|journée|Voyage, trajet (≠ journée : day)|The journey took five hours.
+F|attend|attendre|Assister à (≠ attendre : to wait)|I attended the meeting.
+F|demand|demander|Exiger, revendiquer (≠ demander : to ask)|Workers demand better pay.
+F|deceive|décevoir|Tromper (≠ décevoir : to disappoint)|Don't deceive me.
+F|pretend|prétendre|Faire semblant (≠ prétendre : to claim)|He pretended to be asleep.
+F|college|collège|Université, études supérieures (≠ collège : middle school)|She goes to college in Boston.
+F|lecture|lecture|Cours magistral, conférence (≠ lecture : reading)|The lecture starts at ten.
+F|location|location|Emplacement, lieu (≠ location : rental)|The hotel has a great location.
+F|rent|rente|Louer (≠ rente : income / annuity)|We rent a small flat.
+F|chips|chips|Frites (UK) (≠ chips : crisps)|Fish and chips, please.
+F|crude|crue|Grossier, brut (≠ cru : raw)|He told a crude joke.
+F|cave|cave|Grotte (≠ cave : cellar)|The explorers entered a cave.
+F|prejudice|préjudice|Préjugé (≠ préjudice : harm)|Prejudice is hard to fight.
+F|resume|résumer|Reprendre, continuer (≠ résumer : to summarize)|Work will resume on Monday.
+F|raisin|raisin|Raisin sec (≠ raisin : grape)|I put raisins in my cake.
+F|stage|stage|Étape, scène (≠ stage : internship / placement)|This is the last stage.
+F|physician|physicien|Médecin (≠ physicien : physicist)|My physician is very kind.
+F|injury|injure|Blessure (≠ injure : insult)|He has a knee injury.
+F|large|large|Grand, volumineux (≠ large : wide)|It's a large house.
+F|ignore|ignorer|Ne pas tenir compte de (≠ ignorer : not to know)|She ignored my message.
+F|agenda|agenda|Ordre du jour (≠ agenda : diary / planner)|What's on the agenda today?
+F|assist|assister|Aider (≠ assister à : to attend)|Can I assist you?
+F|blessed|blessé|Béni (≠ blessé : injured / wounded)|We are blessed with good friends.
+F|coin|coin|Pièce de monnaie (≠ coin : corner)|I found a coin on the street.
+F|comprehensive|compréhensif|Complet, détaillé (≠ compréhensif : understanding)|It's a comprehensive guide.
+F|fabric|fabrique|Tissu (≠ fabrique : factory)|The fabric is soft.
+F|figure|figure|Chiffre, silhouette (≠ figure : face)|Look at these figures.
+F|grave|grave|Tombe (≠ grave : serious)|They visited his grave.
+F|hazard|hasard|Danger, risque (≠ hasard : chance)|Ice is a hazard on the road.
+F|issue|issue|Question, problème, numéro (≠ issue : exit)|This is an important issue.
+F|magazine|magasin|Magazine, revue (≠ magasin : shop)|I read a magazine.
+F|novel|nouvelle|Roman (≠ nouvelle : short story / news)|She wrote a novel.
+F|parents|parents|Parents (père et mère) (≠ parents : relatives)|My parents live in Nice.
+F|pain|pain|Douleur (≠ pain : bread)|I have a pain in my back.
+F|sympathetic|sympathique|Compatissant (≠ sympathique : nice)|He was sympathetic to my problem.
+F|terrific|terrifiant|Formidable, génial (≠ terrifiant : terrifying)|That's terrific news!
+F|trap|trappe|Piège (≠ trappe : hatch)|The mouse fell into a trap.

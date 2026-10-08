@@ -1,0 +1,500 @@
+you|pronoun|A1|juː|tu, vous|Can you help me?|Peux-tu m'aider ?
+i|pronoun|A1|aɪ|je|I like coffee.|J'aime le café.
+the|determiner|A1|ðə|le, la, les|The book is on the table.|Le livre est sur la table.
+to|preposition|A1|tuː|à, pour|I want to go home.|Je veux rentrer à la maison.
+a|determiner|A1|ə|un, une|She has a dog.|Elle a un chien.
+it|pronoun|A1|ɪt|il, elle, ça|It is very cold today.|Il fait très froid aujourd'hui.
+and|conjunction|A1|ænd|et|I like tea and coffee.|J'aime le thé et le café.
+that|pronoun|A1|ðæt|ça, cela, que|That is a good idea.|C'est une bonne idée.
+of|preposition|A1|ɒv|de|A cup of tea, please.|Une tasse de thé, s'il vous plaît.
+is|auxiliary|A1|ɪz|est|She is happy.|Elle est heureuse.|be
+in|preposition|A1|ɪn|dans, en|The keys are in the bag.|Les clés sont dans le sac.
+what|pronoun|A1|wɒt|que, quoi, quel|What is your name?|Comment t'appelles-tu ?
+we|pronoun|A1|wiː|nous, on|We live in Paris.|Nous habitons à Paris.
+me|pronoun|A1|miː|moi, me|Give me the book.|Donne-moi le livre.
+this|pronoun|A1|ðɪs|ceci, ce, cette|This is my sister.|Voici ma sœur.
+he|pronoun|A1|hiː|il|He works in a bank.|Il travaille dans une banque.
+for|preposition|A1|fɔː|pour, pendant|This gift is for you.|Ce cadeau est pour toi.
+my|determiner|A1|maɪ|mon, ma, mes|My house is small.|Ma maison est petite.
+on|preposition|A1|ɒn|sur, à|The cup is on the table.|La tasse est sur la table.
+have|verb|A1|hæv|avoir|I have two brothers.|J'ai deux frères.
+your|determiner|A1|jɔː|ton, ta, votre|Is this your phone?|C'est ton téléphone ?
+do|auxiliary|A1|duː|faire|Do you speak English?|Parlez-vous anglais ?
+was|auxiliary|A1|wɒz|était|He was tired yesterday.|Il était fatigué hier.|be
+no|determiner|A1|nəʊ|non, aucun|No, thank you.|Non, merci.
+not|adverb|A1|nɒt|ne pas|I am not hungry.|Je n'ai pas faim.
+be|verb|A1|biː|être|I want to be a doctor.|Je veux être médecin.
+are|auxiliary|A1|ɑː|sont, es, êtes|They are my friends.|Ce sont mes amis.|be
+know|verb|A1|nəʊ|savoir, connaître|I don't know his name.|Je ne connais pas son nom.
+can|modal|A1|kæn|pouvoir, savoir|I can swim very well.|Je sais très bien nager.
+with|preposition|A1|wɪð|avec|I live with my parents.|J'habite avec mes parents.
+but|conjunction|A1|bʌt|mais|I like it, but it is expensive.|Je l'aime bien, mais c'est cher.
+all|determiner|A1|ɔːl|tout, tous|All the students are here.|Tous les élèves sont là.
+so|adverb|A1|səʊ|donc, si, tellement|I was so tired.|J'étais tellement fatigué.
+just|adverb|A2|dʒʌst|juste, seulement|I just arrived.|Je viens d'arriver.
+there|adverb|A1|ðeə|là, y|Put the bag over there.|Pose le sac là-bas.
+here|adverb|A1|hɪə|ici|Come here, please.|Viens ici, s'il te plaît.
+they|pronoun|A1|ðeɪ|ils, elles|They are at school.|Ils sont à l'école.
+like|verb|A1|laɪk|aimer|I like pizza.|J'aime la pizza.
+get|verb|A1|ɡet|obtenir, recevoir, devenir|I get up at seven.|Je me lève à sept heures.
+she|pronoun|A1|ʃiː|elle|She is my teacher.|Elle est ma professeure.
+go|verb|A1|ɡəʊ|aller|We go to school by bus.|Nous allons à l'école en bus.
+if|conjunction|A1|ɪf|si|If it rains, we stay home.|S'il pleut, on reste à la maison.
+right|adjective|A1|raɪt|correct, droit, juste|You are right.|Tu as raison.
+out|adverb|A1|aʊt|dehors|She went out.|Elle est sortie.
+about|preposition|A1|əˈbaʊt|à propos de, environ|Tell me about your day.|Parle-moi de ta journée.
+up|adverb|A1|ʌp|en haut, debout|Stand up, please.|Lève-toi, s'il te plaît.
+at|preposition|A1|æt|à, chez|I am at home.|Je suis à la maison.
+him|pronoun|A1|hɪm|lui, le|I called him yesterday.|Je l'ai appelé hier.
+now|adverb|A1|naʊ|maintenant|I am busy now.|Je suis occupé maintenant.
+one|determiner|A1|wʌn|un, une|I have one sister.|J'ai une sœur.
+come|verb|A1|kʌm|venir|Come with me.|Viens avec moi.
+well|adverb|A2|wel|bien|She speaks English well.|Elle parle bien anglais.
+her|determiner|A1|hɜː|son, sa, ses (à elle), la, lui|I like her car.|J'aime sa voiture.
+how|adverb|A1|haʊ|comment|How are you?|Comment vas-tu ?
+will|modal|A1|wɪl|(futur)|I will call you tomorrow.|Je t'appellerai demain.
+got|verb|A1|ɡɒt|obtenu, eu|I got a new phone.|J'ai eu un nouveau téléphone.|get
+want|verb|A1|wɒnt|vouloir|I want a glass of water.|Je veux un verre d'eau.
+think|verb|A1|θɪŋk|penser|I think you are right.|Je pense que tu as raison.
+as|conjunction|A2|æz|comme, en tant que|She works as a nurse.|Elle travaille comme infirmière.
+see|verb|A1|siː|voir|I can see the sea.|Je vois la mer.
+did|auxiliary|A1|dɪd|(passé de do)|Did you eat breakfast?|As-tu pris le petit-déjeuner ?|do
+good|adjective|A1|ɡʊd|bon, bien|This is a good restaurant.|C'est un bon restaurant.
+who|pronoun|A1|huː|qui|Who is that man?|Qui est cet homme ?
+why|adverb|A1|waɪ|pourquoi|Why are you late?|Pourquoi es-tu en retard ?
+from|preposition|A1|frɒm|de, depuis|I am from France.|Je viens de France.
+let|verb|A2|let|laisser, permettre|Let me help you.|Laisse-moi t'aider.
+his|determiner|A1|hɪz|son, sa, ses (à lui)|His brother is a doctor.|Son frère est médecin.
+yes|interjection|A1|jes|oui|Yes, I agree.|Oui, je suis d'accord.
+when|adverb|A1|wen|quand|When does the film start?|Quand commence le film ?
+going|verb|A1|ˈɡəʊɪŋ|allant|I am going to the park.|Je vais au parc.|go
+time|noun|A1|taɪm|temps, heure, fois|What time is it?|Quelle heure est-il ?
+an|determiner|A1|ən|un, une|She eats an apple every day.|Elle mange une pomme chaque jour.
+okay|interjection|A1|ˌəʊˈkeɪ|d'accord, ça va|Okay, let's go.|D'accord, on y va.
+back|adverb|A1|bæk|de retour, en arrière|I'll be back soon.|Je reviens bientôt.
+look|verb|A1|lʊk|regarder|Look at this picture.|Regarde cette image.
+us|pronoun|A1|ʌs|nous|Come with us.|Viens avec nous.
+would|modal|A2|wʊd|(conditionnel)|I would like some tea.|Je voudrais du thé.
+them|pronoun|A1|ðem|les, leur|I see them every day.|Je les vois tous les jours.
+where|adverb|A1|weə|où|Where do you live?|Où habites-tu ?
+were|auxiliary|A1|wɜː|étaient, étiez|We were at the cinema.|Nous étions au cinéma.|be
+take|verb|A1|teɪk|prendre, emporter|Take an umbrella.|Prends un parapluie.
+then|adverb|A1|ðen|puis, alors|First eat, then play.|D'abord mange, ensuite joue.
+had|verb|A1|hæd|eu|I had a great weekend.|J'ai passé un super week-end.|have
+or|conjunction|A1|ɔː|ou|Tea or coffee?|Thé ou café ?
+been|auxiliary|A2|biːn|été|I have been to London.|Je suis allé à Londres.|be
+our|determiner|A1|ˈaʊə|notre, nos|Our teacher is kind.|Notre professeur est gentil.
+tell|verb|A1|tel|dire, raconter|Tell me the truth.|Dis-moi la vérité.
+really|adverb|A1|ˈrɪəli|vraiment|I really like this song.|J'aime vraiment cette chanson.
+man|noun|A1|mæn|homme|That man is my uncle.|Cet homme est mon oncle.
+some|determiner|A1|sʌm|du, des, quelques|I need some water.|J'ai besoin d'eau.
+say|verb|A1|seɪ|dire|What did you say?|Qu'as-tu dit ?
+could|modal|A2|kʊd|pouvait, pourrait|Could you open the window?|Pourriez-vous ouvrir la fenêtre ?
+by|preposition|A2|baɪ|par, près de|The book was written by Orwell.|Le livre a été écrit par Orwell.
+need|verb|A1|niːd|avoir besoin de|I need your help.|J'ai besoin de ton aide.
+something|pronoun|A1|ˈsʌmθɪŋ|quelque chose|I want to eat something.|Je veux manger quelque chose.
+has|verb|A1|hæz|a|She has a red bike.|Elle a un vélo rouge.|have
+too|adverb|A1|tuː|aussi, trop|I am tired too.|Je suis fatigué aussi.
+more|adverb|A1|mɔː|plus, davantage|I need more time.|J'ai besoin de plus de temps.
+way|noun|A2|weɪ|chemin, manière|Which way is the station?|Par où est la gare ?
+down|adverb|A1|daʊn|en bas|Sit down, please.|Assieds-toi, s'il te plaît.
+make|verb|A1|meɪk|faire, fabriquer|I make breakfast every morning.|Je prépare le petit-déjeuner chaque matin.
+very|adverb|A1|ˈveri|très|The soup is very hot.|La soupe est très chaude.
+never|adverb|A1|ˈnevə|jamais|I never drink coffee at night.|Je ne bois jamais de café le soir.
+only|adverb|A2|ˈəʊnli|seulement|I only have five euros.|Je n'ai que cinq euros.
+people|noun|A1|ˈpiːpl|gens, personnes|Many people like football.|Beaucoup de gens aiment le football.
+over|preposition|A2|ˈəʊvə|au-dessus de, fini|The film is over.|Le film est terminé.
+because|conjunction|A1|bɪˈkɒz|parce que|I stayed home because I was ill.|Je suis resté chez moi parce que j'étais malade.
+little|adjective|A1|ˈlɪtl|petit, peu|She has a little dog.|Elle a un petit chien.
+please|interjection|A1|pliːz|s'il vous plaît|Please sit down.|Asseyez-vous, s'il vous plaît.
+love|verb|A1|lʌv|aimer, adorer|I love my family.|J'aime ma famille.
+should|modal|A2|ʃʊd|devrait|You should sleep more.|Tu devrais dormir plus.
+mean|verb|A2|miːn|signifier, vouloir dire|What does this word mean?|Que signifie ce mot ?
+said|verb|A1|sed|dit|She said hello.|Elle a dit bonjour.|say
+sorry|adjective|A1|ˈsɒri|désolé|I'm sorry I'm late.|Je suis désolé d'être en retard.
+give|verb|A1|ɡɪv|donner|Give me your hand.|Donne-moi la main.
+off|adverb|A2|ɒf|éteint, parti|Turn off the light.|Éteins la lumière.
+thank|verb|A1|θæŋk|remercier|I thank you for your help.|Je vous remercie de votre aide.
+any|determiner|A1|ˈeni|aucun, du, des|Do you have any questions?|Avez-vous des questions ?
+two|determiner|A1|tuː|deux|I have two cats.|J'ai deux chats.
+even|adverb|A2|ˈiːvn|même|Even my mother likes it.|Même ma mère l'aime.
+much|determiner|A1|mʌtʃ|beaucoup|I don't have much time.|Je n'ai pas beaucoup de temps.
+doing|verb|A1|ˈduːɪŋ|faisant|What are you doing?|Qu'est-ce que tu fais ?|do
+sure|adjective|A2|ʃɔː|sûr, certain|Are you sure?|Es-tu sûr ?
+thing|noun|A1|θɪŋ|chose|What is that thing?|Qu'est-ce que c'est que cette chose ?
+these|determiner|A1|ðiːz|ces, ceux-ci|These shoes are new.|Ces chaussures sont neuves.|this
+help|verb|A1|help|aider|Can you help me?|Peux-tu m'aider ?
+first|adjective|A1|fɜːst|premier|This is my first day.|C'est mon premier jour.
+into|preposition|A2|ˈɪntuː|dans, en|She walked into the room.|Elle est entrée dans la pièce.
+anything|pronoun|A2|ˈeniθɪŋ|quelque chose, rien|Do you need anything?|As-tu besoin de quelque chose ?
+still|adverb|A2|stɪl|encore, toujours|He is still sleeping.|Il dort encore.
+find|verb|A1|faɪnd|trouver|I can't find my keys.|Je ne trouve pas mes clés.
+life|noun|A1|laɪf|vie|Life is beautiful.|La vie est belle.
+nothing|pronoun|A2|ˈnʌθɪŋ|rien|There is nothing in the fridge.|Il n'y a rien dans le frigo.
+day|noun|A1|deɪ|jour, journée|Have a nice day!|Passe une bonne journée !
+work|verb|A1|wɜːk|travailler, marcher|I work in an office.|Je travaille dans un bureau.
+their|determiner|A1|ðeə|leur, leurs|Their house is big.|Leur maison est grande.
+again|adverb|A1|əˈɡen|encore, de nouveau|Please say it again.|Dis-le encore, s'il te plaît.
+maybe|adverb|A2|ˈmeɪbi|peut-être|Maybe we can meet tomorrow.|On peut peut-être se voir demain.
+must|modal|A2|mʌst|devoir|You must wear a seatbelt.|Tu dois mettre ta ceinture.
+before|preposition|A1|bɪˈfɔː|avant|Wash your hands before eating.|Lave-toi les mains avant de manger.
+other|adjective|A1|ˈʌðə|autre|Do you have any other questions?|Avez-vous d'autres questions ?
+wait|verb|A1|weɪt|attendre|Wait for me here.|Attends-moi ici.
+stop|verb|A1|stɒp|arrêter|Stop the car!|Arrête la voiture !
+call|verb|A1|kɔːl|appeler|I'll call you later.|Je t'appellerai plus tard.
+after|preposition|A1|ˈɑːftə|après|Let's eat after the film.|Mangeons après le film.
+talk|verb|A1|tɔːk|parler|We need to talk.|Nous devons parler.
+away|adverb|A2|əˈweɪ|loin, parti|He lives far away.|Il habite loin d'ici.
+than|conjunction|A2|ðæn|que (comparatif)|She is taller than me.|Elle est plus grande que moi.
+thought|verb|A2|θɔːt|pensé|I thought it was easy.|Je pensais que c'était facile.|think
+home|noun|A1|həʊm|maison, foyer|I'm going home.|Je rentre à la maison.
+night|noun|A1|naɪt|nuit, soir|Good night!|Bonne nuit !
+put|verb|A1|pʊt|mettre, poser|Put the book on the shelf.|Mets le livre sur l'étagère.
+great|adjective|A1|ɡreɪt|super, grand|That's a great idea!|C'est une super idée !
+those|determiner|A1|ðəʊz|ces, ceux-là|Those flowers are beautiful.|Ces fleurs sont belles.|that
+last|adjective|A2|lɑːst|dernier|I saw him last week.|Je l'ai vu la semaine dernière.
+better|adjective|A2|ˈbetə|meilleur, mieux|This one is better.|Celui-ci est meilleur.|good
+everything|pronoun|A2|ˈevriθɪŋ|tout|Everything is ready.|Tout est prêt.
+told|verb|A2|təʊld|dit, raconté|She told me a story.|Elle m'a raconté une histoire.|tell
+new|adjective|A1|njuː|nouveau, neuf|I have a new phone.|J'ai un nouveau téléphone.
+things|noun|A1|θɪŋz|choses, affaires|I packed my things.|J'ai fait mes affaires.|thing
+always|adverb|A1|ˈɔːlweɪz|toujours|She always smiles.|Elle sourit toujours.
+keep|verb|A2|kiːp|garder, continuer|Keep the change.|Gardez la monnaie.
+long|adjective|A1|lɒŋ|long|It was a long day.|Ce fut une longue journée.
+years|noun|A1|jɪəz|années, ans|I lived there for five years.|J'ai vécu là-bas cinq ans.|year
+leave|verb|A2|liːv|partir, laisser|We leave at eight.|Nous partons à huit heures.
+does|auxiliary|A1|dʌz|fait|Does she like music?|Est-ce qu'elle aime la musique ?|do
+money|noun|A1|ˈmʌni|argent|I don't have much money.|Je n'ai pas beaucoup d'argent.
+around|adverb|A2|əˈraʊnd|autour, environ|He looked around.|Il a regardé autour de lui.
+name|noun|A1|neɪm|nom, prénom|My name is Anna.|Je m'appelle Anna.
+place|noun|A1|pleɪs|endroit, lieu|This is a nice place.|C'est un bel endroit.
+ever|adverb|A2|ˈevə|déjà, jamais|Have you ever been to Spain?|Es-tu déjà allé en Espagne ?
+feel|verb|A1|fiːl|se sentir, ressentir|I feel tired today.|Je me sens fatigué aujourd'hui.
+guys|noun|A2|ɡaɪz|les gars, les amis|Hey guys, come here!|Hé les gars, venez ici !|guy
+father|noun|A1|ˈfɑːðə|père|My father is a teacher.|Mon père est professeur.
+guy|noun|A2|ɡaɪ|type, gars|He is a nice guy.|C'est un type sympa.
+made|verb|A1|meɪd|fait, fabriqué|She made a cake.|Elle a fait un gâteau.|make
+old|adjective|A1|əʊld|vieux, âgé|My grandfather is very old.|Mon grand-père est très âgé.
+which|determiner|A1|wɪtʃ|quel, lequel, qui|Which colour do you like?|Quelle couleur aimes-tu ?
+big|adjective|A1|bɪɡ|grand, gros|They have a big house.|Ils ont une grande maison.
+lot|noun|A2|lɒt|beaucoup (a lot), tas|I like it a lot.|Je l'aime beaucoup.
+done|verb|A2|dʌn|fait, terminé|I'm done with my homework.|J'ai fini mes devoirs.|do
+hello|interjection|A1|həˈləʊ|bonjour, salut|Hello, how are you?|Bonjour, comment vas-tu ?
+nice|adjective|A1|naɪs|agréable, gentil|It's nice to meet you.|Ravi de te rencontrer.
+believe|verb|A2|bɪˈliːv|croire|I don't believe you.|Je ne te crois pas.
+girl|noun|A1|ɡɜːl|fille|The girl is reading a book.|La fille lit un livre.
+someone|pronoun|A2|ˈsʌmwʌn|quelqu'un|Someone is at the door.|Quelqu'un est à la porte.
+fine|adjective|A1|faɪn|bien, correct, amende|I'm fine, thanks.|Je vais bien, merci.
+thanks|interjection|A1|θæŋks|merci|Thanks for your help.|Merci pour ton aide.
+wanted|verb|A1|ˈwɒntɪd|voulu|I wanted to see you.|Je voulais te voir.|want
+kind|noun|A2|kaɪnd|sorte, genre|What kind of music do you like?|Quel genre de musique aimes-tu ?
+coming|verb|A1|ˈkʌmɪŋ|venant|I'm coming!|J'arrive !|come
+house|noun|A1|haʊs|maison|They have a big house.|Ils ont une grande maison.
+every|determiner|A1|ˈevri|chaque, tous les|I run every morning.|Je cours tous les matins.
+through|preposition|A2|θruː|à travers|We drove through the city.|Nous avons traversé la ville en voiture.
+being|verb|A2|ˈbiːɪŋ|étant|Being late is rude.|Être en retard est impoli.|be
+course|noun|A2|kɔːs|cours, plat, parcours|Of course!|Bien sûr !
+stay|verb|A1|steɪ|rester, séjourner|Stay here, please.|Reste ici, s'il te plaît.
+left|adjective|A1|left|gauche, parti|Turn left at the corner.|Tourne à gauche au coin.
+dad|noun|A1|dæd|papa|My dad cooks very well.|Mon papa cuisine très bien.
+enough|determiner|A2|ɪˈnʌf|assez, suffisant|I have enough money.|J'ai assez d'argent.
+happened|verb|A2|ˈhæpənd|arrivé, s'est passé|What happened?|Que s'est-il passé ?|happen
+came|verb|A1|keɪm|venu|She came home late.|Elle est rentrée tard.|come
+may|modal|A2|meɪ|pouvoir, peut-être|May I come in?|Puis-je entrer ?
+mother|noun|A1|ˈmʌðə|mère|My mother is a nurse.|Ma mère est infirmière.
+wrong|adjective|A2|rɒŋ|faux, mauvais|That answer is wrong.|Cette réponse est fausse.
+world|noun|A1|wɜːld|monde|I want to travel the world.|Je veux voyager à travers le monde.
+bad|adjective|A1|bæd|mauvais|The weather is bad today.|Il fait mauvais aujourd'hui.
+might|modal|B1|maɪt|pourrait, peut-être|It might rain tomorrow.|Il se pourrait qu'il pleuve demain.
+three|determiner|A1|θriː|trois|I have three sisters.|J'ai trois sœurs.
+today|adverb|A1|təˈdeɪ|aujourd'hui|What are you doing today?|Que fais-tu aujourd'hui ?
+listen|verb|A1|ˈlɪsn|écouter|Listen to the teacher.|Écoute le professeur.
+another|determiner|A2|əˈnʌðə|un autre|Can I have another cup?|Puis-je avoir une autre tasse ?
+understand|verb|A1|ˌʌndəˈstænd|comprendre|I don't understand.|Je ne comprends pas.
+hear|verb|A1|hɪə|entendre|I can't hear you.|Je ne t'entends pas.
+remember|verb|A2|rɪˈmembə|se souvenir|I remember her name.|Je me souviens de son nom.
+ask|verb|A1|ɑːsk|demander|Ask the teacher.|Demande au professeur.
+own|adjective|B1|əʊn|propre|She has her own room.|Elle a sa propre chambre.
+same|adjective|A2|seɪm|même|We have the same phone.|Nous avons le même téléphone.
+show|verb|A2|ʃəʊ|montrer|Show me your photos.|Montre-moi tes photos.
+else|adverb|A2|els|d'autre|Anything else?|Autre chose ?
+talking|verb|A1|ˈtɔːkɪŋ|parlant|Who are you talking to?|À qui parles-tu ?|talk
+found|verb|A2|faʊnd|trouvé|I found my keys.|J'ai trouvé mes clés.|find
+next|adjective|A1|nekst|prochain, suivant|See you next week.|À la semaine prochaine.
+getting|verb|A2|ˈɡetɪŋ|devenant, obtenant|It's getting dark.|Il commence à faire nuit.|get
+care|verb|A2|keə|se soucier, prendre soin|I care about you.|Tu comptes pour moi.
+car|noun|A1|kɑː|voiture|He drives a red car.|Il conduit une voiture rouge.
+looking|verb|A1|ˈlʊkɪŋ|regardant, cherchant|I'm looking for my keys.|Je cherche mes clés.|look
+son|noun|A1|sʌn|fils|Their son is five years old.|Leur fils a cinq ans.
+try|verb|A1|traɪ|essayer|Try this cake.|Essaie ce gâteau.
+woman|noun|A1|ˈwʊmən|femme|That woman is my teacher.|Cette femme est ma professeure.
+went|verb|A1|went|allé|We went to the beach.|Nous sommes allés à la plage.|go
+hi|interjection|A1|haɪ|salut|Hi, how are you?|Salut, comment vas-tu ?
+dead|adjective|A2|ded|mort|The plant is dead.|La plante est morte.
+many|determiner|A1|ˈmeni|beaucoup de, nombreux|How many books do you have?|Combien de livres as-tu ?
+mind|noun|B1|maɪnd|esprit, avis|Do you mind if I sit here?|Cela vous dérange si je m'assois ici ?
+friend|noun|A1|frend|ami|She is my best friend.|Elle est ma meilleure amie.
+best|adjective|A1|best|meilleur|This is the best pizza ever.|C'est la meilleure pizza de tous les temps.|good
+mom|noun|A1|mɒm|maman|My mom is at work.|Ma maman est au travail.
+morning|noun|A1|ˈmɔːnɪŋ|matin|Good morning!|Bonjour !
+trying|verb|A2|ˈtraɪɪŋ|essayant|I'm trying to sleep.|J'essaie de dormir.|try
+boy|noun|A1|bɔɪ|garçon|The boy is playing football.|Le garçon joue au football.
+together|adverb|A2|təˈɡeðə|ensemble|Let's work together.|Travaillons ensemble.
+yourself|pronoun|A2|jɔːˈself|toi-même, vous-même|Please help yourself.|Sers-toi, je t'en prie.
+job|noun|A1|dʒɒb|travail, emploi|She has a good job.|Elle a un bon travail.
+saw|verb|A1|sɔː|vu|I saw him yesterday.|Je l'ai vu hier.|see
+family|noun|A1|ˈfæməli|famille|I love my family.|J'aime ma famille.
+real|adjective|A2|rɪəl|réel, vrai|Is this real gold?|Est-ce de l'or véritable ?
+without|preposition|A2|wɪˈðaʊt|sans|Don't leave without me.|Ne pars pas sans moi.
+baby|noun|A1|ˈbeɪbi|bébé|The baby is sleeping.|Le bébé dort.
+room|noun|A1|ruːm|pièce, chambre, place|Her room is very tidy.|Sa chambre est très rangée.
+already|adverb|A2|ɔːlˈredi|déjà|I've already eaten.|J'ai déjà mangé.
+move|verb|A2|muːv|bouger, déménager|We are moving to Lyon.|Nous déménageons à Lyon.
+most|determiner|A2|məʊst|la plupart, le plus|Most people agree.|La plupart des gens sont d'accord.
+seen|verb|A2|siːn|vu|Have you seen my keys?|As-tu vu mes clés ?|see
+live|verb|A1|lɪv|vivre, habiter|I live in Paris.|J'habite à Paris.
+miss|verb|A2|mɪs|manquer, rater|I miss my family.|Ma famille me manque.
+actually|adverb|B1|ˈæktʃuəli|en fait|Actually, I disagree.|En fait, je ne suis pas d'accord.
+both|determiner|A2|bəʊθ|les deux|Both answers are correct.|Les deux réponses sont correctes.
+heard|verb|A2|hɜːd|entendu|I heard a noise.|J'ai entendu un bruit.|hear
+once|adverb|A2|wʌns|une fois|I go there once a week.|J'y vais une fois par semaine.
+ready|adjective|A1|ˈredi|prêt|Are you ready?|Es-tu prêt ?
+head|noun|A1|hed|tête|My head hurts.|J'ai mal à la tête.
+called|verb|A1|kɔːld|appelé|She called me last night.|Elle m'a appelé hier soir.|call
+used|verb|A2|juːzd|utilisé, habitué|I used a dictionary.|J'ai utilisé un dictionnaire.|use
+idea|noun|A1|aɪˈdɪə|idée|That's a good idea.|C'est une bonne idée.
+knew|verb|A2|njuː|su, connu|I knew the answer.|Je connaissais la réponse.|know
+hold|verb|B1|həʊld|tenir|Hold my bag, please.|Tiens mon sac, s'il te plaît.
+happy|adjective|A1|ˈhæpi|heureux|I'm very happy today.|Je suis très heureux aujourd'hui.
+door|noun|A1|dɔː|porte|Close the door, please.|Ferme la porte, s'il te plaît.
+such|determiner|B1|sʌtʃ|tel, si|It was such a nice day.|C'était une si belle journée.
+brother|noun|A1|ˈbrʌðə|frère|My brother plays guitar.|Mon frère joue de la guitare.
+also|adverb|A2|ˈɔːlsəʊ|aussi|She also speaks Spanish.|Elle parle aussi espagnol.
+pretty|adverb|B1|ˈprɪti|assez, joli|The film was pretty good.|Le film était plutôt bien.
+bit|noun|A2|bɪt|un peu, morceau|Wait a bit.|Attends un peu.
+took|verb|A2|tʊk|pris|She took the bus.|Elle a pris le bus.|take
+yet|adverb|A2|jet|encore, déjà|I haven't finished yet.|Je n'ai pas encore fini.
+men|noun|A1|men|hommes|The men are working.|Les hommes travaillent.|man
+whole|adjective|B1|həʊl|entier|I ate the whole cake.|J'ai mangé tout le gâteau.
+start|verb|A1|stɑːt|commencer|The class starts at nine.|Le cours commence à neuf heures.
+use|verb|A1|juːz|utiliser|Can I use your phone?|Puis-je utiliser ton téléphone ?
+while|conjunction|B1|waɪl|pendant que, alors que|I read while I wait.|Je lis pendant que j'attends.
+since|conjunction|B1|sɪns|depuis, puisque|I've lived here since 2020.|J'habite ici depuis 2020.
+wife|noun|A1|waɪf|épouse, femme|His wife is a doctor.|Sa femme est médecin.
+days|noun|A1|deɪz|jours|I stayed three days.|Je suis resté trois jours.|day
+guess|verb|B1|ɡes|deviner, supposer|Guess what happened!|Devine ce qui s'est passé !
+tomorrow|adverb|A1|təˈmɒrəʊ|demain|See you tomorrow.|À demain.
+matter|verb|B1|ˈmætə|importer, affaire|It doesn't matter.|Ça n'a pas d'importance.
+meet|verb|A1|miːt|rencontrer|Nice to meet you.|Enchanté de te rencontrer.
+bring|verb|A2|brɪŋ|apporter|Bring your book tomorrow.|Apporte ton livre demain.
+tonight|adverb|A1|təˈnaɪt|ce soir|What are you doing tonight?|Que fais-tu ce soir ?
+everyone|pronoun|A2|ˈevriwʌn|tout le monde|Everyone is here.|Tout le monde est là.
+run|verb|A1|rʌn|courir|I run every morning.|Je cours tous les matins.
+hard|adjective|A2|hɑːd|dur, difficile|This exercise is hard.|Cet exercice est difficile.
+alone|adjective|A2|əˈləʊn|seul|She lives alone.|Elle vit seule.
+myself|pronoun|A2|maɪˈself|moi-même|I did it myself.|Je l'ai fait moi-même.
+school|noun|A1|skuːl|école|The children go to school.|Les enfants vont à l'école.
+gone|verb|A2|ɡɒn|parti|He has gone home.|Il est rentré chez lui.|go
+end|noun|A2|end|fin|The end of the film was sad.|La fin du film était triste.
+saying|verb|A2|ˈseɪɪŋ|disant|What are you saying?|Qu'est-ce que tu dis ?|say
+phone|noun|A1|fəʊn|téléphone|Where is my phone?|Où est mon téléphone ?
+play|verb|A1|pleɪ|jouer|The children play in the garden.|Les enfants jouent dans le jardin.
+looks|verb|A1|lʊks|a l'air, regarde|She looks tired.|Elle a l'air fatiguée.|look
+problem|noun|A1|ˈprɒbləm|problème|I have a problem.|J'ai un problème.
+few|determiner|A2|fjuː|peu de, quelques|I have a few friends here.|J'ai quelques amis ici.
+friends|noun|A1|frendz|amis|I met my friends at the café.|J'ai retrouvé mes amis au café.|friend
+ago|adverb|A2|əˈɡəʊ|il y a|I saw him two days ago.|Je l'ai vu il y a deux jours.
+open|verb|A1|ˈəʊpən|ouvrir|Open the window, please.|Ouvre la fenêtre, s'il te plaît.
+anyone|pronoun|A2|ˈeniwʌn|quelqu'un, personne|Is anyone there?|Y a-t-il quelqu'un ?
+hope|verb|A2|həʊp|espérer|I hope you feel better.|J'espère que tu te sens mieux.
+face|noun|A2|feɪs|visage|She has a kind face.|Elle a un visage doux.
+until|preposition|A2|ənˈtɪl|jusqu'à|Wait until Monday.|Attends jusqu'à lundi.
+lost|adjective|A2|lɒst|perdu|I'm lost.|Je suis perdu.
+police|noun|A2|pəˈliːs|police|Call the police!|Appelle la police !
+excuse|verb|A2|ɪkˈskjuːz|excuser|Excuse me, where is the station?|Excusez-moi, où est la gare ?
+turn|verb|A2|tɜːn|tourner, devenir|Turn right at the corner.|Tournez à droite au coin.
+business|noun|A2|ˈbɪznəs|affaires, entreprise|He runs a small business.|Il dirige une petite entreprise.
+case|noun|B1|keɪs|cas, affaire|In that case, I'll stay.|Dans ce cas, je reste.
+wants|verb|A1|wɒnts|veut|She wants a coffee.|Elle veut un café.|want
+says|verb|A1|sez|dit|He says he is tired.|Il dit qu'il est fatigué.|say
+true|adjective|A2|truː|vrai|Is it true?|Est-ce vrai ?
+die|verb|A2|daɪ|mourir|Flowers die without water.|Les fleurs meurent sans eau.
+heart|noun|A2|hɑːt|cœur|My heart is beating fast.|Mon cœur bat vite.
+soon|adverb|A1|suːn|bientôt|See you soon!|À bientôt !
+each|determiner|A2|iːtʃ|chaque|Each student has a book.|Chaque élève a un livre.
+worry|verb|A2|ˈwʌri|s'inquiéter|Don't worry.|Ne t'inquiète pas.
+later|adverb|A1|ˈleɪtə|plus tard|See you later.|À plus tard.
+year|noun|A1|jɪə|an, année|This year I will learn English.|Cette année, j'apprendrai l'anglais.
+watch|verb|A1|wɒtʃ|regarder, montre|We watch a film every Friday.|Nous regardons un film chaque vendredi.
+music|noun|A1|ˈmjuːzɪk|musique|I listen to music every day.|J'écoute de la musique tous les jours.
+hand|noun|A1|hænd|main|Give me your hand.|Donne-moi ta main.
+having|verb|A2|ˈhævɪŋ|ayant|We are having dinner.|Nous sommes en train de dîner.|have
+probably|adverb|B1|ˈprɒbəbli|probablement|It will probably rain.|Il va probablement pleuvoir.
+beautiful|adjective|A1|ˈbjuːtɪfl|beau, belle|What a beautiful day!|Quelle belle journée !
+doctor|noun|A1|ˈdɒktə|médecin|I have an appointment with the doctor.|J'ai rendez-vous chez le médecin.
+sit|verb|A1|sɪt|s'asseoir|Please sit down.|Asseyez-vous, s'il vous plaît.
+eat|verb|A1|iːt|manger|We eat dinner at eight.|Nous dînons à huit heures.
+thinking|verb|A2|ˈθɪŋkɪŋ|pensant|I'm thinking about you.|Je pense à toi.|think
+young|adjective|A1|jʌŋ|jeune|She is very young.|Elle est très jeune.
+second|noun|A1|ˈsekənd|seconde, deuxième|Wait a second.|Attends une seconde.
+working|verb|A1|ˈwɜːkɪŋ|travaillant|I'm working today.|Je travaille aujourd'hui.|work
+water|noun|A1|ˈwɔːtə|eau|Can I have some water?|Puis-je avoir de l'eau ?
+person|noun|A1|ˈpɜːsn|personne|He is a very kind person.|C'est une personne très gentille.
+part|noun|A2|pɑːt|partie, rôle|This is the best part.|C'est la meilleure partie.
+kids|noun|A1|kɪdz|enfants, gamins|The kids are playing outside.|Les enfants jouent dehors.|kid
+late|adjective|A1|leɪt|en retard, tard|Sorry, I'm late.|Désolé, je suis en retard.
+stuff|noun|B1|stʌf|affaires, trucs|I left my stuff at home.|J'ai laissé mes affaires à la maison.
+exactly|adverb|B1|ɪɡˈzæktli|exactement|That's exactly what I mean.|C'est exactement ce que je veux dire.
+under|preposition|A2|ˈʌndə|sous|The cat is under the table.|Le chat est sous la table.
+death|noun|B1|deθ|mort|The news of his death was sad.|La nouvelle de sa mort était triste.
+minute|noun|A1|ˈmɪnɪt|minute|Wait a minute.|Attends une minute.
+pay|verb|A2|peɪ|payer|I'll pay by card.|Je paierai par carte.
+crazy|adjective|B1|ˈkreɪzi|fou|That's a crazy idea!|C'est une idée folle !
+forget|verb|A2|fəˈɡet|oublier|Don't forget your keys.|N'oublie pas tes clés.
+everybody|pronoun|A2|ˈevribɒdi|tout le monde|Everybody likes her.|Tout le monde l'aime bien.
+kid|noun|A2|kɪd|enfant, gamin|The kid is smiling.|L'enfant sourit.
+change|verb|A2|tʃeɪndʒ|changer|I want to change my job.|Je veux changer de travail.
+gave|verb|A2|ɡeɪv|donné|She gave me a present.|Elle m'a offert un cadeau.|give
+happen|verb|A2|ˈhæpən|arriver, se passer|What will happen next?|Que va-t-il se passer ensuite ?
+five|determiner|A1|faɪv|cinq|I have five minutes.|J'ai cinq minutes.
+drink|verb|A1|drɪŋk|boire|Do you want a drink?|Veux-tu boire quelque chose ?
+far|adverb|A1|fɑː|loin|Is it far from here?|Est-ce loin d'ici ?
+knows|verb|A1|nəʊz|sait|He knows the answer.|Il connaît la réponse.|know
+its|determiner|A2|ɪts|son, sa, ses (neutre)|The dog wagged its tail.|Le chien a remué la queue.
+whatever|pronoun|B1|wɒtˈevə|peu importe, tout ce que|Do whatever you want.|Fais ce que tu veux.
+eyes|noun|A1|aɪz|yeux|She has blue eyes.|Elle a les yeux bleus.|eye
+shut|verb|B1|ʃʌt|fermer|Shut the door, please.|Ferme la porte, s'il te plaît.
+hit|verb|B1|hɪt|frapper, heurter|The ball hit the window.|Le ballon a heurté la fenêtre.
+taking|verb|A2|ˈteɪkɪŋ|prenant|I'm taking a photo.|Je prends une photo.|take
+easy|adjective|A1|ˈiːzi|facile|The test was easy.|Le test était facile.
+times|noun|A2|taɪmz|fois, époque|I've seen it three times.|Je l'ai vu trois fois.|time
+check|verb|A2|tʃek|vérifier|Check your email.|Vérifie tes e-mails.
+hands|noun|A1|hændz|mains|Wash your hands.|Lave-toi les mains.|hand
+minutes|noun|A1|ˈmɪnɪts|minutes|It takes ten minutes.|Cela prend dix minutes.|minute
+deal|noun|B1|diːl|accord, affaire|It's a deal!|Marché conclu !
+different|adjective|A1|ˈdɪfrənt|différent|We have different opinions.|Nous avons des avis différents.
+means|verb|A2|miːnz|signifie|What does it mean? It means "house".|Que signifie-t-il ? Il signifie « maison ».|mean
+point|noun|B1|pɔɪnt|point, intérêt|I see your point.|Je vois ce que tu veux dire.
+inside|preposition|A2|ɪnˈsaɪd|à l'intérieur|Let's go inside.|Rentrons à l'intérieur.
+makes|verb|A1|meɪks|fait|This song makes me happy.|Cette chanson me rend heureux.|make
+asked|verb|A1|ɑːskt|demandé|She asked a question.|Elle a posé une question.|ask
+somebody|pronoun|A2|ˈsʌmbədi|quelqu'un|Somebody called you.|Quelqu'un t'a appelé.
+mine|pronoun|A2|maɪn|le mien|This book is mine.|Ce livre est à moi.
+making|verb|A2|ˈmeɪkɪŋ|faisant|I'm making dinner.|Je prépare le dîner.|make
+body|noun|A2|ˈbɒdi|corps|Exercise is good for the body.|Le sport est bon pour le corps.
+afraid|adjective|A2|əˈfreɪd|effrayé|I'm afraid of spiders.|J'ai peur des araignées.
+sleep|verb|A1|sliːp|dormir|I need to sleep.|J'ai besoin de dormir.
+chance|noun|B1|tʃɑːns|chance, occasion|Give me a chance.|Donne-moi une chance.
+dear|adjective|A1|dɪə|cher|Dear Anna, thank you for your letter.|Chère Anna, merci pour ta lettre.
+quite|adverb|B1|kwaɪt|assez, tout à fait|It's quite cold today.|Il fait assez froid aujourd'hui.
+four|determiner|A1|fɔː|quatre|There are four chairs.|Il y a quatre chaises.
+anyway|adverb|B1|ˈeniweɪ|de toute façon|Anyway, let's start.|Bref, commençons.
+close|verb|A2|kləʊz|fermer|Please close the door.|Ferme la porte, s'il te plaît.
+party|noun|A1|ˈpɑːti|fête|We are going to a party.|Nous allons à une fête.
+fun|noun|A1|fʌn|amusement|The trip was fun.|Le voyage était amusant.
+against|preposition|B1|əˈɡenst|contre|I'm against this idea.|Je suis contre cette idée.
+word|noun|A1|wɜːd|mot|I don't know this word.|Je ne connais pas ce mot.
+comes|verb|A1|kʌmz|vient|He comes from Italy.|Il vient d'Italie.|come
+important|adjective|A2|ɪmˈpɔːtnt|important|English is important.|L'anglais est important.
+set|verb|B1|set|mettre, régler|Set the table, please.|Mets la table, s'il te plaît.
+shall|modal|B1|ʃæl|(proposition)|Shall we go?|On y va ?
+story|noun|A2|ˈstɔːri|histoire|Tell me a story.|Raconte-moi une histoire.
+number|noun|A1|ˈnʌmbə|numéro, nombre|What's your phone number?|Quel est ton numéro de téléphone ?
+daughter|noun|A1|ˈdɔːtə|fille|Their daughter is ten.|Leur fille a dix ans.
+least|determiner|B1|liːst|le moins|At least you tried.|Au moins tu as essayé.
+waiting|verb|A2|ˈweɪtɪŋ|attendant|I'm waiting for the bus.|J'attends le bus.|wait
+hurt|verb|B1|hɜːt|blesser, avoir mal|My foot hurts.|J'ai mal au pied.
+wish|verb|B1|wɪʃ|souhaiter|I wish you a happy birthday.|Je te souhaite un joyeux anniversaire.
+moment|noun|A2|ˈməʊmənt|moment|Just a moment, please.|Un instant, s'il vous plaît.
+fight|noun|B1|faɪt|bagarre, lutte|They had a fight.|Ils se sont disputés.
+week|noun|A1|wiːk|semaine|I work five days a week.|Je travaille cinq jours par semaine.
+husband|noun|A1|ˈhʌzbənd|mari|Her husband is a chef.|Son mari est cuisinier.
+girls|noun|A1|ɡɜːlz|filles|The girls are singing.|Les filles chantent.|girl
+rest|noun|B1|rest|repos, reste|Take a rest.|Repose-toi.
+married|adjective|A2|ˈmærid|marié|They got married last year.|Ils se sont mariés l'année dernière.
+fire|noun|A2|ˈfaɪə|feu, incendie|Be careful with the fire.|Fais attention au feu.
+game|noun|A1|ɡeɪm|jeu, match|Let's play a game.|Jouons à un jeu.
+nobody|pronoun|A2|ˈnəʊbədi|personne|Nobody knows the answer.|Personne ne connaît la réponse.
+children|noun|A1|ˈtʃɪldrən|enfants|The children are at school.|Les enfants sont à l'école.|child
+side|noun|A2|saɪd|côté|Sit by my side.|Assieds-toi à mes côtés.
+stand|verb|A2|stænd|se tenir debout, supporter|Please stand up.|Levez-vous, s'il vous plaît.
+read|verb|A1|riːd|lire|I read before bed.|Je lis avant de dormir.
+though|conjunction|B1|ðəʊ|bien que, pourtant|It was cold, though sunny.|Il faisait froid, bien qu'ensoleillé.
+cut|verb|A2|kʌt|couper|Cut the bread, please.|Coupe le pain, s'il te plaît.
+started|verb|A1|ˈstɑːtɪd|commencé|The film started late.|Le film a commencé tard.|start
+sister|noun|A1|ˈsɪstə|sœur|My sister lives in Rome.|Ma sœur habite à Rome.
+supposed|adjective|B2|səˈpəʊzd|censé|You are supposed to wait here.|Tu es censé attendre ici.
+between|preposition|A2|bɪˈtwiːn|entre|The bank is between the school and the park.|La banque est entre l'école et le parc.
+child|noun|A1|tʃaɪld|enfant|The child is five years old.|L'enfant a cinq ans.
+goes|verb|A1|ɡəʊz|va|She goes to work by train.|Elle va au travail en train.|go
+hours|noun|A1|ˈaʊəz|heures|I slept for eight hours.|J'ai dormi huit heures.|hour
+speak|verb|A1|spiːk|parler|Do you speak English?|Parlez-vous anglais ?
+women|noun|A1|ˈwɪmɪn|femmes|The women are talking.|Les femmes discutent.|woman
+behind|preposition|A2|bɪˈhaɪnd|derrière|The cat is behind the sofa.|Le chat est derrière le canapé.
+almost|adverb|A2|ˈɔːlməʊst|presque|It's almost ready.|C'est presque prêt.
+truth|noun|B1|truːθ|vérité|Tell me the truth.|Dis-moi la vérité.
+blood|noun|B1|blʌd|sang|The nurse took some blood.|L'infirmière a prélevé du sang.
+able|adjective|B1|ˈeɪbl|capable|She is able to swim.|Elle est capable de nager.
+lady|noun|A2|ˈleɪdi|dame|The lady is waiting for you.|La dame vous attend.
+anymore|adverb|B1|ˌenɪˈmɔː|plus (maintenant)|I don't live there anymore.|Je n'habite plus là-bas.
+playing|verb|A1|ˈpleɪɪŋ|jouant|The kids are playing outside.|Les enfants jouent dehors.|play
+gets|verb|A1|ɡets|obtient, devient|It gets cold at night.|Il fait froid la nuit.|get
+shot|noun|B2|ʃɒt|coup de feu, photo, tir|It was a great shot.|C'était un super tir.
+reason|noun|A2|ˈriːzn|raison|What's the reason?|Quelle est la raison ?
+trouble|noun|B1|ˈtrʌbl|ennui, problème|I'm in trouble.|J'ai des ennuis.
+break|verb|A2|breɪk|casser, pause|Don't break the glass.|Ne casse pas le verre.
+war|noun|A2|wɔː|guerre|The war ended in 1945.|La guerre s'est terminée en 1945.
+city|noun|A1|ˈsɪti|ville|Paris is a big city.|Paris est une grande ville.
+walk|verb|A1|wɔːk|marcher|I walk to school.|Je vais à l'école à pied.
+town|noun|A1|taʊn|ville (petite), centre-ville|I live in a small town.|J'habite dans une petite ville.
+trust|verb|B1|trʌst|faire confiance|I trust you.|Je te fais confiance.
+met|verb|A2|met|rencontré|We met in London.|Nous nous sommes rencontrés à Londres.|meet
+office|noun|A1|ˈɒfɪs|bureau|I work in an office.|Je travaille dans un bureau.
+question|noun|A1|ˈkwestʃən|question|I have a question.|J'ai une question.
+brought|verb|A2|brɔːt|apporté|She brought some cake.|Elle a apporté du gâteau.|bring
+yours|pronoun|A2|jɔːz|le tien, le vôtre|Is this pen yours?|Ce stylo est-il à toi ?
+welcome|adjective|A1|ˈwelkəm|bienvenu|You're welcome!|De rien !
+high|adjective|A1|haɪ|haut|The mountain is very high.|La montagne est très haute.
+couple|noun|B1|ˈkʌpl|couple, deux|A young couple lives next door.|Un jeune couple habite à côté.
+half|noun|A2|hɑːf|moitié, demi|Half of the class is absent.|La moitié de la classe est absente.
+died|verb|A2|daɪd|mort (verbe)|He died in 2010.|Il est mort en 2010.|die
+cool|adjective|A2|kuːl|cool, frais|That's cool!|C'est cool !
+free|adjective|A2|friː|libre, gratuit|Are you free tonight?|Es-tu libre ce soir ?
+either|adverb|B1|ˈaɪðə|non plus, l'un ou l'autre|I don't like it either.|Je ne l'aime pas non plus.
+seems|verb|B1|siːmz|semble|It seems easy.|Cela semble facile.|seem
+power|noun|B1|ˈpaʊə|pouvoir, puissance|Knowledge is power.|Savoir, c'est pouvoir.
+bye|interjection|A1|baɪ|au revoir|Bye, see you tomorrow!|Au revoir, à demain !
+buy|verb|A1|baɪ|acheter|I want to buy a new phone.|Je veux acheter un nouveau téléphone.
+telling|verb|A2|ˈtelɪŋ|disant, racontant|He is telling a joke.|Il raconte une blague.|tell
+honey|noun|A2|ˈhʌni|miel, chéri(e)|I put honey in my tea.|Je mets du miel dans mon thé.
+tried|verb|A2|traɪd|essayé|I tried the soup.|J'ai goûté la soupe.|try
+front|noun|A2|frʌnt|devant, façade|He sits in the front.|Il s'assied devant.
+team|noun|A2|tiːm|équipe|Our team won.|Notre équipe a gagné.
+answer|noun|A1|ˈɑːnsə|réponse|I know the answer.|Je connais la réponse.
+gun|noun|B1|ɡʌn|arme à feu, pistolet|The police officer has a gun.|Le policier a une arme.
+boys|noun|A1|bɔɪz|garçons|The boys are playing.|Les garçons jouent.|boy
+line|noun|A2|laɪn|ligne, file|Please stand in line.|Faites la queue, s'il vous plaît.
+send|verb|A1|send|envoyer|Send me a message.|Envoie-moi un message.
+news|noun|A2|njuːz|nouvelles, actualités|I have good news.|J'ai une bonne nouvelle.
+stupid|adjective|B1|ˈstjuːpɪd|stupide|That was a stupid mistake.|C'était une erreur stupide.
+bed|noun|A1|bed|lit|I go to bed at ten.|Je me couche à dix heures.
+hurry|verb|B1|ˈhʌri|se dépêcher|Hurry up, we're late!|Dépêche-toi, on est en retard !
+full|adjective|A2|fʊl|plein, rassasié|I'm full, thanks.|Je n'ai plus faim, merci.
+months|noun|A1|mʌnθs|mois|I lived there for six months.|J'y ai vécu six mois.|month
+save|verb|B1|seɪv|sauver, économiser|I save money every month.|J'économise de l'argent chaque mois.
+sometimes|adverb|A1|ˈsʌmtaɪmz|parfois|Sometimes I walk to work.|Parfois je vais au travail à pied.
+become|verb|B1|bɪˈkʌm|devenir|She wants to become a doctor.|Elle veut devenir médecin.
+along|preposition|B1|əˈlɒŋ|le long de|We walked along the river.|Nous avons marché le long de la rivière.
+hate|verb|A2|heɪt|détester|I hate waiting.|Je déteste attendre.
+food|noun|A1|fuːd|nourriture|I love Italian food.|J'adore la cuisine italienne.
+outside|adverb|A2|ˌaʊtˈsaɪd|dehors|The kids are playing outside.|Les enfants jouent dehors.
+light|noun|A2|laɪt|lumière, léger|Turn on the light.|Allume la lumière.
+needs|verb|A1|niːdz|a besoin de|She needs a holiday.|Elle a besoin de vacances.|need
+dog|noun|A1|dɒɡ|chien|I have a small dog.|J'ai un petit chien.
+country|noun|A1|ˈkʌntri|pays, campagne|France is a beautiful country.|La France est un beau pays.
+clear|adjective|B1|klɪə|clair|The instructions are clear.|Les instructions sont claires.
+order|noun|B1|ˈɔːdə|commande, ordre|Can I take your order?|Puis-je prendre votre commande ?
+fact|noun|B1|fækt|fait|It's a fact.|C'est un fait.
+captain|noun|B1|ˈkæptɪn|capitaine|The captain spoke to the crew.|Le capitaine a parlé à l'équipage.
+six|determiner|A1|sɪks|six|I wake up at six.|Je me réveille à six heures.
+hot|adjective|A1|hɒt|chaud|It's very hot today.|Il fait très chaud aujourd'hui.

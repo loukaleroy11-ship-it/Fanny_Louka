@@ -1,0 +1,490 @@
+// Lingua — database schema (PostgreSQL)
+//
+// Design notes
+// - `Vocabulary` is the *global lexicon* (a word exists once, independent of any learner).
+//   Words typed by a learner live in the same table with `ownerId` set (private entries).
+// - `Flashcard` is a learner's card for one Vocabulary entry; it carries the FSRS scheduling
+//   state. One card per (user, vocabulary) — decks are views through `DeckCard`, so a word that
+//   is in several decks is never reviewed twice.
+// - `lemmaId` links inflected forms (went → go) without treating them as identical entries.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Level {
+  A1
+  A2
+  B1
+  B2
+  C1
+  C2
+}
+
+enum Accent {
+  US
+  UK
+}
+
+enum PartOfSpeech {
+  NOUN
+  VERB
+  ADJECTIVE
+  ADVERB
+  PRONOUN
+  PREPOSITION
+  CONJUNCTION
+  DETERMINER
+  AUXILIARY
+  MODAL
+  PHRASAL_VERB
+  EXPRESSION
+  INTERJECTION
+}
+
+enum CardOrigin {
+  COMMON500
+  CATALOG
+  USER
+  AI
+  MISTAKE
+  IMPORT
+}
+
+enum DeckKind {
+  COMMON500
+  MISTAKES
+  CUSTOM
+  CATALOG
+}
+
+enum SkillArea {
+  VOCABULARY
+  GRAMMAR
+  READING
+  LISTENING
+  WRITING
+  SPEAKING
+}
+
+enum MistakeCategory {
+  GRAMMAR
+  VOCABULARY
+  PREPOSITION
+  SPELLING
+  PRONUNCIATION
+  WORD_ORDER
+  OTHER
+}
+
+enum MistakeSource {
+  CONVERSATION
+  EXERCISE
+  PLACEMENT
+  MANUAL
+}
+
+enum MessageRole {
+  USER
+  ASSISTANT
+}
+
+enum SessionKind {
+  REVIEW
+  CONVERSATION
+  GRAMMAR
+  PLACEMENT
+}
+
+enum CognateKind {
+  COGNATE
+  FALSE_FRIEND
+}
+
+model User {
+  id               String   @id @default(cuid())
+  email            String   @unique
+  passwordHash     String
+  name             String
+  createdAt        DateTime @default(now())
+
+  // learning profile
+  level            Level    @default(A1)
+  goal             String   @default("Parler anglais au quotidien")
+  dailyMinutes     Int      @default(15)
+  dailyNewCards    Int      @default(5)
+  dailyReviewCards Int      @default(20)
+  dailyConversations Int    @default(1)
+  placementDone    Boolean  @default(false)
+  timezone         String   @default("Europe/Paris")
+
+  // preferences
+  accent           Accent   @default(US)
+  voiceGender      String   @default("female")
+  speechRate       Float    @default(1)
+  englishOnly      Boolean  @default(false)
+  autoAddMistakes  Boolean  @default(false)
+  theme            String   @default("system")
+  desiredRetention Float    @default(0.9)
+
+  // gamification
+  xp               Int      @default(0)
+  streak           Int      @default(0)
+  longestStreak    Int      @default(0)
+  lastActiveDate   DateTime? @db.Date
+
+  decks            Deck[]
+  flashcards       Flashcard[]
+  reviews          Review[]
+  vocabulary       Vocabulary[]
+  conversations    Conversation[]
+  mistakes         Mistake[]
+  userSkills       UserSkill[]
+  skillEstimates   SkillEstimate[]
+  dailyGoals       DailyGoal[]
+  achievements     Achievement[]
+  sessions         LearningSession[]
+  exerciseResults  ExerciseResult[]
+  passwordResets   PasswordReset[]
+}
+
+model PasswordReset {
+  id        String    @id @default(cuid())
+  userId    String
+  tokenHash String    @unique
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+// ── Lexicon ────────────────────────────────────────────────────────────────
+
+model Vocabulary {
+  id                 String       @id @default(cuid())
+  word               String
+  normalized         String       // lower-case, trimmed, single-spaced, punctuation-stripped
+  ownerId            String?      // null = global entry; set = private entry of that learner
+  lemmaId            String?
+  pos                PartOfSpeech
+  category           String       // human label shown in the UI ("Noun", "Modal verb"...)
+  level              Level
+  translation        String
+  ipa                String?
+  pronunciation      String?      // respelling hint, optional
+  example            String?
+  exampleTranslation String?
+  definition         String?
+  synonyms           String[]
+  antonyms           String[]
+  collocations       String[]
+  related            String[]
+  tags               String[]
+  pastSimple         String?
+  pastParticiple     String?
+  verbRank           Int?         // rank among the most common verbs (summed frequency of all forms)
+  createdAt          DateTime     @default(now())
+
+  owner      User?                @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+  lemma      Vocabulary?          @relation("Lemma", fields: [lemmaId], references: [id], onDelete: SetNull)
+  forms      Vocabulary[]         @relation("Lemma")
+  frequency  VocabularyFrequency?
+  flashcards Flashcard[]
+
+  @@unique([normalized, pos, ownerId])
+  @@index([normalized])
+  @@index([ownerId])
+  @@index([lemmaId])
+}
+
+model VocabularyFrequency {
+  id           String     @id @default(cuid())
+  vocabularyId String     @unique
+  source       String     // e.g. "opensubtitles-2018-en"
+  rank         Int
+  count        Int
+  vocabulary   Vocabulary @relation(fields: [vocabularyId], references: [id], onDelete: Cascade)
+
+  @@index([rank])
+}
+
+model Cognate {
+  id        String      @id @default(cuid())
+  english   String
+  french    String      // French word that looks alike
+  kind      CognateKind
+  meaning   String      // true French meaning of the English word (matters for false friends)
+  note      String?
+  example   String?
+  level     Level       @default(A2)
+
+  @@unique([english, kind])
+}
+
+// ── Decks & cards ──────────────────────────────────────────────────────────
+
+model Deck {
+  id          String   @id @default(cuid())
+  userId      String
+  name        String
+  description String?
+  kind        DeckKind @default(CUSTOM)
+  catalogKey  String?
+  createdAt   DateTime @default(now())
+
+  user  User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  cards DeckCard[]
+
+  @@unique([userId, name])
+  @@index([userId, kind])
+}
+
+model Flashcard {
+  id           String     @id @default(cuid())
+  userId       String
+  vocabularyId String
+  origin       CardOrigin
+  tags         String[]
+  note         String?
+  createdAt    DateTime   @default(now())
+
+  // FSRS scheduling state (state: 0 New, 1 Learning, 2 Review, 3 Relearning)
+  state         Int       @default(0)
+  due           DateTime  @default(now())
+  stability     Float     @default(0)
+  difficulty    Float     @default(0)
+  elapsedDays   Int       @default(0)
+  scheduledDays Int       @default(0)
+  learningSteps Int       @default(0)
+  reps          Int       @default(0)
+  lapses        Int       @default(0)
+  lastReview    DateTime?
+  suspended     Boolean   @default(false)
+
+  user       User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  vocabulary Vocabulary @relation(fields: [vocabularyId], references: [id], onDelete: Cascade)
+  decks      DeckCard[]
+  reviews    Review[]
+  mistakes   Mistake[]
+
+  @@unique([userId, vocabularyId])
+  @@index([userId, state, due])
+  @@index([userId, origin])
+}
+
+model DeckCard {
+  deckId      String
+  flashcardId String
+  addedAt     DateTime @default(now())
+
+  deck      Deck      @relation(fields: [deckId], references: [id], onDelete: Cascade)
+  flashcard Flashcard @relation(fields: [flashcardId], references: [id], onDelete: Cascade)
+
+  @@id([deckId, flashcardId])
+  @@index([flashcardId])
+}
+
+model Review {
+  id            String   @id @default(cuid())
+  userId        String
+  flashcardId   String
+  sessionId     String?
+  rating        Int      // 1 Again, 2 Hard, 3 Good, 4 Easy
+  stateBefore   Int
+  stateAfter    Int
+  stabilityAfter  Float
+  difficultyAfter Float
+  scheduledDays Int
+  elapsedDays   Int
+  dueAfter      DateTime
+  durationMs    Int      @default(0)
+  reviewedAt    DateTime @default(now())
+
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  flashcard Flashcard @relation(fields: [flashcardId], references: [id], onDelete: Cascade)
+
+  @@index([userId, reviewedAt])
+  @@index([flashcardId, reviewedAt])
+}
+
+// ── Conversations & mistakes ───────────────────────────────────────────────
+
+model Conversation {
+  id          String    @id @default(cuid())
+  userId      String
+  scenario    String
+  level       Level
+  englishOnly Boolean   @default(false)
+  mock        Boolean   @default(false)
+  startedAt   DateTime  @default(now())
+  endedAt     DateTime?
+  durationSec Int       @default(0)
+  wordsSpoken Int       @default(0)
+  report      Json?
+
+  user     User                  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  messages ConversationMessage[]
+  mistakes Mistake[]
+
+  @@index([userId, startedAt])
+}
+
+model ConversationMessage {
+  id             String      @id @default(cuid())
+  conversationId String
+  role           MessageRole
+  content        String
+  viaVoice       Boolean     @default(false)
+  sttConfidence  Float?      // speech-recognition confidence (0..1) for voice messages
+  correction     Json?       // { original, corrected, explanation, category, skill }
+  createdAt      DateTime    @default(now())
+
+  conversation Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+
+  @@index([conversationId, createdAt])
+}
+
+model Mistake {
+  id             String          @id @default(cuid())
+  userId         String
+  category       MistakeCategory
+  skillId        String?
+  original       String
+  corrected      String
+  explanation    String
+  source         MistakeSource
+  conversationId String?
+  flashcardId    String?         // card generated from this mistake
+  createdAt      DateTime        @default(now())
+
+  user         User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  skill        GrammarSkill? @relation(fields: [skillId], references: [id], onDelete: SetNull)
+  conversation Conversation? @relation(fields: [conversationId], references: [id], onDelete: SetNull)
+  flashcard    Flashcard?    @relation(fields: [flashcardId], references: [id], onDelete: SetNull)
+
+  @@index([userId, createdAt])
+  @@index([userId, skillId])
+}
+
+// ── Skills & level estimation ──────────────────────────────────────────────
+
+model GrammarSkill {
+  id          String  @id @default(cuid())
+  slug        String  @unique
+  name        String
+  description String
+  level       Level
+  lessonSlug  String? // grammar lesson that trains this skill
+
+  userSkills UserSkill[]
+  mistakes   Mistake[]
+}
+
+model UserSkill {
+  id        String   @id @default(cuid())
+  userId    String
+  skillId   String
+  attempts  Int      @default(0)
+  correct   Int      @default(0)
+  mistakes  Int      @default(0)
+  mastery   Float    @default(0.5) // 0..1, smoothed success rate
+  priority  Float    @default(0)   // grows with recurring mistakes, decays with success
+  updatedAt DateTime @updatedAt
+
+  user  User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  skill GrammarSkill @relation(fields: [skillId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, skillId])
+  @@index([userId, priority])
+}
+
+// Level estimate per language skill on a continuous scale: 0 = bottom of A1 … 6 = top of C2.
+model SkillEstimate {
+  id        String    @id @default(cuid())
+  userId    String
+  area      SkillArea
+  value     Float     @default(0.5)
+  evidence  Int       @default(0)
+  updatedAt DateTime  @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, area])
+}
+
+// ── Goals, gamification, sessions ──────────────────────────────────────────
+
+model DailyGoal {
+  id                String   @id @default(cuid())
+  userId            String
+  date              DateTime @db.Date
+  targetMinutes     Int
+  targetCards       Int
+  targetNewWords    Int
+  targetConversations Int
+  seconds           Int      @default(0)
+  cardsReviewed     Int      @default(0)
+  newWords          Int      @default(0)
+  conversations     Int      @default(0)
+  exercises         Int      @default(0)
+  mistakeCards      Int      @default(0)
+  hardCards         Int      @default(0)
+  convSeconds       Int      @default(0)
+  xpEarned          Int      @default(0)
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, date])
+}
+
+model Achievement {
+  id         String   @id @default(cuid())
+  userId     String
+  code       String
+  unlockedAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, code])
+}
+
+model LearningSession {
+  id          String      @id @default(cuid())
+  userId      String
+  kind        SessionKind
+  startedAt   DateTime    @default(now())
+  endedAt     DateTime?
+  durationSec Int         @default(0)
+  items       Int         @default(0)
+  correct     Int         @default(0)
+  xp          Int         @default(0)
+  meta        Json?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, startedAt])
+}
+
+model ExerciseResult {
+  id         String   @id @default(cuid())
+  userId     String
+  lessonSlug String
+  exerciseId String
+  type       String
+  correct    Boolean
+  answer     String
+  skillSlug  String?
+  createdAt  DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, lessonSlug])
+  @@index([userId, createdAt])
+}
