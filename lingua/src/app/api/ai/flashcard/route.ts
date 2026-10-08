@@ -13,3 +13,6 @@ export const POST = route(
   },
   { ai: true },
 );
+
+// AI calls can take a while on serverless hosts (Vercel default is 10 s)
+export const maxDuration = 60;
