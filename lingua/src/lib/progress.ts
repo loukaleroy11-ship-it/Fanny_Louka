@@ -11,6 +11,7 @@ export interface Activity {
   mistakeCards?: number;
   hardCards?: number;
   convSeconds?: number;
+  oral?: number;
   xp?: number;
   perfectLesson?: boolean;
 }
@@ -59,6 +60,7 @@ export async function recordActivity(userId: string, a: Activity, now = new Date
       mistakeCards: { increment: a.mistakeCards ?? 0 },
       hardCards: { increment: a.hardCards ?? 0 },
       convSeconds: { increment: Math.round(a.convSeconds ?? 0) },
+      oralItems: { increment: a.oral ?? 0 },
       xpEarned: { increment: xp },
     },
   });

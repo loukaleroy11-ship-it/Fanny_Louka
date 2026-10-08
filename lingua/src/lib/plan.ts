@@ -8,7 +8,7 @@ import { HARD_DIFFICULTY, HARD_LAPSES } from "./fsrs";
 
 export interface PlanItem {
   id: string;
-  kind: "review" | "new" | "hard" | "mistakes" | "conversation" | "grammar";
+  kind: "review" | "new" | "hard" | "mistakes" | "conversation" | "grammar" | "oral";
   icon: string;
   title: string;
   detail: string;
@@ -25,7 +25,7 @@ export interface DailyPlan {
   targetMinutes: number;
 }
 
-const MIN_PER = { review: 0.4, new: 1, hard: 0.6, mistakes: 0.6, grammar: 0.8 };
+const MIN_PER = { review: 0.4, new: 1, hard: 0.6, mistakes: 0.6, grammar: 0.8, oral: 0.6 };
 
 /**
  * Builds today's plan from level, recurring mistakes, time budget, backlog and recent accuracy.
@@ -58,11 +58,12 @@ export async function generatePlan(userId: string, now = new Date()): Promise<Da
 
   const reviewDue = Math.max(0, dueTotal - dueMistakes);
   const grammarTarget = budget >= 10 ? 5 : 0;
+  const oralTarget = budget >= 10 ? 8 : 4;
   const hardTarget = Math.min(5, hardCount);
   const mistakeTarget = Math.min(8, dueMistakes + newMistakes);
   const reviewTarget = Math.min(reviewDue, user.dailyReviewCards, Math.floor(reviewMin / MIN_PER.review));
   // New words fill whatever time is left once the essentials are planned (at least 2 when the budget allows).
-  const planned = convMin + reviewTarget * MIN_PER.review + hardTarget * MIN_PER.hard + mistakeTarget * MIN_PER.mistakes + grammarTarget * MIN_PER.grammar;
+  const planned = convMin + oralTarget * MIN_PER.oral + reviewTarget * MIN_PER.review + hardTarget * MIN_PER.hard + mistakeTarget * MIN_PER.mistakes + grammarTarget * MIN_PER.grammar;
   const leftover = Math.max(0, budget - planned);
   let newTarget = Math.min(newAvail, user.dailyNewCards, Math.max(budget >= 10 ? 2 : 1, Math.floor(leftover / MIN_PER.new)));
   // adaptivity: heavy backlog or poor accuracy → fewer new words; excellent accuracy → a couple more
@@ -90,6 +91,10 @@ export async function generatePlan(userId: string, now = new Date()): Promise<Da
       detail: `${scenario.emoji} ${scenario.label}`, target: convMin, done: Math.floor(goal.convSeconds / 60), minutes: convMin,
       href: `/conversation?scenario=${scenario.id}`,
     });
+  items.push({
+    id: "oral", kind: "oral", icon: "🎧", title: `${oralTarget} phrases à l'oral`, detail: "Écouter, comprendre, répéter à voix haute",
+    target: oralTarget, done: goal.oralItems, minutes: Math.round(oralTarget * MIN_PER.oral), href: "/oral",
+  });
   if (reviewTarget > 0)
     items.push({
       id: "review", kind: "review", icon: "📚", title: `${reviewTarget} flashcards à réviser`, detail: `${reviewDue} cartes dues aujourd'hui`,

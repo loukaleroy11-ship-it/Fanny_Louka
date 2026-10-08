@@ -14,6 +14,24 @@ L'application apprend ce que vous savez, vos erreurs et votre niveau, puis déci
 > | E-mail « mot de passe oublié » | **Réel avec `RESEND_API_KEY`**. Sans clé, le lien est affiché dans les logs serveur et (hors production) dans l'interface. |
 > | Rate limiting | En mémoire, **par instance** (suffisant pour 1 serveur ; remplacer par Redis/Upstash en multi-instances). L'IP est lue dans `X-Forwarded-For` : à déployer derrière un reverse-proxy de confiance qui écrase cet en-tête. |
 
+## Objectif : l'oral
+
+Lingua est pensé pour **comprendre l'anglais parlé et le parler** :
+
+* **AI Conversation** — le professeur rebondit sur *ce que vous dites* (détails, fil de la discussion), vous corrige discrètement, et **reprend les affirmations fausses** (« Paris is the capital of Italy »). Micro, voix, vitesse 0.75–1.5×. **Mode écoute** (icône oreille) : le texte du professeur est masqué, vous ne faites que l'écouter (relecture normale ou lente, texte à la demande).
+* **Oral** (`/oral`) — *Écoute & écris* (dictée : compréhension orale) et *Écoute & répète* (vous répétez à voix haute, le micro transcrit, vous voyez mot par mot ce qui est passé). Ces exercices alimentent les niveaux **Listening** et **Speaking**, et le plan du jour contient « N phrases à l'oral ».
+* Les flashcards ont leur bouton 🔊 (mot et phrase, US/UK) et l'option de lecture automatique.
+
+> Limites : la répétition est notée par la reconnaissance vocale du navigateur (elle mesure l'intelligibilité, pas la qualité exacte de l'accent). En mode démo (sans clé IA), « rebondir sur ce que vous dites » et le contrôle des faits se limitent à des règles simples ; la vraie conversation nécessite `ANTHROPIC_API_KEY`.
+
+## Mode une seule personne
+
+La création de compte est **fermée par défaut**. Créez votre compte une fois :
+```bash
+npm run user:create -- "vous@exemple.com" "votre-mot-de-passe" "Votre prénom"
+```
+(`ALLOW_REGISTRATION="true"` dans `.env` rouvre la page d'inscription.) À chaque connexion, les decks système et les 500 cartes sont réparés automatiquement s'ils manquent.
+
 ## Sommaire
 
 1. [Choix techniques](#1-choix-techniques)
@@ -115,12 +133,12 @@ Pour utiliser un autre fournisseur : modifiez uniquement `src/lib/ai/llm.ts` (fo
 ## 6. Tests
 
 ```bash
-npm test                 # 83 tests unitaires (FSRS, filtres, normalisation, CSV, correcteur démo, chemin LLM sur API simulée, intégrité des données…)
+npm test                 # 86 tests unitaires (FSRS, filtres, normalisation, CSV, correcteur démo, chemin LLM sur API simulée, intégrité des données…)
 npm run typecheck        # tsc --noEmit
 npm run build            # build de production
 # Parcours complets (serveur lancé et seedé : npm run dev, ou npm run build && npm start)
-npm run e2e              # 188 vérifications API contre la vraie base (184 sur un build de production : le lien de reset n'y est volontairement pas exposé)
-CHROMIUM_PATH=/chemin/vers/chrome npm run e2e:ui   # 107 vérifications dans un vrai navigateur (Playwright), mobile compris
+npm run e2e              # 198 vérifications API contre la vraie base (184 sur un build de production : le lien de reset n'y est volontairement pas exposé)
+CHROMIUM_PATH=/chemin/vers/chrome npm run e2e:ui   # 116 vérifications dans un vrai navigateur (Playwright), mobile compris
 ```
 
 > **Limite à connaître** : sans clé, le chemin « vraie IA » n'a été testé que contre une **API Anthropic simulée** (`tests/llm-live-path.test.ts` : forme de la requête, normalisation des messages, validation du JSON, repli en mode démo). Le comportement réel du modèle n'a **pas** été vérifié ici.

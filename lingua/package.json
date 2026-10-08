@@ -16,7 +16,8 @@
     "db:reset": "prisma migrate reset --force",
     "e2e": "tsx scripts/e2e.ts",
     "e2e:ui": "tsx scripts/e2e-ui.ts",
-    "screens": "tsx scripts/shots.ts"
+    "screens": "tsx scripts/shots.ts",
+    "user:create": "tsx scripts/create-user.ts"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"

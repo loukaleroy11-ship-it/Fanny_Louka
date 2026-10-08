@@ -215,6 +215,34 @@ const GENERIC_Q = ["Can you tell me more about that?", "Why do you think so?", "
 const ADVANCED_Q = ["What would you do differently if you could start again?", "Do you think most people would agree with you? Why?"];
 const SIMPLE_Q = ["Do you like it?", "Can you tell me more?", "What is your favourite thing?"];
 
+const STOP = new Set(("i you he she it we they me my your his her our their the a an and or but so because if then than that this those these to of in on at for with from by about into over after before up down out very really just also too not no yes was were is are am be been being do did does done have has had will would can could should must may might go went going like liked want wanted get got make made think know see saw say said tell told yesterday today tomorrow last night week weekend day time good bad nice great fine okay ok lot some any much many more most thing things something nothing here there what when where why how who which while again always never sometimes usually often").split(" "));
+
+/** Most telling content word of a message ("I went to the beach with Tom" → "beach"), used to react to what was said. */
+export function topicOf(text: string): string | null {
+  const words = (text.toLowerCase().match(/[a-z]{4,}/g) ?? []).filter((w) => !STOP.has(w) && !w.endsWith("ing") && !w.endsWith("ly"));
+  if (!words.length) return null;
+  return words.sort((a, b) => b.length - a.length)[0];
+}
+
+const CAPITALS: Record<string, string> = { france: "Paris", italy: "Rome", spain: "Madrid", germany: "Berlin", england: "London", "the uk": "London", japan: "Tokyo", portugal: "Lisbon", australia: "Canberra", canada: "Ottawa", china: "Beijing", egypt: "Cairo", brazil: "Brasília", "the usa": "Washington, D.C.", belgium: "Brussels", switzerland: "Bern" };
+
+/** Demo-mode "reality check": a handful of well-known facts. Real fact-checking needs the LLM. */
+export function mockFactCheck(text: string): string | null {
+  const m = text.match(/\b([A-Z][\w'’-]+(?: [A-Z][\w'’-]+)?) is the capital (?:city )?of (the )?([A-Za-z]+(?: [A-Za-z]+)?)/i);
+  if (m) {
+    const country = ((m[2] ? "the " : "") + m[3]).toLowerCase().replace(/\.$/, "");
+    const real = CAPITALS[country] ?? CAPITALS[m[3].toLowerCase()];
+    if (real && real.toLowerCase() !== m[1].toLowerCase()) return `Actually, the capital of ${m[2] ? "the " : ""}${m[3]} is ${real}, not ${m[1]}.`;
+  }
+  if (/\bsun (rises|rose) in the (west|north|south)\b/i.test(text)) return "Actually, the sun rises in the east.";
+  if (/\b(earth|world) is flat\b/i.test(text)) return "Hmm, the Earth is round, actually — but I'm curious why you say that.";
+  if (/\b(\d+) ?\+ ?(\d+) ?(=|is|equals) ?(\d+)\b/.test(text)) {
+    const [, a, b, , r] = text.match(/(\d+) ?\+ ?(\d+) ?(=|is|equals) ?(\d+)/)!;
+    if (Number(a) + Number(b) !== Number(r)) return `Careful: ${a} plus ${b} is ${Number(a) + Number(b)}, not ${r}.`;
+  }
+  return null;
+}
+
 export function mockReply(opts: { scenarioId: string; turn: number; level: string; userText: string; name: string }): string {
   const sc = scenarioById(opts.scenarioId) ?? SCENARIOS[0];
   if (opts.turn === 0) return sc.opener.replace(/^Hi!?/, `Hi ${opts.name}!`).slice(0, 300);
@@ -226,8 +254,15 @@ export function mockReply(opts: { scenarioId: string; turn: number; level: strin
     : ["C1", "C2", "B2"].includes(opts.level)
       ? [...sc.questions, ...ADVANCED_Q, ...GENERIC_Q]
       : [...sc.questions, ...GENERIC_Q];
-  const q = words < 3 ? "Can you say a little more? Try a full sentence." : pick(pool, opts.turn - 1);
-  return `${reaction} ${q}`;
+  const topic = topicOf(opts.userText);
+  const fact = mockFactCheck(opts.userText);
+  // Every other turn, build the follow-up on a word the learner actually used.
+  const followUps = topic
+    ? [`What do you like most about the ${topic}?`, `How did the ${topic} make you feel?`, `Who do you usually talk to about the ${topic}?`, `Can you describe the ${topic} for me?`]
+    : [];
+  const q = words < 3 ? "Can you say a little more? Try a full sentence." : topic && opts.turn % 2 === 0 ? pick(followUps, opts.turn) : pick(pool, opts.turn - 1);
+  const ack = topic && words >= 3 ? `${reaction.replace(/[.!?]$/, "")} — the ${topic}!` : reaction;
+  return `${fact ? `${fact} ` : ""}${fact ? "" : ack + " "}${q}`.trim();
 }
 
 // ── level heuristics (mock estimateLevel / analyzeConversation) ────────────

@@ -5,11 +5,13 @@ import { createSession, hashPassword } from "@/lib/auth";
 import { bootstrapUser } from "@/lib/cards";
 import { emailSchema, passwordSchema } from "@/lib/validation";
 import { rateLimit, AUTH_LIMIT } from "@/lib/ratelimit";
+import { registrationOpen } from "@/lib/registration";
 
 const schema = z.object({ name: z.string().trim().min(1, "Nom requis").max(60), email: emailSchema, password: passwordSchema, timezone: z.string().max(60).optional() });
 
 export const POST = route(
   async ({ req }) => {
+    if (!registrationOpen()) throw new ApiError(403, "La création de compte est désactivée.");
     const rl = rateLimit(`register:${clientIp(req)}`, AUTH_LIMIT());
     if (!rl.ok) throw new ApiError(429, `Trop de tentatives. Réessayez dans ${rl.retryAfter}s.`);
     const input = await body(req, schema);

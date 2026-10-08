@@ -218,7 +218,7 @@ async function main() {
   const spokenAi = await page.evaluate(() => (window as any).__spoken.filter((s: any) => s.text.includes("?")));
   check("AI replies are read aloud with TTS (accent/speed from settings)", spokenAi.length >= 1 && ["en-US", "en-GB"].includes(spokenAi.at(-1).lang));
   await page.getByLabel("Vitesse de la voix").selectOption("0.75");
-  await page.getByRole("button", { name: "Replay" }).last().click();
+  await page.getByRole("button", { name: "Replay", exact: true }).last().click();
   await page.waitForTimeout(200);
   check("speech speed 0.75x applied to replay", (await page.evaluate(() => (window as any).__spoken.at(-1).rate)) === 0.75);
   // click-a-word
@@ -262,6 +262,42 @@ async function main() {
   await page.goto(BASE + "/mistakes");
   await page.getByText(/Add to my flashcards|Dans mes flashcards/).first().waitFor({ timeout: 8000 });
   check("wrong exercise answer was stored in My Mistakes", true);
+  section("F2. Oral practice and listening mode");
+  await page.goto(BASE + "/oral");
+  await page.getByRole("button", { name: "Commencer" }).first().click();
+  await page.getByRole("button", { name: "Écouter" }).waitFor();
+  await page.waitForFunction(() => (window as any).__spoken.length >= 1, null, { timeout: 5000 });
+  const dict = await page.evaluate(() => (window as any).__spoken.at(-1).text as string);
+  await page.getByLabel("Phrase entendue").fill(dict);
+  await page.getByRole("button", { name: "Vérifier" }).click();
+  await page.getByText(/Bien joué/).waitFor({ timeout: 8000 });
+  check("dictation: typing exactly what was spoken scores 100 %", await page.getByText("100 %").isVisible());
+  await page.getByRole("button", { name: "Suivant" }).click();
+  await page.getByLabel("Phrase entendue").fill("completely different words here");
+  await page.getByRole("button", { name: "Vérifier" }).click();
+  await page.getByText(/Presque/).waitFor({ timeout: 8000 });
+  check("dictation: wrong answer shows the missed words", await page.getByText("À travailler").isVisible());
+  await page.goto(BASE + "/oral");
+  await page.getByRole("button", { name: "Commencer" }).nth(1).click();
+  await page.getByRole("button", { name: "Speak" }).waitFor();
+  await page.waitForFunction(() => (window as any).__spoken.length >= 1, null, { timeout: 5000 });
+  const model = await page.evaluate(() => (window as any).__spoken.at(-1).text as string);
+  await page.evaluate((t) => { (window as any).__sttText = t; }, model);
+  await page.getByRole("button", { name: "Speak" }).click();
+  await page.getByText(/Bien joué/).waitFor({ timeout: 8000 });
+  check("repeat: the spoken (stubbed) sentence is scored word by word", await page.getByText(/Entendu/).isVisible());
+  await page.goto(BASE + "/conversation");
+  await page.getByRole("button", { name: "Scénario Casual conversation" }).click();
+  await page.waitForURL(/\/conversation\/.+/);
+  await page.getByRole("button", { name: "Mode écoute" }).click();
+  await page.evaluate(() => ((window as any).__spoken.length = 0));
+  await page.reload();
+  await page.getByText("Écoutez le message").first().waitFor();
+  check("listening mode hides the teacher's text", !(await page.getByRole("log").innerText()).includes("How was your day"));
+  await page.getByRole("button", { name: "Afficher le texte" }).first().click();
+  check("…and 'Afficher le texte' reveals it", (await page.getByRole("log").innerText()).length > 20 && !(await page.getByText("Écoutez le message").isVisible().catch(() => false)));
+  check("slow replay button exists", await page.getByRole("button", { name: "Replay lent" }).first().isVisible());
+
   check("no unexpected browser errors on desktop", errors.length === 0, errors);
   await ctx.close();
 
@@ -277,7 +313,7 @@ async function main() {
   await m.getByLabel("Mot de passe").fill("password123");
   await m.getByRole("button", { name: "Se connecter" }).click();
   await m.waitForURL("**/dashboard");
-  const pages = ["/dashboard", "/review", "/cards", "/decks", "/conversation", "/verbs", "/grammar", "/grammar/present-perfect", "/cognates", "/vocabulary", "/mistakes", "/stats", "/progress", "/profile", "/settings", "/search?q=house", "/placement"];
+  const pages = ["/dashboard", "/review", "/cards", "/decks", "/conversation", "/oral", "/verbs", "/grammar", "/grammar/present-perfect", "/cognates", "/vocabulary", "/mistakes", "/stats", "/progress", "/profile", "/settings", "/search?q=house", "/placement"];
   for (const p of pages) {
     await m.goto(BASE + p, { waitUntil: "networkidle" });
     const o = await overflowCheck(m);

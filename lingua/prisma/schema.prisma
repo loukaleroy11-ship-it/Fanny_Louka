@@ -437,6 +437,7 @@ model DailyGoal {
   mistakeCards      Int      @default(0)
   hardCards         Int      @default(0)
   convSeconds       Int      @default(0)
+  oralItems         Int      @default(0)
   xpEarned          Int      @default(0)
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)

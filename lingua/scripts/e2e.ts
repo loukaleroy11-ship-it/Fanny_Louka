@@ -347,6 +347,29 @@ async function main() {
   check("search results flag cards already owned", (await a.get("/api/search?q=run")).json.results[0].inCards === true);
   check("search validates input", (await a.get("/api/search?q=")).status === 400);
 
+  section("11b. Oral practice (listening & speaking)");
+  const oi = await a.get("/api/oral/items?n=6");
+  check("oral items: sentences with translation + level", oi.status === 200 && oi.json.items.length >= 4 && oi.json.items.every((x: any) => x.sentence.split(" ").length >= 3 && x.translation && x.level), oi.json);
+  const tgt = "She usually walks to work.";
+  const perfect = await a.post("/api/oral/score", { mode: "listen", target: tgt, heard: "she usually walks to work", level: "A2" });
+  check("dictation: exact answer (case/punctuation ignored) = 100 %", perfect.json.pass === true && perfect.json.score === 1, perfect.json);
+  const partial = await a.post("/api/oral/score", { mode: "listen", target: tgt, heard: "she usually work to work", level: "A2" });
+  check("dictation: wrong word is pinpointed", partial.json.pass === false && partial.json.missed.includes("walks") && partial.json.marks.filter((m: any) => !m.ok).length === 1, partial.json);
+  const repeatRes = await a.post("/api/oral/score", { mode: "repeat", target: "I would like a cup of tea, please.", heard: "i would like a cup of tea please", level: "A1", confidence: 0.9 });
+  check("repeat: recognised speech matches the target", repeatRes.json.pass === true);
+  check("repeat: lenient threshold (75 %) and missed words listed", (await a.post("/api/oral/score", { mode: "repeat", target: "We are going to the beach tomorrow.", heard: "we are going to the beach", level: "A2" })).json.pass === true && (await a.post("/api/oral/score", { mode: "repeat", target: "We are going to the beach tomorrow.", heard: "beach", level: "A2" })).json.pass === false);
+  check("oral input validated", (await a.post("/api/oral/score", { mode: "nope", target: "x", heard: "y" })).status === 400);
+  const lst = (await a.get("/api/progress")).json.skills.find((s: any) => s.area === "LISTENING");
+  check("Listening estimate gets evidence from dictations", lst.evidence >= 1, lst);
+  const pl = await a.get("/api/plan");
+  const oralItem = pl.json.items.find((i: any) => i.kind === "oral");
+  check("daily plan includes oral practice, with progress counted", oralItem && oralItem.done >= 4 && oralItem.href === "/oral", oralItem);
+  const talk = await a.post("/api/conversation", { scenario: "casual" });
+  const t1 = await a.post(`/api/conversation/${talk.json.conversation.id}/message`, { content: "Yesterday I visited my grandmother in the hospital." });
+  check("reply picks up a detail of what was said (not generic)", /grandmother|hospital|visited/i.test(t1.json.assistantMessage.content) || t1.json.mock === false, t1.json.assistantMessage.content);
+  const t2 = await a.post(`/api/conversation/${talk.json.conversation.id}/message`, { content: "Paris is the capital of Italy." });
+  check("false statements are corrected, not accepted", /capital of Italy is Rome/i.test(t2.json.assistantMessage.content) || t2.json.mock === false, t2.json.assistantMessage.content);
+
   section("12. Decks, catalog, import/export");
   const mk = await a.post("/api/decks", { name: "Australia", description: "Working holiday" });
   check("create custom deck", mk.status === 201 && (await a.post("/api/decks", { name: "Australia" })).status === 409);

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { registrationOpen } from "@/lib/registration";
 import { Brain, Flame, GraduationCap, Layers, MessageCircle, Mic, Repeat, Sparkles, Target } from "lucide-react";
 
 const FEATURES = [
@@ -10,24 +11,27 @@ const FEATURES = [
   { icon: GraduationCap, title: "Grammaire & exercices", text: "Les 5 temps essentiels expliqués simplement, avec exercices corrigés." },
 ];
 
+export const dynamic = "force-dynamic";
+
 export default function Landing() {
+  const signup = registrationOpen() ? "/register" : "/login";
   return (
     <div className="min-h-dvh">
       <header className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
         <span className="flex items-center gap-2 text-lg font-semibold"><span className="grid size-9 place-items-center rounded-xl bg-brand text-brand-ink"><Sparkles className="size-5" /></span> Lingua</span>
         <nav className="flex items-center gap-2">
           <Link href="/login" className="inline-flex h-11 items-center rounded-xl px-4 text-sm font-medium hover:bg-surface-2">Connexion</Link>
-          <Link href="/register" className="inline-flex h-11 items-center rounded-xl bg-brand px-4 text-sm font-medium text-brand-ink hover:brightness-110">Commencer</Link>
+          <Link href={signup} className="inline-flex h-11 items-center rounded-xl bg-brand px-4 text-sm font-medium text-brand-ink hover:brightness-110">Commencer</Link>
         </nav>
       </header>
       <main>
         <section className="mx-auto max-w-4xl px-4 pb-16 pt-14 text-center sm:pt-24">
           <span className="anim-up inline-flex items-center gap-2 rounded-full bg-brand-soft px-3 py-1 text-sm font-medium text-brand"><Flame className="size-4" /> Anki + Duolingo + prof particulier</span>
           <h1 className="anim-up mt-6 text-4xl font-semibold tracking-tight sm:text-6xl">Un professeur d&apos;anglais personnel,<br /><span className="text-brand">dans vos flashcards.</span></h1>
-          <p className="anim-up mx-auto mt-6 max-w-2xl text-lg text-muted">Lingua apprend ce que vous savez, ce que vous ratez, et décide chaque jour de ce que vous devez travailler. De A1 à C1.</p>
+          <p className="anim-up mx-auto mt-6 max-w-2xl text-lg text-muted">Comprendre l&apos;anglais parlé, parler sans peur : Lingua vous fait écouter, répéter et discuter, apprend ce que vous ratez et décide chaque jour de ce que vous devez travailler. De A1 à C1.</p>
           <div className="anim-up mt-8 flex flex-wrap justify-center gap-3">
-            <Link href="/register" className="inline-flex h-12 items-center rounded-xl bg-brand px-7 font-medium text-brand-ink hover:brightness-110">Passer le test de niveau</Link>
-            <Link href="/login" className="inline-flex h-12 items-center rounded-xl border border-border bg-surface px-7 font-medium hover:bg-surface-2">J&apos;ai déjà un compte</Link>
+            <Link href={signup} className="inline-flex h-12 items-center rounded-xl bg-brand px-7 font-medium text-brand-ink hover:brightness-110">Se connecter</Link>
+            
           </div>
         </section>
         <section className="mx-auto grid max-w-6xl gap-4 px-4 pb-24 sm:grid-cols-2 lg:grid-cols-3" aria-label="Fonctionnalités">

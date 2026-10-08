@@ -64,6 +64,19 @@ export async function bootstrapUser(userId: string) {
   await installCatalogDeck(userId, "common500");
 }
 
+/**
+ * Idempotent repair: makes sure the system decks exist and the 500-word deck is complete
+ * (e.g. the account was created before the lexicon was seeded). Cheap when nothing is missing.
+ */
+export async function ensureBootstrapped(userId: string) {
+  await ensureSystemDecks(userId);
+  const [expected, have] = await Promise.all([
+    db.vocabulary.count({ where: { ownerId: null, tags: { has: "deck:common500" } } }),
+    db.deckCard.count({ where: { deck: { userId, kind: "COMMON500" } } }),
+  ]);
+  if (expected > 0 && have < expected) await installCatalogDeck(userId, "common500");
+}
+
 export interface DuplicateInfo {
   normalized: string;
   /** Entries whose normalised word is exactly the same. */

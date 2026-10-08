@@ -3,7 +3,7 @@ import { route, body, ok, ApiError, clientIp } from "@/lib/api";
 import { db } from "@/lib/db";
 import { createSession, hashPassword, verifyPassword } from "@/lib/auth";
 import { rateLimit, AUTH_LIMIT } from "@/lib/ratelimit";
-import { bootstrapUser } from "@/lib/cards";
+import { ensureBootstrapped } from "@/lib/cards";
 
 const schema = z.object({ email: z.string().trim().toLowerCase().email().max(200), password: z.string().min(1).max(128) });
 // Keeps timing similar whether or not the account exists.
@@ -17,8 +17,8 @@ export const POST = route(
     const user = await db.user.findUnique({ where: { email: input.email }, select: { id: true, passwordHash: true, placementDone: true } });
     const valid = await verifyPassword(input.password, user?.passwordHash ?? (await (dummy ??= hashPassword("not-a-real-password"))));
     if (!user || !valid) throw new ApiError(401, "Email ou mot de passe incorrect.");
-    // Accounts created by the seed (demo user) get their decks on first login.
-    if ((await db.deck.count({ where: { userId: user.id } })) === 0) await bootstrapUser(user.id);
+    // Creates / completes the system decks and the 500-word deck if needed (no-op otherwise).
+    await ensureBootstrapped(user.id);
     await createSession(user.id);
     return ok({ ok: true, next: user.placementDone ? "/dashboard" : "/placement" });
   },

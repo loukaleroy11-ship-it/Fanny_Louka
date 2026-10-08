@@ -5,7 +5,7 @@ import clsx from "clsx";
 import { useState } from "react";
 import type { ReactNode } from "react";
 import {
-  BarChart3, BookOpen, Brain, Flame, GraduationCap, Home, Languages, Layers, LayoutGrid, Library, LogOut, MessageCircle,
+  Headphones, BarChart3, BookOpen, Brain, Flame, GraduationCap, Home, Languages, Layers, LayoutGrid, Library, LogOut, MessageCircle,
   Menu, Moon, Search, Settings, Sparkles, Sun, TriangleAlert, User as UserIcon, X, Zap, TrendingUp, Repeat,
 } from "lucide-react";
 import { useUser } from "./providers";
@@ -15,6 +15,7 @@ const NAV: { href: string; label: string; icon: typeof Home; group: "main" | "le
   { href: "/dashboard", label: "Dashboard", icon: Home, group: "main" },
   { href: "/review", label: "Réviser", icon: Repeat, group: "main" },
   { href: "/conversation", label: "AI Conversation", icon: MessageCircle, group: "main" },
+  { href: "/oral", label: "Oral", icon: Headphones, group: "main" },
   { href: "/cards", label: "My Cards", icon: Layers, group: "main" },
   { href: "/decks", label: "Decks", icon: LayoutGrid, group: "learn" },
   { href: "/vocabulary", label: "Vocabulaire", icon: Library, group: "learn" },
@@ -31,7 +32,7 @@ const TABS = [
   { href: "/dashboard", label: "Home", icon: Home },
   { href: "/review", label: "Réviser", icon: Repeat },
   { href: "/conversation", label: "Parler", icon: MessageCircle },
-  { href: "/cards", label: "Cartes", icon: Layers },
+  { href: "/oral", label: "Oral", icon: Headphones },
 ];
 
 const active = (path: string, href: string) => path === href || path.startsWith(href + "/");

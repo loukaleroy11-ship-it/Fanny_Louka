@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { ArrowUp, Check, Mic, MicOff, Plus, Square, Volume2 } from "lucide-react";
+import { ArrowUp, Check, Ear, Mic, MicOff, Plus, Snail, Square, Volume2 } from "lucide-react";
 import clsx from "clsx";
 import { Badge, Button, Card, ErrorState, Modal, Skeleton } from "@/components/ui";
 import { useToast, useUser } from "@/components/providers";
@@ -36,12 +36,24 @@ export function ChatView({ id }: { id: string }) {
   const [report, setReport] = useState<Report | null>(null);
   const [ending, setEnding] = useState(false);
   const [mock, setMock] = useState(false);
+  // Listening mode: teacher messages are spoken only; the text stays hidden until the learner asks for it.
+  const [listenOnly, setListenOnly] = useState(false);
+  const [revealed, setRevealed] = useState<Record<string, boolean>>({});
   const rec = useRef<SRInstance | null>(null);
   const bottom = useRef<HTMLDivElement>(null);
   const confidence = useRef<number | undefined>(undefined);
   const srSupported = useMemo(() => typeof window !== "undefined" && !!getRecognitionCtor(), []);
   const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
+  useEffect(() => {
+    setMounted(true);
+    try { setListenOnly(localStorage.getItem("lingua-listen-only") === "1"); } catch { /* ignore */ }
+  }, []);
+  const toggleListen = () => {
+    const v = !listenOnly;
+    setListenOnly(v);
+    if (v) setVoiceReplies(true);
+    try { localStorage.setItem("lingua-listen-only", v ? "1" : "0"); } catch { /* ignore */ }
+  };
 
   useEffect(() => {
     let live = true;
@@ -53,11 +65,11 @@ export function ChatView({ id }: { id: string }) {
 
   useEffect(() => { bottom.current?.scrollIntoView({ behavior: "smooth", block: "end" }); }, [msgs.length, sending, interim]);
 
-  const say = useCallback((m: Msg) => {
+  const say = useCallback((m: Msg, slow = false) => {
     if (!ttsSupported()) return;
     setSpeakingId(m.id);
     // The teacher also adapts its speaking speed: at the default 1x, beginners hear slightly slower speech.
-    const levelRate = user.speechRate === 1 ? ({ A1: 0.85, A2: 0.92 } as Record<string, number>)[user.level] ?? 1 : user.speechRate;
+    const levelRate = slow ? 0.65 : user.speechRate === 1 ? ({ A1: 0.85, A2: 0.92 } as Record<string, number>)[user.level] ?? 1 : user.speechRate;
     void speak(m.content, { accent: user.accent, gender: user.voiceGender, rate: levelRate, onEnd: () => setSpeakingId((s) => (s === m.id ? null : s)) });
   }, [user.accent, user.voiceGender, user.speechRate, user.level]);
 
@@ -173,6 +185,7 @@ export function ChatView({ id }: { id: string }) {
             <label className="sr-only" htmlFor="rate">Vitesse de la voix</label>
             <select id="rate" value={user.speechRate} onChange={(e) => void update({ speechRate: Number(e.target.value) })} className="h-10 rounded-xl border border-border bg-surface px-2 text-sm">{RATES.map((r) => <option key={r} value={r}>{r}x</option>)}</select>
             <button onClick={() => void update({ accent: user.accent === "UK" ? "US" : "UK" })} className="h-10 rounded-xl border border-border bg-surface px-2.5 text-sm" aria-label="Changer d'accent">{user.accent === "UK" ? "🇬🇧" : "🇺🇸"}</button>
+            <button onClick={toggleListen} aria-pressed={listenOnly} aria-label="Mode écoute" title="Mode écoute : le texte du professeur est masqué" className={clsx("inline-flex size-10 items-center justify-center rounded-xl border", listenOnly ? "border-brand bg-brand-soft text-brand" : "border-border bg-surface text-muted")}><Ear className="size-4" /></button>
             <button onClick={() => { setVoiceReplies(!voiceReplies); if (voiceReplies) stopSpeaking(); }} aria-pressed={voiceReplies} aria-label="Réponses vocales" className={clsx("inline-flex size-10 items-center justify-center rounded-xl border", voiceReplies ? "border-brand bg-brand-soft text-brand" : "border-border bg-surface text-muted")}><Volume2 className="size-4" /></button>
             <Button size="sm" variant="secondary" onClick={end} loading={ending}>Terminer</Button>
           </div>
@@ -183,13 +196,14 @@ export function ChatView({ id }: { id: string }) {
         {msgs.map((m) => (
           <div key={m.id} className={clsx("flex flex-col gap-1.5", m.role === "USER" ? "items-end" : "items-start")}>
             <div className={clsx("anim-up max-w-[88%] rounded-2xl px-4 py-2.5 text-[15px] leading-relaxed sm:max-w-[80%]", m.role === "USER" ? "rounded-br-md bg-brand text-brand-ink" : "rounded-bl-md border border-border bg-surface")} lang="en">
-              {m.role === "ASSISTANT" ? renderWords(m) : m.content}
+              {m.role === "ASSISTANT" ? (listenOnly && !revealed[m.id] && !ended ? <span className="inline-flex items-center gap-2 text-muted"><Ear className="size-4" aria-hidden /> Écoutez le message… <button className="min-h-8 rounded-lg bg-surface-2 px-2 text-xs font-medium text-text hover:bg-border" onClick={() => setRevealed((r) => ({ ...r, [m.id]: true }))}>Afficher le texte</button></span> : renderWords(m)) : m.content}
               {m.viaVoice && m.role === "USER" && <Mic className="ml-1.5 inline size-3 opacity-70" aria-label="Message vocal" />}
             </div>
             {m.role === "ASSISTANT" && (
               <div className="flex items-center gap-2 pl-1">
                 <button onClick={() => (speakingId === m.id ? (stopSpeaking(), setSpeakingId(null)) : say(m))} aria-label={speakingId === m.id ? "Stop" : "Replay"} className="inline-flex h-8 items-center gap-1 rounded-lg px-2 text-xs text-muted hover:bg-surface-2">{speakingId === m.id ? <Square className="size-3" /> : <Volume2 className="size-3.5" />} Replay</button>
-                {m.newWords?.map((w) => <Badge key={w.word} tone="brand" className="!text-[11px]">{w.word} = {w.meaning}</Badge>)}
+                <button onClick={() => say(m, true)} aria-label="Replay lent" className="inline-flex h-8 items-center gap-1 rounded-lg px-2 text-xs text-muted hover:bg-surface-2"><Snail className="size-3.5" /> Lent</button>
+                {(!listenOnly || revealed[m.id]) && m.newWords?.map((w) => <Badge key={w.word} tone="brand" className="!text-[11px]">{w.word} = {w.meaning}</Badge>)}
               </div>
             )}
             {m.role === "ASSISTANT" && word?.msgId === m.id && (

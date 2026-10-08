@@ -5,7 +5,7 @@ import { Suspense, useState } from "react";
 import { Button, Card, Field, Input } from "@/components/ui";
 import { api } from "@/lib/client";
 
-function Form() {
+function Form({ canRegister }: { canRegister: boolean }) {
   const params = useSearchParams();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -38,12 +38,12 @@ function Form() {
       </form>
       <div className="mt-5 flex justify-between text-sm">
         <Link href="/forgot-password" className="text-brand hover:underline">Mot de passe oublié ?</Link>
-        <Link href="/register" className="text-brand hover:underline">Créer un compte</Link>
+        {canRegister && <Link href="/register" className="text-brand hover:underline">Créer un compte</Link>}
       </div>
     </Card>
   );
 }
 
-export function LoginForm() {
-  return <Suspense><Form /></Suspense>;
+export function LoginForm({ canRegister }: { canRegister: boolean }) {
+  return <Suspense><Form canRegister={canRegister} /></Suspense>;
 }

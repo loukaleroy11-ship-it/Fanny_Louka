@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { heuristicLevel, mockCorrect, mockReply } from "@/lib/ai/mock";
+import { heuristicLevel, mockCorrect, mockFactCheck, mockReply, topicOf } from "@/lib/ai/mock";
 import { extractJson } from "@/lib/ai/llm";
 import { turnSchema, flashcardDraftSchema } from "@/lib/ai/schemas";
 
@@ -104,5 +104,22 @@ describe("LLM output parsing", () => {
     const d = flashcardDraftSchema.parse({ word: "x", translation: "y", pos: "WRONG" });
     expect(d.pos).toBe("NOUN");
     expect(d.synonyms).toEqual([]);
+  });
+});
+
+describe("mock conversation keeps a thread and reality-checks", () => {
+  it("reacts to a word the learner used", () => {
+    const r = mockReply({ scenarioId: "casual", turn: 2, level: "B1", userText: "Yesterday I visited my grandmother in the hospital.", name: "A" });
+    expect(r.toLowerCase()).toMatch(/grandmother|hospital|visited/);
+  });
+  it("corrects false facts instead of playing along", () => {
+    expect(mockReply({ scenarioId: "travel", turn: 1, level: "B1", userText: "Paris is the capital of Italy.", name: "A" })).toMatch(/capital of Italy is Rome/);
+    expect(mockFactCheck("The sun rises in the west.")).toMatch(/east/);
+    expect(mockFactCheck("2 + 2 = 5")).toMatch(/is 4/);
+    expect(mockFactCheck("Rome is the capital of Italy.")).toBeNull();
+  });
+  it("topicOf ignores filler", () => {
+    expect(topicOf("I went to the beach with my friends")).toBe("friends");
+    expect(topicOf("yes ok")).toBeNull();
   });
 });
