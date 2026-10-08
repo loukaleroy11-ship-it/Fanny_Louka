@@ -137,6 +137,7 @@ npm test                 # 86 tests unitaires (FSRS, filtres, normalisation, CSV
 npm run typecheck        # tsc --noEmit
 npm run build            # build de production
 # Parcours complets (serveur lancé et seedé : npm run dev, ou npm run build && npm start)
+# (le serveur doit tourner avec ALLOW_REGISTRATION=true : les tests créent leurs comptes)
 npm run e2e              # 198 vérifications API contre la vraie base (184 sur un build de production : le lien de reset n'y est volontairement pas exposé)
 CHROMIUM_PATH=/chemin/vers/chrome npm run e2e:ui   # 116 vérifications dans un vrai navigateur (Playwright), mobile compris
 ```

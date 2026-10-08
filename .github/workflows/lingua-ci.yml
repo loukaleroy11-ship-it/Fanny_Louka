@@ -19,6 +19,7 @@ jobs:
       DATABASE_URL: postgresql://lingua:lingua@localhost:5432/lingua?schema=public
       AUTH_SECRET: ci-secret-ci-secret-ci-secret-ci-secret-0123
       RATE_LIMIT_AI_PER_MIN: "300"
+      ALLOW_REGISTRATION: "true"   # the e2e suite creates its own throw-away accounts
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
