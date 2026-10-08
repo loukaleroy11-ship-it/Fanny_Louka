@@ -26,7 +26,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   const h = "mb-3 text-lg font-semibold";
   return (
     <article className="space-y-6">
-      <Link href="/grammar" className="inline-flex items-center gap-1 text-sm text-muted hover:text-text"><ArrowLeft className="size-4" /> English Grammar</Link>
+      <Link href="/grammar" className="inline-flex min-h-11 items-center gap-1 text-sm text-muted hover:text-text"><ArrowLeft className="size-4" /> English Grammar</Link>
       <header>
         <div className="flex flex-wrap items-center gap-2"><Badge tone="brand">{lesson.level}</Badge><span className="text-sm text-muted">{lesson.titleFr}</span></div>
         <h1 className="mt-1 text-3xl font-semibold tracking-tight">{lesson.title}</h1>

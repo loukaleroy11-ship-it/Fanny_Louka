@@ -123,17 +123,17 @@ export default async function Dashboard() {
                 <li key={e.area} className="flex items-center justify-between"><span className="text-muted">{SKILL_LABEL[e.area]}</span><b>{levelLabel(e.value)}</b></li>
               ))}
             </ul>
-            <Link href="/progress" className="mt-3 inline-block text-sm text-brand hover:underline">Voir ma progression</Link>
+            <Link href="/progress" className="mt-2 inline-flex min-h-11 items-center text-sm text-brand hover:underline">Voir ma progression</Link>
           </Card>
 
           <Card>
-            <div className="mb-3 flex items-center justify-between"><h2 className="font-semibold">Weakness</h2><Link href="/mistakes" className="text-sm text-brand hover:underline">Tout voir</Link></div>
+            <div className="mb-3 flex items-center justify-between"><h2 className="font-semibold">Weakness</h2><Link href="/mistakes" className="inline-flex min-h-11 items-center text-sm text-brand hover:underline">Tout voir</Link></div>
             {mistakes.length === 0 ? (
               <p className="text-sm text-muted">Aucune erreur enregistrée pour l&apos;instant. Parlez avec le professeur IA pour que Lingua repère vos points faibles.</p>
             ) : (
               <div className="space-y-3">
                 {mistakes.map((m) => <HBar key={m.label} label={m.label} value={m.count} max={mistakes[0].count} right={mistakesLabel(m.count)} tone="warn" />)}
-                {top && <Link href={top.slug ? `/grammar/${top.slug}` : "/grammar"} className="inline-flex items-center gap-1 text-sm text-brand hover:underline"><Target className="size-4" /> Travailler « {top.label} »</Link>}
+                {top && <Link href={top.slug ? `/grammar/${top.slug}` : "/grammar"} className="inline-flex min-h-11 items-center gap-1 text-sm text-brand hover:underline"><Target className="size-4" /> Travailler « {top.label} »</Link>}
               </div>
             )}
           </Card>

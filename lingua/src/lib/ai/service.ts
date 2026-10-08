@@ -52,7 +52,22 @@ async function withFallback<T>(live: () => Promise<T>, mock: () => Promise<T> | 
   }
 }
 
-const trimHistory = (h: ChatMessage[]) => h.slice(-20).map((m) => ({ ...m, content: m.content.slice(0, 1000) }));
+/**
+ * The Messages API wants the conversation to start with a `user` turn and to alternate roles.
+ * Our stored history starts with the teacher's opener, so insert a neutral user turn and merge any
+ * consecutive messages of the same role.
+ */
+export function normalizeForLLM(h: ChatMessage[]): ChatMessage[] {
+  const out: ChatMessage[] = [];
+  for (const m of h.slice(-20)) {
+    const content = m.content.slice(0, 1000);
+    const last = out[out.length - 1];
+    if (last && last.role === m.role) last.content += `\n${content}`;
+    else out.push({ role: m.role, content });
+  }
+  if (out.length && out[0].role === "assistant") out.unshift({ role: "user", content: "[The learner has joined the conversation.]" });
+  return out;
+}
 
 export const AIService = {
   isMock: isMockMode,
@@ -66,8 +81,10 @@ export const AIService = {
     const turn = input.history.filter((m) => m.role === "user").length + (input.userMessage ? 1 : 0);
     return withFallback<S.TurnResult>(
       async () => {
-        const msgs: ChatMessage[] = trimHistory(input.history);
-        msgs.push({ role: "user", content: input.userMessage ?? `[${P.openerInstruction}]` });
+        const msgs = normalizeForLLM(input.history);
+        const next = input.userMessage ?? `[${P.openerInstruction}]`;
+        if (msgs.length && msgs[msgs.length - 1].role === "user") msgs[msgs.length - 1].content += `\n${next}`;
+        else msgs.push({ role: "user", content: next });
         const out = await jsonCall(S.turnSchema, P.teacherSystem(ctx, sc), msgs, { maxTokens: 500, temperature: 0.7 });
         return out;
       },

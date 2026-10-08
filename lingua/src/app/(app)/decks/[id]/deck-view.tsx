@@ -22,7 +22,7 @@ export function DeckView({ id }: { id: string }) {
   }
   return (
     <div className="space-y-5">
-      <Link href="/decks" className="inline-flex items-center gap-1 text-sm text-muted hover:text-text"><ArrowLeft className="size-4" /> Decks</Link>
+      <Link href="/decks" className="inline-flex min-h-11 items-center gap-1 text-sm text-muted hover:text-text"><ArrowLeft className="size-4" /> Decks</Link>
       <PageHeader title={d?.name ?? "…"} subtitle={d?.description} actions={<>
         <Link href={`/review?deck=${id}&n=20`} className="inline-flex h-11 items-center gap-2 rounded-xl bg-brand px-4 text-sm font-medium text-brand-ink hover:brightness-110"><Play className="size-4" /> Réviser ce deck</Link>
         {d?.kind === "CUSTOM" && d.name !== "My Words" && <Button variant="ghost" onClick={() => setConfirm(true)} aria-label="Supprimer le deck"><Trash2 className="size-4 text-danger" /></Button>}

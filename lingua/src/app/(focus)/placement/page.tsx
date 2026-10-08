@@ -66,7 +66,7 @@ export default function PlacementPage() {
         <p className="mx-auto max-w-md text-muted">{qs.length} questions rapides (~6 min) sur le vocabulaire, la grammaire, la conjugaison et la compréhension. Répondez au mieux — si vous ne savez pas, choisissez « Je ne sais pas » plutôt que de deviner.</p>
         <div className="flex flex-wrap justify-center gap-2">{(Object.keys(SECTION_LABEL) as PlacementSection[]).map((s) => <Badge key={s} tone="brand">{SECTION_LABEL[s]}</Badge>)}</div>
         <Button size="lg" onClick={() => setPhase("quiz")}>Commencer <ArrowRight className="size-4" /></Button>
-        <p><Link href="/dashboard" className="text-sm text-muted hover:underline">Passer pour l&apos;instant (niveau A1 par défaut)</Link></p>
+        <p><Link href="/dashboard" className="inline-flex min-h-11 items-center text-sm text-muted hover:underline">Passer pour l&apos;instant (niveau A1 par défaut)</Link></p>
       </Card>
     );
 

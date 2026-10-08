@@ -41,7 +41,7 @@ export function DecksPage() {
             {data?.decks.map((d) => (
               <Card key={d.id} className="flex flex-col gap-3">
                 <div className="flex items-start justify-between gap-2">
-                  <div><Link href={`/decks/${d.id}`} className="text-lg font-semibold hover:text-brand">{d.name}</Link>{d.description && <p className="mt-0.5 line-clamp-2 text-sm text-muted">{d.description}</p>}</div>
+                  <div><Link href={`/decks/${d.id}`} className="inline-flex min-h-11 items-center text-lg font-semibold hover:text-brand">{d.name}</Link>{d.description && <p className="mt-0.5 line-clamp-2 text-sm text-muted">{d.description}</p>}</div>
                   {d.kind === "COMMON500" && <Badge tone="brand">Top 500</Badge>}{d.kind === "MISTAKES" && <Badge tone="warn">Erreurs</Badge>}
                 </div>
                 <Progress value={d.progress} label={`Progression ${d.name}`} />

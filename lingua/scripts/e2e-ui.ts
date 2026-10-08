@@ -260,7 +260,8 @@ async function main() {
   await page.getByText("Pas tout à fait").waitFor();
   check("wrong answer shows the expected answer", await page.getByText(/Réponse attendue/).isVisible());
   await page.goto(BASE + "/mistakes");
-  check("wrong exercise answer was stored in My Mistakes", await page.getByText("Add to my flashcards").first().isVisible() || await page.getByText("Dans mes flashcards").first().isVisible());
+  await page.getByText(/Add to my flashcards|Dans mes flashcards/).first().waitFor({ timeout: 8000 });
+  check("wrong exercise answer was stored in My Mistakes", true);
   check("no unexpected browser errors on desktop", errors.length === 0, errors);
   await ctx.close();
 

@@ -226,7 +226,7 @@ export function ChatView({ id }: { id: string }) {
           {listening && <p className="rounded-xl bg-danger-soft px-3 py-2 text-sm text-danger" role="status"><span className="mr-2 inline-block size-2 animate-pulse rounded-full bg-danger" />Listening… <span className="text-text" lang="en">{interim}</span></p>}
           <form className="flex items-end gap-2" onSubmit={(e) => { e.preventDefault(); void send(text); }}>
             <textarea value={text} onChange={(e) => setText(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey && !e.nativeEvent.isComposing) { e.preventDefault(); void send(text); } }}
-              rows={1} maxLength={1500} placeholder={conv.englishOnly ? "Type in English…" : "Écrivez en anglais… (ou utilisez le micro)"} aria-label="Votre message" lang="en" disabled={sending}
+              rows={1} maxLength={1500} placeholder={conv.englishOnly ? "Type in English…" : "Écrivez en anglais…"} aria-label="Votre message" lang="en" disabled={sending}
               className="max-h-32 min-h-12 flex-1 resize-none rounded-2xl border border-border bg-surface px-4 py-3 text-base focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/30" />
             {text.trim() ? (
               <Button type="submit" size="lg" className="!size-14 !rounded-full !p-0" aria-label="Envoyer" disabled={sending}><ArrowUp className="size-6" /></Button>

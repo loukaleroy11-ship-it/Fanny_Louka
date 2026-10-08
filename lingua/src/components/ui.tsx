@@ -178,8 +178,10 @@ export function Toggle({ checked, onChange, label, description }: { checked: boo
         <div className="text-sm font-medium">{label}</div>
         {description && <div className="text-xs text-muted">{description}</div>}
       </label>
-      <button id={id} role="switch" aria-checked={checked} onClick={() => onChange(!checked)} className={clsx("relative h-7 w-12 shrink-0 rounded-full transition", checked ? "bg-brand" : "bg-border")}>
-        <span className={clsx("absolute top-0.5 size-6 rounded-full bg-white shadow transition-all", checked ? "left-[22px]" : "left-0.5")} />
+      <button id={id} role="switch" aria-checked={checked} onClick={() => onChange(!checked)} className="grid h-11 w-14 shrink-0 place-items-center">
+        <span className={clsx("relative block h-7 w-12 rounded-full transition", checked ? "bg-brand" : "bg-border")}>
+          <span className={clsx("absolute top-0.5 size-6 rounded-full bg-white shadow transition-all", checked ? "left-[22px]" : "left-0.5")} />
+        </span>
       </button>
     </div>
   );

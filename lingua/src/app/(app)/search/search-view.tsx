@@ -53,7 +53,7 @@ export function SearchView() {
                   {r.pastParticiple && <div className="flex gap-2"><dt className="text-muted">Past participle:</dt><dd className="font-medium">{r.pastParticiple}</dd></div>}
                   {r.lemma && <div className="flex gap-2"><dt className="text-muted">Forme de:</dt><dd className="font-medium">{r.lemma.word}</dd></div>}
                 </dl>
-                {r.forms.length > 0 && <p className="text-sm"><span className="text-muted">Related words:</span> {r.forms.map((f) => <Link key={f} href={`/search?q=${encodeURIComponent(f)}`} className="mr-2 text-brand hover:underline">{f}</Link>)}</p>}
+                {r.forms.length > 0 && <p className="text-sm"><span className="text-muted">Related words:</span> {r.forms.map((f) => <Link key={f} href={`/search?q=${encodeURIComponent(f)}`} className="mr-1.5 inline-flex h-9 items-center rounded-full bg-brand-soft px-3 text-brand hover:underline">{f}</Link>)}</p>}
                 {r.example && <p className="rounded-xl bg-surface-2 p-3 text-sm"><span lang="en">{r.example}</span><span className="block text-muted">{r.exampleTranslation}</span></p>}
               </Card>
             );

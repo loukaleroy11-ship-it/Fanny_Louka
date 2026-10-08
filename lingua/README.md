@@ -115,13 +115,15 @@ Pour utiliser un autre fournisseur : modifiez uniquement `src/lib/ai/llm.ts` (fo
 ## 6. Tests
 
 ```bash
-npm test                 # 71 tests unitaires (FSRS, filtres, normalisation, CSV, correcteur démo, intégrité des données…)
+npm test                 # 83 tests unitaires (FSRS, filtres, normalisation, CSV, correcteur démo, chemin LLM sur API simulée, intégrité des données…)
 npm run typecheck        # tsc --noEmit
 npm run build            # build de production
 # Parcours complets (serveur lancé et seedé : npm run dev, ou npm run build && npm start)
-npm run e2e              # ~190 vérifications API contre la vraie base
-CHROMIUM_PATH=/chemin/vers/chrome npm run e2e:ui   # parcours navigateur réel (Playwright), mobile compris
+npm run e2e              # 188 vérifications API contre la vraie base (184 sur un build de production : le lien de reset n'y est volontairement pas exposé)
+CHROMIUM_PATH=/chemin/vers/chrome npm run e2e:ui   # 107 vérifications dans un vrai navigateur (Playwright), mobile compris
 ```
+
+> **Limite à connaître** : sans clé, le chemin « vraie IA » n'a été testé que contre une **API Anthropic simulée** (`tests/llm-live-path.test.ts` : forme de la requête, normalisation des messages, validation du JSON, repli en mode démo). Le comportement réel du modèle n'a **pas** été vérifié ici.
 
 `e2e` couvre : inscription/connexion/reset, test de niveau, 500 mots (plages de rang, fonctions, tris), détection de doublons, CRUD cartes, FSRS (Again < Hard < Good < Easy, historique, cartes difficiles), filtres combinés, conversation + corrections + erreurs récurrentes + plan, cartes générées, grammaire, verbes, recherche, decks, import/export, statistiques, sécurité (CSRF, rate limit, isolation entre utilisateurs).
 `e2e:ui` couvre : le parcours d'inscription réel, le test de niveau au clavier, la détection de doublon dans la modale, la session de révision (retournement, notation, prononciation US/UK), le **micro** et la **synthèse vocale** (API Web Speech **remplacées par des stubs déterministes** car le Chromium headless n'a ni micro ni voix), le rapport de conversation, le mobile 390 px (pas de scroll horizontal, cibles tactiles, labels).
@@ -148,6 +150,21 @@ lingua/
 ```
 
 **Séparation des responsabilités** : routes = validation + autorisation ; `src/lib` = logique métier pure/testable ; `AIService` = seul point d'accès au LLM (aucun prompt dans les composants) ; les réponses des exercices ne quittent jamais le serveur.
+
+### Écrans
+
+| Route | Écran |
+|---|---|
+| `/` · `/login` · `/register` · `/forgot-password` · `/reset-password` | Accueil, inscription, connexion, mot de passe oublié |
+| `/placement` | Test de niveau (vocabulaire, grammaire, conjugaison, compréhension) → *Estimated level* + programme |
+| `/dashboard` | Bonjour, streak, progression du jour, plan du jour, niveau A2 → B1, faiblesses, badges |
+| `/review` | Réglages de révision (nombre, source, statut, difficulté, rang, fonction, niveau, ordre) puis session plein écran |
+| `/cards` · `/decks` · `/decks/:id` | My Cards (créer/modifier/supprimer/rechercher/filtrer/trier, import/export), decks et leur progression |
+| `/conversation` · `/conversation/:id` | Scénarios (16 + Surprise me), chat texte + micro, corrections discrètes, clic sur un mot, rapport |
+| `/vocabulary` · `/verbs` · `/cognates` · `/search` | Vocabulaire par fonction, Most Common Verbs, mots apparentés + faux amis, recherche globale |
+| `/grammar` · `/grammar/:slug` | 5 leçons + exercices (QCM, compléter, traduire, corriger, créer, dictée) |
+| `/mistakes` · `/progress` · `/stats` | Erreurs récurrentes, niveau par compétence + lacunes, statistiques et graphiques |
+| `/profile` · `/settings` | Profil/objectifs/badges, thème, accent, voix, vitesse, English Only, mot de passe |
 
 ## 8. Modèle de données
 
