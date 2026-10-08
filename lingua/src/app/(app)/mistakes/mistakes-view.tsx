@@ -1,4 +1,5 @@
 "use client";
+import { mistakesLabel } from "@/lib/format";
 import Link from "next/link";
 import { useState } from "react";
 import { Play } from "lucide-react";
@@ -39,7 +40,7 @@ export function MistakesView() {
       ) : (
         <>
           <Card><h2 className="mb-3 font-semibold">Erreurs récurrentes</h2>
-            <div className="space-y-3">{data?.summary.map((s) => <HBar key={s.label} label={s.label} value={s.count} max={data.summary[0].count} right={`${s.count} mistakes`} tone="warn" />)}</div></Card>
+            <div className="space-y-3">{data?.summary.map((s) => <HBar key={s.label} label={s.label} value={s.count} max={data.summary[0].count} right={mistakesLabel(s.count)} tone="warn" />)}</div></Card>
           <ul className="space-y-2">
             {data?.items.map((m) => (
               <li key={m.id}><Card className="space-y-2 !p-4">

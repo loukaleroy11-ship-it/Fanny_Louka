@@ -56,8 +56,10 @@ export function ChatView({ id }: { id: string }) {
   const say = useCallback((m: Msg) => {
     if (!ttsSupported()) return;
     setSpeakingId(m.id);
-    void speak(m.content, { accent: user.accent, gender: user.voiceGender, rate: user.speechRate, onEnd: () => setSpeakingId((s) => (s === m.id ? null : s)) });
-  }, [user.accent, user.voiceGender, user.speechRate]);
+    // The teacher also adapts its speaking speed: at the default 1x, beginners hear slightly slower speech.
+    const levelRate = user.speechRate === 1 ? ({ A1: 0.85, A2: 0.92 } as Record<string, number>)[user.level] ?? 1 : user.speechRate;
+    void speak(m.content, { accent: user.accent, gender: user.voiceGender, rate: levelRate, onEnd: () => setSpeakingId((s) => (s === m.id ? null : s)) });
+  }, [user.accent, user.voiceGender, user.speechRate, user.level]);
 
   // Read the opener aloud once (first load of a fresh conversation), if voice replies are on
   const opened = useRef(false);
@@ -186,7 +188,7 @@ export function ChatView({ id }: { id: string }) {
             </div>
             {m.role === "ASSISTANT" && (
               <div className="flex items-center gap-2 pl-1">
-                <button onClick={() => (speakingId === m.id ? (stopSpeaking(), setSpeakingId(null)) : say(m))} aria-label={speakingId === m.id ? "Arrêter la lecture" : "Réécouter"} className="inline-flex h-8 items-center gap-1 rounded-lg px-2 text-xs text-muted hover:bg-surface-2">{speakingId === m.id ? <Square className="size-3" /> : <Volume2 className="size-3.5" />} Replay</button>
+                <button onClick={() => (speakingId === m.id ? (stopSpeaking(), setSpeakingId(null)) : say(m))} aria-label={speakingId === m.id ? "Stop" : "Replay"} className="inline-flex h-8 items-center gap-1 rounded-lg px-2 text-xs text-muted hover:bg-surface-2">{speakingId === m.id ? <Square className="size-3" /> : <Volume2 className="size-3.5" />} Replay</button>
                 {m.newWords?.map((w) => <Badge key={w.word} tone="brand" className="!text-[11px]">{w.word} = {w.meaning}</Badge>)}
               </div>
             )}

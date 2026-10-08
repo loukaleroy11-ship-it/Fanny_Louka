@@ -73,15 +73,22 @@ async function main() {
   check("logout clears session", (await b.post("/api/auth/logout")).status === 200 && (await b.get("/api/auth/me")).status === 401);
 
   section("2. Password reset");
+  let pw = "password123";
   const fp = await new Client().post("/api/auth/forgot-password", { email });
-  check("forgot-password responds generically + dev link", fp.status === 200 && !!fp.json.devLink, fp.json);
+  check("forgot-password responds generically", fp.status === 200 && /Si un compte existe/.test(fp.json.message), fp.json);
   check("unknown email gets the same generic response", (await new Client().post("/api/auth/forgot-password", { email: "ghost@example.com" })).json.message === fp.json.message);
-  const token = new URL(fp.json.devLink).searchParams.get("token")!;
-  check("short new password rejected", (await new Client().post("/api/auth/reset-password", { token, password: "x" })).status === 400);
-  check("bad token rejected", (await new Client().post("/api/auth/reset-password", { token: "x".repeat(30), password: "newpassword1" })).status === 400);
-  check("reset with valid token", (await new Client().post("/api/auth/reset-password", { token, password: "newpassword1" })).status === 200);
-  check("token cannot be reused", (await new Client().post("/api/auth/reset-password", { token, password: "another12345" })).status === 400);
-  check("old password no longer works / new one does", (await new Client().post("/api/auth/login", { email, password: "password123" })).status === 401 && (await a.post("/api/auth/login", { email, password: "newpassword1" })).status === 200);
+  if (fp.json.devLink) {
+    const token = new URL(fp.json.devLink).searchParams.get("token")!;
+    check("short new password rejected", (await new Client().post("/api/auth/reset-password", { token, password: "x" })).status === 400);
+    check("bad token rejected", (await new Client().post("/api/auth/reset-password", { token: "x".repeat(30), password: "newpassword1" })).status === 400);
+    check("reset with valid token", (await new Client().post("/api/auth/reset-password", { token, password: "newpassword1" })).status === 200);
+    check("token cannot be reused", (await new Client().post("/api/auth/reset-password", { token, password: "another12345" })).status === 400);
+    check("old password no longer works / new one does", (await new Client().post("/api/auth/login", { email, password: "password123" })).status === 401 && (await a.post("/api/auth/login", { email, password: "newpassword1" })).status === 200);
+    pw = "newpassword1";
+  } else {
+    check("production mode never exposes the reset link in the API response", fp.json.devLink === undefined);
+    console.log("  (reset-link steps skipped: NODE_ENV=production hides the dev link; run against `next dev` to exercise them)");
+  }
 
   section("3. Placement test");
   const pq = await a.get("/api/placement");
@@ -98,7 +105,7 @@ async function main() {
   check("weak answers → A1/A2 estimate", /^(A1|A2)/.test(wr.json.estimatedLevel), wr.json);
   const me2 = await a.get("/api/auth/me");
   check("level stored on the profile and placementDone set", me2.json.user.placementDone === true && ["B2", "C1", "B1"].includes(me2.json.user.level), me2.json.user.level);
-  check("login now goes to /dashboard", (await new Client().post("/api/auth/login", { email, password: "newpassword1" })).json.next === "/dashboard");
+  check("login now goes to /dashboard", (await new Client().post("/api/auth/login", { email, password: pw })).json.next === "/dashboard");
   // downgrade to a predictable level for later tests
   await a.patch("/api/profile", { level: "A2" });
 
@@ -379,7 +386,7 @@ async function main() {
   await small.patch("/api/profile", { dailyMinutes: 5 });
   const planSmall = await small.get("/api/plan");
   check("5-minute budget → short plan", planSmall.json.plannedMinutes <= 9, planSmall.json);
-  check("password change", (await a.post("/api/profile/password", { current: "wrong", next: "newpassword2" })).status === 400 && (await a.post("/api/profile/password", { current: "newpassword1", next: "newpassword2" })).status === 200);
+  check("password change", (await a.post("/api/profile/password", { current: "wrong", next: "newpassword2" })).status === 400 && (await a.post("/api/profile/password", { current: pw, next: "newpassword2" })).status === 200);
 
   section("14. Gamification & level evolution");
   const ach = await db.achievement.findMany({ where: { user: { email } } });

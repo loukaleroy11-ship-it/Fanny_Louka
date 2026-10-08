@@ -1,4 +1,5 @@
 "use client";
+import { mistakesLabel } from "@/lib/format";
 import { useState } from "react";
 import { BookOpenCheck, Brain, Clock, Flame, MessageCircle, Target, TriangleAlert, Trophy, CheckCircle2 } from "lucide-react";
 import { Card, Chip, ErrorState, PageHeader, Skeleton, Stat } from "@/components/ui";
@@ -38,7 +39,7 @@ export function StatsView() {
             <Card><h2 className="mb-3 font-semibold">Erreurs par jour</h2><BarChart data={data.series.map((s) => ({ label: label(s.date), value: s.mistakes }))} color="var(--warn)" /></Card>
             <Card><h2 className="mb-3 font-semibold">Taux de réussite des révisions</h2><LineChart data={data.series.map((s) => ({ label: label(s.date), value: s.accuracy === null ? null : Math.round(s.accuracy * 100) }))} yMax={100} unit="%" color="var(--accent)" /></Card>
             <Card><h2 className="mb-3 font-semibold">Erreurs les plus fréquentes</h2>
-              {data.topMistakes.length === 0 ? <p className="text-sm text-muted">Aucune erreur enregistrée.</p> : <div className="space-y-3">{data.topMistakes.map((m) => <HBar key={m.label} label={m.label} value={m.count} max={data.topMistakes[0].count} right={`${m.count} mistakes`} tone="warn" />)}</div>}</Card>
+              {data.topMistakes.length === 0 ? <p className="text-sm text-muted">Aucune erreur enregistrée.</p> : <div className="space-y-3">{data.topMistakes.map((m) => <HBar key={m.label} label={m.label} value={m.count} max={data.topMistakes[0].count} right={mistakesLabel(m.count)} tone="warn" />)}</div>}</Card>
           </div>
         </>
       )}

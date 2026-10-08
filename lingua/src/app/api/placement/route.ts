@@ -3,7 +3,7 @@ import { route, body, ok } from "@/lib/api";
 import { db } from "@/lib/db";
 import { LEVEL_DIFFICULTY, PLACEMENT_QUESTIONS, type PlacementSection } from "@/content/placement";
 import { estimateAbility, levelLabel, levelOf, overallValue } from "@/lib/levels";
-import { setEstimate, recordSkillResult, refreshLevel } from "@/lib/skills";
+import { setEstimate, refreshLevel } from "@/lib/skills";
 import { recordMistakes } from "@/lib/mistakes";
 import { recordActivity, unlock } from "@/lib/progress";
 import type { SkillArea } from "@prisma/client";

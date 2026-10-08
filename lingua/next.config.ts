@@ -10,6 +10,9 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  distDir: process.env.NEXT_DIST_DIR || ".next",
+  // `NEXT_OUTPUT=standalone` produces a minimal server for Docker (see Dockerfile)
+  ...(process.env.NEXT_OUTPUT === "standalone" ? { output: "standalone" as const } : {}),
   poweredByHeader: false,
   eslint: { ignoreDuringBuilds: true },
   async headers() {

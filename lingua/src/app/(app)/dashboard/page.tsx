@@ -1,3 +1,4 @@
+import { mistakesLabel } from "@/lib/format";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { ArrowRight, BookOpen, Check, Flame, Target, Trophy } from "lucide-react";
@@ -131,7 +132,7 @@ export default async function Dashboard() {
               <p className="text-sm text-muted">Aucune erreur enregistrée pour l&apos;instant. Parlez avec le professeur IA pour que Lingua repère vos points faibles.</p>
             ) : (
               <div className="space-y-3">
-                {mistakes.map((m) => <HBar key={m.label} label={m.label} value={m.count} max={mistakes[0].count} right={`${m.count} mistakes`} tone="warn" />)}
+                {mistakes.map((m) => <HBar key={m.label} label={m.label} value={m.count} max={mistakes[0].count} right={mistakesLabel(m.count)} tone="warn" />)}
                 {top && <Link href={top.slug ? `/grammar/${top.slug}` : "/grammar"} className="inline-flex items-center gap-1 text-sm text-brand hover:underline"><Target className="size-4" /> Travailler « {top.label} »</Link>}
               </div>
             )}

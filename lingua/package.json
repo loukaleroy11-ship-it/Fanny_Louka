@@ -2,7 +2,7 @@
   "name": "lingua",
   "version": "1.0.0",
   "private": true,
-  "description": "Lingua — adaptive English learning platform (flashcards + FSRS + AI teacher)",
+  "description": "Lingua \u2014 adaptive English learning platform (flashcards + FSRS + AI teacher)",
   "scripts": {
     "dev": "next dev",
     "build": "prisma generate && next build",
@@ -14,7 +14,9 @@
     "db:deploy": "prisma migrate deploy",
     "db:seed": "tsx prisma/seed.ts",
     "db:reset": "prisma migrate reset --force",
-    "e2e": "tsx scripts/e2e.ts"
+    "e2e": "tsx scripts/e2e.ts",
+    "e2e:ui": "tsx scripts/e2e-ui.ts",
+    "screens": "tsx scripts/shots.ts"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"

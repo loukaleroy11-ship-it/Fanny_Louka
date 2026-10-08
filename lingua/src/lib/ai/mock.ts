@@ -58,7 +58,6 @@ const sub = (s: string, re: RegExp, to: string | ((...a: string[]) => string)) =
   const out = s.replace(re, to as never);
   return out !== s ? out : null;
 };
-const keepCase = (orig: string, repl: string) => (orig[0] === orig[0].toUpperCase() ? repl[0].toUpperCase() + repl.slice(1) : repl);
 
 const RULES: Rule[] = [
   {

@@ -1,3 +1,4 @@
+import { mistakesLabel } from "@/lib/format";
 import type { Metadata } from "next";
 import { requireUser } from "@/lib/session";
 import { getStats } from "@/lib/stats";
@@ -35,7 +36,7 @@ export default async function Page() {
         </Card>
         <Card>
           <h2 className="mb-3 font-semibold">Erreurs fréquentes</h2>
-          {stats.topMistakes.length === 0 ? <p className="text-sm text-muted">Aucune pour l&apos;instant.</p> : <div className="space-y-3">{stats.topMistakes.slice(0, 5).map((m) => <HBar key={m.label} label={m.label} value={m.count} max={stats.topMistakes[0].count} right={`${m.count} mistakes`} tone="warn" />)}</div>}
+          {stats.topMistakes.length === 0 ? <p className="text-sm text-muted">Aucune pour l&apos;instant.</p> : <div className="space-y-3">{stats.topMistakes.slice(0, 5).map((m) => <HBar key={m.label} label={m.label} value={m.count} max={stats.topMistakes[0].count} right={mistakesLabel(m.count)} tone="warn" />)}</div>}
         </Card>
       </div>
       <Card>

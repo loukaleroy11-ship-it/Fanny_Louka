@@ -45,9 +45,9 @@ export function CardsPage() {
             <h3 className="font-semibold">Exporter</h3>
             <p className="text-sm text-muted">Colonnes : English, French, Example, ExampleTranslation, Category, PartOfSpeech, Level, Rank, Tags.</p>
             <div className="flex flex-wrap gap-2">
-              <a href="/api/cards/export?format=csv&scope=mine" className="inline-flex h-11 items-center gap-2 rounded-xl border border-border bg-surface-2 px-4 text-sm font-medium hover:bg-border"><Download className="size-4" /> Mes cartes (CSV)</a>
-              <a href="/api/cards/export?format=csv" className="inline-flex h-11 items-center gap-2 rounded-xl border border-border bg-surface-2 px-4 text-sm font-medium hover:bg-border"><Download className="size-4" /> Toutes (CSV)</a>
-              <a href="/api/cards/export?format=anki-tsv" className="inline-flex h-11 items-center gap-2 rounded-xl border border-border bg-surface-2 px-4 text-sm font-medium hover:bg-border"><Download className="size-4" /> Format texte Anki</a>
+              <button type="button" onClick={() => window.location.assign("/api/cards/export?format=csv&scope=mine")} className="inline-flex h-11 items-center gap-2 rounded-xl border border-border bg-surface-2 px-4 text-sm font-medium hover:bg-border"><Download className="size-4" /> Mes cartes (CSV)</button>
+              <button type="button" onClick={() => window.location.assign("/api/cards/export?format=csv")} className="inline-flex h-11 items-center gap-2 rounded-xl border border-border bg-surface-2 px-4 text-sm font-medium hover:bg-border"><Download className="size-4" /> Toutes (CSV)</button>
+              <button type="button" onClick={() => window.location.assign("/api/cards/export?format=anki-tsv")} className="inline-flex h-11 items-center gap-2 rounded-xl border border-border bg-surface-2 px-4 text-sm font-medium hover:bg-border"><Download className="size-4" /> Format texte Anki</button>
             </div>
           </section>
           <section className="space-y-2">
